@@ -24,3 +24,8 @@ class CommentAdmin(admin.ModelAdmin):
     def approve_comments(self, request, queryset):
         queryset.update(approved=True)
 
+
+#@admin.register(Membership)
+#class membership(admin.ModelAdmin):
+#    list_display = ('name', 'body')
+#    search_fields = ('name', 'email', 'body')

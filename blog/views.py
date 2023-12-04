@@ -28,3 +28,8 @@ class PostDetail(View):
                 "liked": liked
             },
         )
+def about(request):
+    """This function render the about page of the project."""
+    return render(
+        request,
+        "about.html")
