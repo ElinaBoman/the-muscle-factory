@@ -140,3 +140,8 @@ body {
     background: transparent;
     border: none;
 }
+
+/* Sign in */
+.container-sign-in {
+    background-color: beige;
+}
