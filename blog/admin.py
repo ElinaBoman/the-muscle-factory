@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Post, Comment
+from .models import Post, Comment, Membership
 from django_summernote.admin import SummernoteModelAdmin
 
 
@@ -25,7 +25,7 @@ class CommentAdmin(admin.ModelAdmin):
         queryset.update(approved=True)
 
 
-#@admin.register(Membership)
-#class membership(admin.ModelAdmin):
-#    list_display = ('name', 'body')
-#    search_fields = ('name', 'email', 'body')
+@admin.register(Membership)
+class MembershipAdmin(admin.ModelAdmin):
+   list_display = ('name', 'memberlevel')
+   search_fields = ('name', 'email', 'memberlevel')
