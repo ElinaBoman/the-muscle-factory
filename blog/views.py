@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from django.views import generic, View
-from .models import Event
+from .models import Event, EventBooking
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 
 class EventList(generic.ListView):
@@ -27,6 +28,8 @@ class EventDetail(View):
                 # "liked": liked
             },
         )
+
+        
 def about(request):
     """This function render the about page of the project."""
     return render(
@@ -38,3 +41,5 @@ def contact(request):
     return render(
         request,
         "contact.html")
+
+

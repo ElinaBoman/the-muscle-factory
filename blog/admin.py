@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Event, Membership
+from .models import Event, Membership, EventBooking
 from django_summernote.admin import SummernoteModelAdmin
 
 
@@ -28,3 +28,4 @@ class EventAdmin(SummernoteModelAdmin):
 class MembershipAdmin(admin.ModelAdmin):
    list_display = ('name', 'last_name', 'memberlevel', 'created_on')
    search_fields = ('name', 'email', 'memberlevel')
+
