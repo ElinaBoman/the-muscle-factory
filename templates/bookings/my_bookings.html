@@ -15,9 +15,14 @@
             <li> {{ booking.event_date }}</li>
             <li> {{ booking.event_time }}</li>
             <li> {{ booking.event_choice}}</li>
+            <label for="add">Add new bookng</label>
+            <button id="add"><a href="{% url 'process_form' %}">Add</a></button>
+            <label for="delete">Delete booking</label>
+            <button id="delete"><a href="{% url 'delete_booking' %}">Delete</a></button>
+            <hr>
             {% endfor %}
         </ul>
-        <button><a href="process_form.html">Add</a></button>
+    
         {% else %}
         <p>You have no bookings yet.</p>
         {% endif %}

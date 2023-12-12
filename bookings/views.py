@@ -42,6 +42,11 @@ def my_bookings(request):
 }
      return render(request, 'bookings/my_bookings.html', context)
 
-
+def delete_booking(request):
+     bookings = EventBooking.objects.all()
+     context = {
+        'bookings': bookings
+}
+     return render(request, 'bookings/delete_booking.html', context)
 #     # Din vykod här
 #     return render(request, 'create_booking.html/')
