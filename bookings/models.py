@@ -3,14 +3,16 @@ import uuid
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 
+
 # Create your models here.
 # The structure of this model was inspired by gStarHigh, the model has been modified to suit this project. I have created the eventchoices.
+
 class EventBooking(models.Model):
     booking_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="user_booking")
     updated_on = models.DateField(auto_now=True)
     created_on = models.DateField(auto_now=True)
-    event_date = models.TimeField(auto_now=False)
+    event_date = models.DateField(auto_now=False)
     lesson_time = models.TimeField(default="12:30")
 
     EVENT_CHOICE = (
@@ -29,4 +31,5 @@ class EventBooking(models.Model):
 
     def __str__(self):
          return f"{self.user} - {self.event_choice}"
+
 

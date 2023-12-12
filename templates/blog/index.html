@@ -8,6 +8,9 @@
         <!-- Event Entries Column -->
         <div class="col-12 mt-3 left">
             <div class="row">
+                {% if user.is_authenticated %}
+                    <h3>Welcome {{user.username}}</h3>
+                {% endif %}
                 {% for event in event_list %}
                 <div class="col-md-4">
                     <div class="card mb-4">

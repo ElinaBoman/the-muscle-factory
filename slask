@@ -32,3 +32,13 @@
     {% endelement %}
     {% include "socialaccount/snippets/login.html" with page_layout="entrance" %}
 {% endblock content %}
+
+
+ <form method="GET" action="{% url 'process_form' %}">
+            {% csrf_token %}
+            {{ form.as_p }}
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+   </div>

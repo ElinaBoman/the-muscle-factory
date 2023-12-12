@@ -1,7 +1,8 @@
 from django.urls import path
 from . import views
-from .views import create_booking
+from bookings.views import process_form, my_bookings
 
 urlpatterns = [
-    path('create_booking/', create_booking, name='create_booking'),
+    path('process_form/', process_form, name='process_form'),
+    path('my_bookings/', my_bookings, name='my_bookings'),
 ]

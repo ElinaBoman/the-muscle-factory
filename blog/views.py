@@ -1,13 +1,13 @@
 from django.shortcuts import render, get_object_or_404
 from django.views import generic, View
-from .models import Event, EventBooking
+from .models import Event
 from django.contrib.auth.mixins import LoginRequiredMixin
 
 
 class EventList(generic.ListView):
     model = Event
     queryset = Event.objects.filter(status=1).order_by('created_on')
-    template_name = 'index.html'
+    template_name = 'blog/index.html'
     paginated_by = 6
 
 class EventDetail(View):
@@ -21,7 +21,7 @@ class EventDetail(View):
 
         return render(
             request,
-            "event_detail.html",
+            "blog/event_detail.html",
             {
                 "event": event_instance,
                 # "comments": comments,
@@ -29,6 +29,11 @@ class EventDetail(View):
             },
         )
 
+def home(request):
+    """This function render the about page of the project."""
+    return render(
+        request,
+        "blog/index.html")
         
 def about(request):
     """This function render the about page of the project."""

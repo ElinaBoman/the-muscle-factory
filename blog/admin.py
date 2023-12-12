@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Event, Membership, EventBooking
+from .models import Event, Membership
 from django_summernote.admin import SummernoteModelAdmin
 
 
