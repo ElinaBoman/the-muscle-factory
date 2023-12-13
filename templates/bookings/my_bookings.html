@@ -17,10 +17,10 @@
             <li> {{ booking.lesson_time }}</li>
             <li> {{ booking.event_choice}}</li>
             <td>
-                <a href="{% url 'edit_item' %}">
+                <a href="{% url 'edit_item' booking.booking_id %}">
                     <button>Edit</button>
                 </a>
-            </td>
+            </td>   
             <label for="add">Add new booking</label>
             <button id="add"><a href="{% url 'process_form' %}">Add</a></button>
             <label for="delete">Delete booking</label>
@@ -28,7 +28,7 @@
             <hr>
             {% endfor %}
         </ul>
-    
+            
         {% else %}
         <p>You have no bookings yet.</p>
         {% endif %}

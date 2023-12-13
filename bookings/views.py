@@ -3,6 +3,7 @@ from django.views import generic
 from django.http import HttpResponse
 from django import forms
 from django.contrib import messages
+import uuid
 from .forms import CreateBookingForm
 from .models import EventBooking
 
@@ -22,41 +23,37 @@ def process_form(request):
 
 
 
-
-# if request.method == 'POST':
-#         form = proccess_form(request.POST)
-#         if form.is_valid():
-#             form.save()
-#             return redirect('success')
-#         else:
-#             form = process_form()
-
-
-#         return render(request, 'bookings/process_form.html', {'form': form})
-
-
 def my_bookings(request):
-     bookings = EventBooking.objects.all()
-     form = CreateBookingForm()
-     context = {
-        'bookings': bookings
-}
-     return render(request, 'bookings/my_bookings.html', context)
+    
+    booking = EventBooking.objects.all()
+    form = CreateBookingForm()
+    context = {
+    'bookings': booking, 
+    }
+    return render(request, 'bookings/my_bookings.html', context)
 
 
-def edit_item(request):
-     #booking = get_object_or_404(EventBooking, pk=booking_id)
-     #context = {
-     #   'bookings': bookings
-#}
-     return render(request, 'bookings/edit_item.html') 
-
+def edit_item(request, booking_id):
+    bookings = get_object_or_404(EventBooking, booking_id=booking_id)
+    form = CreateBookingForm(request.POST, instance=bookings)
+    context = {
+    'bookings': bookings,
+    'form': form
+ }
+#    if form.is_valid():
+        
+#         bookings = form.save(commit=False)
+#         booking.user = request.user
+#         booking.save()
+#         messages.info(request, 'Your lesson was updated successfully!') 
+    return render(request, 'bookings/edit_item.html', context)
+    
 
 def delete_booking(request):
-     bookings = EventBooking.objects.all()
-     context = {
-        'bookings': bookings
+    bookings = EventBooking.objects.all()
+    context = {
+       'bookings': bookings
 }
-     return render(request, 'bookings/delete_booking.html', context)
+    return render(request, 'bookings/delete_booking.html', context)
 #     # Din vykod här
 #     return render(request, 'create_booking.html/')

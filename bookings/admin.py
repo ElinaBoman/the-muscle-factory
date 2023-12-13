@@ -6,4 +6,8 @@ from .models import EventBooking
 class EventBookingAdmin(admin.ModelAdmin):
     list_display = ("user", "event_date", "lesson_time","event_choice", "booking_status")
     list_filter = ('booking_status', 'created_on')
-    search_fields = ("user", "event_date", "booking_status")
+    search_fields = ["user", "event_date", "booking_status"]
+    actions = ['approve_booking']
+
+    def approve_bookings(self, request, queryset):
+        queryset.update(approved=True)
