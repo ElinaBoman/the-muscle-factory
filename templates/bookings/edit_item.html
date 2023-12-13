@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% block head_title %}{% trans "Create Booking" %}{% endblock %}
+
+<!--BLOCK CONTENT INNEHÅLLER KOD FRÅN ANDRA TEMPLATES. Allt innehåll från den sida som vi vill visa, visas inom block content. Här vill vi visa vår form. -->
+{% block content %}
+   <div class="col-12 mt-1 right">
+    <div class="row">
+        <h2>Edit booking</h2>
+        {% if bookings %}
+        {% for booking in bookings %}
+        <p>Booking ID: {{ booking.id }}</p>
+        {% endfor %}
+        {% endif %}
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Update</button>
+        </form>
+    </div>
+   </div>
+{% endblock %}

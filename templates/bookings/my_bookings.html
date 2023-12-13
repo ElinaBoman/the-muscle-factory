@@ -12,10 +12,16 @@
         {% if bookings %}
         <ul>
             {% for booking in bookings %}
+            <li> {{ booking.booking_id }}</li>
             <li> {{ booking.event_date }}</li>
-            <li> {{ booking.event_time }}</li>
+            <li> {{ booking.lesson_time }}</li>
             <li> {{ booking.event_choice}}</li>
-            <label for="add">Add new bookng</label>
+            <td>
+                <a href="{% url 'edit_item' %}">
+                    <button>Edit</button>
+                </a>
+            </td>
+            <label for="add">Add new booking</label>
             <button id="add"><a href="{% url 'process_form' %}">Add</a></button>
             <label for="delete">Delete booking</label>
             <button id="delete"><a href="{% url 'delete_booking' %}">Delete</a></button>

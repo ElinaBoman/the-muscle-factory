@@ -37,10 +37,20 @@ def process_form(request):
 
 def my_bookings(request):
      bookings = EventBooking.objects.all()
+     form = CreateBookingForm()
      context = {
         'bookings': bookings
 }
      return render(request, 'bookings/my_bookings.html', context)
+
+
+def edit_item(request):
+     #booking = get_object_or_404(EventBooking, pk=booking_id)
+     #context = {
+     #   'bookings': bookings
+#}
+     return render(request, 'bookings/edit_item.html') 
+
 
 def delete_booking(request):
      bookings = EventBooking.objects.all()
