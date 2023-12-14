@@ -2,6 +2,7 @@ from django.shortcuts import render, get_object_or_404
 from django.views import generic, View
 from .models import Event
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.http import HttpResponse
 
 
 class EventList(generic.ListView):
@@ -43,8 +44,6 @@ def about(request):
 
 def contact(request):
     """This function render the contact page of the project."""
-    return render(
-        request,
-        "contact.html")
-
+    return render(request,  "contact.html")
+    
 

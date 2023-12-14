@@ -6,13 +6,15 @@
 
 <!--BLOCK CONTENT INNEHÅLLER KOD FRÅN ANDRA TEMPLATES. Allt innehåll från den sida som vi vill visa, visas inom block content. Här vill vi visa vår form. -->
 {% block content %}
+
    <div class="col-12 mt-1 right">
-        <div class="row">
-            <div id=container>
-            <h2>Edit booking</h2>
-            {{ form }}
-            <button type="submit">Update</button>
-            </div>
-        </div>
+    <div class="row">
+        <h2>Hello {{user.username}}, would you like update a booking?</h2>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Submit</button>
+        </form>
+    </div>
    </div>
 {% endblock %}

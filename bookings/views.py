@@ -35,19 +35,24 @@ def my_bookings(request):
 
 def edit_item(request, booking_id):
     bookings = get_object_or_404(EventBooking, booking_id=booking_id)
-    form = CreateBookingForm(request.POST, instance=bookings)
+    form = CreateBookingForm(instance=bookings)
     context = {
     'bookings': bookings,
     'form': form
  }
-#    if form.is_valid():
-        
-#         bookings = form.save(commit=False)
-#         booking.user = request.user
-#         booking.save()
-#         messages.info(request, 'Your lesson was updated successfully!') 
-    return render(request, 'bookings/edit_item.html', context)
-    
+    #return render(request, 'bookings/edit_item.html', context)
+
+    if request.method == 'POST':
+        form = CreateBookingForm(request.POST, instance=bookings)
+        if form.is_valid():
+                booking = form.save(commit=False)
+                booking.user = request.user
+                booking.save()
+                messages.info(request, 'You have updated a booking.')
+                return redirect('my_bookings')
+            
+    return render(request, 'bookings/edit_item.html', {'form': form})
+
 
 def delete_booking(request):
     bookings = EventBooking.objects.all()
