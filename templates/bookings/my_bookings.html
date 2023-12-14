@@ -24,7 +24,7 @@
             <label for="add">Add new booking</label>
             <button id="add"><a href="{% url 'process_form' %}">Add</a></button>
             <label for="delete">Delete booking</label>
-            <button id="delete"><a href="{% url 'delete_booking' %}">Delete</a></button>
+            <button id="delete"><a href="{% url 'delete_booking' booking.booking_id %}">Delete</a></button>
             <hr>
             {% endfor %}
         </ul>

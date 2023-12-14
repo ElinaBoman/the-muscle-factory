@@ -40,7 +40,6 @@ def edit_item(request, booking_id):
     'bookings': bookings,
     'form': form
  }
-    #return render(request, 'bookings/edit_item.html', context)
 
     if request.method == 'POST':
         form = CreateBookingForm(request.POST, instance=bookings)
@@ -54,11 +53,15 @@ def edit_item(request, booking_id):
     return render(request, 'bookings/edit_item.html', {'form': form})
 
 
-def delete_booking(request):
-    bookings = EventBooking.objects.all()
-    context = {
-       'bookings': bookings
-}
-    return render(request, 'bookings/delete_booking.html', context)
+def delete_booking(request, booking_id):
+    bookings = get_object_or_404(EventBooking, booking_id=booking_id)
+ 
+    if request.method == 'POST':
+        bookings.delete()
+        messages.info(request, 'You have deleted your booking.')
+        return redirect('my_bookings')
+        
+    return render(request, 'bookings/delete_booking.html', {'bookings': bookings})
+
 #     # Din vykod här
 #     return render(request, 'create_booking.html/')

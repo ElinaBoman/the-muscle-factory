@@ -9,7 +9,7 @@
 
    <div class="col-12 mt-1 right">
     <div class="row">
-        <h2>Hello {{user.username}}, would you like update a booking?</h2>
+        <h2>Hello {{user.username}}, would you like update your booking?</h2>
         <form method="post">
             {% csrf_token %}
             {{ form.as_p }}
