@@ -6,7 +6,10 @@ from django.contrib import messages
 import uuid
 from .forms import CreateBookingForm
 from .models import EventBooking
+from django.contrib.auth.decorators import login_required
 
+
+# Create a booking
 def process_form(request):
     form = CreateBookingForm()
 
@@ -22,17 +25,18 @@ def process_form(request):
     return render(request, 'bookings/process_form.html', {'form': form})
 
 
-
+# Show bookings
+@login_required
 def my_bookings(request):
     
-    booking = EventBooking.objects.all()
+    booking = EventBooking.objects.filter(user=request.user)
     form = CreateBookingForm()
     context = {
     'bookings': booking, 
     }
     return render(request, 'bookings/my_bookings.html', context)
 
-
+#Update booking
 def edit_item(request, booking_id):
     bookings = get_object_or_404(EventBooking, booking_id=booking_id)
     form = CreateBookingForm(instance=bookings)
@@ -52,7 +56,7 @@ def edit_item(request, booking_id):
             
     return render(request, 'bookings/edit_item.html', {'form': form})
 
-
+# Delete booking
 def delete_booking(request, booking_id):
     bookings = get_object_or_404(EventBooking, booking_id=booking_id)
  

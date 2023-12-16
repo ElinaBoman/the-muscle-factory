@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['the-muscle-factory-9f171161969d.herokuapp.com', '8000-elinaboman-themusclefac-afzywqqs6lt.ws-eu106.gitpod.io']
+ALLOWED_HOSTS = ['the-muscle-factory-9f171161969d.herokuapp.com', '8000-elinaboman-themusclefac-afzywqqs6lt.ws-eu106.gitpod.io', '8000-elinaboman-themusclefac-afzywqqs6lt.ws-eu107.gitpod.io']
 
 
 # Application definition

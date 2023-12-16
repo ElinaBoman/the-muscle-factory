@@ -6,13 +6,17 @@
 
 <!--BLOCK CONTENT INNEHÅLLER KOD FRÅN ANDRA TEMPLATES. Allt innehåll från den sida som vi vill visa, visas inom block content. Här vill vi visa vår form. -->
 {% block content %}
-<div>
-    <h2>Are you sure you want to delete this booking?</h2>
-    <form method="post">
-        {% csrf_token %}
-        {{ booking }}
-
-<button class="btn btn-danger">Delete</button>
-    </form>
+<div class="container-sign-in">
+    <div class="row">
+        <div class="col-md-8 mt-5 offset-md-1">
+        <h2>Are you sure you want to delete this booking?</h2>
+        {{ bookings }}
+        <form method="post">
+            {% csrf_token %}
+            {{ booking }}
+                <button class="btn btn-danger">Delete</button>
+        </form>
+        </div>
+    </div>
 </div>
 {% endblock %}
