@@ -59,7 +59,6 @@ def edit_item(request, booking_id):
 # Delete booking
 def delete_booking(request, booking_id):
     bookings = get_object_or_404(EventBooking, booking_id=booking_id)
- 
     if request.method == 'POST':
         bookings.delete()
         messages.info(request, 'You have deleted your booking.')
@@ -68,4 +67,4 @@ def delete_booking(request, booking_id):
     return render(request, 'bookings/delete_booking.html', {'bookings': bookings})
 
 #     # Din vykod här
-#     return render(request, 'create_booking.html/')
+

@@ -9,14 +9,22 @@
 <div class="container-sign-in">
     <div class="row">
         <div class="col-md-8 mt-5 offset-md-1">
-        <h2>Are you sure you want to delete this booking?</h2>
-        {{ bookings }}
-        <form method="post">
-            {% csrf_token %}
-            {{ booking }}
+            <form method="post">
+                {% csrf_token %}
+                <h2>Are you sure you want to delete this booking?</h2>
+                <ul class="bookings_form_list">
+                        <li> {{ bookings.user }}</li>
+                        <li> {{ bookings.event_date }}</li>
+                        <li> {{ bookings.lesson_time }}</li>
+                        <li> {{ bookings.event_choice }}</li>
+                </ul>
                 <button class="btn btn-danger">Delete</button>
         </form>
-        </div>
+       
+        </div> 
+        <a href="{% url 'my_bookings' %}">
+            <button class="btn btn-info">Return</button>
+        </a>
     </div>
 </div>
 {% endblock %}

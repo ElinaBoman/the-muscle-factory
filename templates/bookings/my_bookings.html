@@ -11,7 +11,7 @@
         <div class="col-md-8 mt-5 offset-md-1">
             <h2>My bookings:</h2>
             {% if bookings %}
-            <ul class="my_bookings_form_list">
+            <ul class="bookings_form_list">
                 {% for booking in bookings %}
                 <li> {{ booking.user }}</li>
                 <li> {{ booking.event_date }}</li>

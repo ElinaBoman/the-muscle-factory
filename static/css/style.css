@@ -135,9 +135,14 @@ body {
 .container-sign-in {
     background-color: #ffff;
     border: black 2px solid;
+    width: 500px;
+    margin: auto;
+    margin-top: 20px;
+    padding-bottom: 20px;
+
 }
 
-.my_bookings_form_list{
+.bookings_form_list{
     list-style: none;
     line-height: 30px;
 }
