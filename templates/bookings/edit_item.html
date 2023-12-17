@@ -12,11 +12,13 @@
         <div class="row">
             <div class="col-md-8 mt-5 offset-md-1">
             <h2>Hello {{user.username}}, would you like update your booking?</h2>
-            <form method="post">
-                {% csrf_token %}
-                {{ form.as_p }}
-                <button type="submit">Submit</button>
-            </form>
+                <div class="booking-form">
+                    <form method="post">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+                        <button type="submit">Submit</button>
+                </form>
+                </div>
             </div>
         </div>
    </div>

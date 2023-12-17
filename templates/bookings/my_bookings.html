@@ -11,22 +11,22 @@
         <div class="col-md-8 mt-5 offset-md-1">
             <h2>My bookings:</h2>
             {% if bookings %}
-            <ul>
+            <ul class="my_bookings_form_list">
                 {% for booking in bookings %}
-                <li> {{ booking.booking_id }}</li>
+                <li> {{ booking.user }}</li>
                 <li> {{ booking.event_date }}</li>
                 <li> {{ booking.lesson_time }}</li>
                 <li> {{ booking.event_choice}}</li>
-                <td>
                     <a href="{% url 'edit_item' booking.booking_id %}">
-                        <button>Edit</button>
+                        <button class="btn btn-info">Edit</button>
+                    </a>  
+                    <a href="{% url 'delete_booking' booking.booking_id %}">
+                        <button class="btn btn-danger">Delete</button>            
                     </a>
-                </td>   
-                <label for="add">Add new booking</label>
-                <button id="add"><a href="{% url 'process_form' %}">Add</a></button>
-                <label for="delete">Delete booking</label>
-                <button id="delete"><a href="{% url 'delete_booking' booking.booking_id %}">Delete</a></button>
-                <hr>
+                    <a href="{% url 'process_form' %}">
+                        <button class="btn btn-success">Add</button>
+                    </a>
+                    <hr>
                 {% endfor %}
             </ul>
         </div>

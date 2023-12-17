@@ -18,15 +18,15 @@ body {
 }
 
 .light-bg {
-    background-color: #fff;
+    background-color: #c24545;
 }
 
 .dark-bg {
-    background-color: #445261;
+    background-color: #b3bdc6;
 }
 
 .main-bg {
-    background-color: #F9FAFC;
+    background-color: #384a70;
 }
 
 .card {
@@ -128,20 +128,19 @@ body {
     text-decoration: underline;
 }
 
-.btn-like {
-    color: #E84610;
-    border: none;
-    background: transparent;
-}
 
-.btn-like:hover,
-.btn-like:active {
-    color: #E84610;
-    background: transparent;
-    border: none;
-}
 
-/* Sign in */
+
+/* Sign in, bookings form */
 .container-sign-in {
-    background-color: beige;
+    background-color: #ffff;
+    border: black 2px solid;
 }
+
+.my_bookings_form_list{
+    list-style: none;
+    line-height: 30px;
+}
+
+/* Booking form */
+
