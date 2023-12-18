@@ -12,15 +12,16 @@ from django.contrib.auth.decorators import login_required
 # Create a booking
 def process_form(request):
     form = CreateBookingForm()
+    bookable_times = ["07:30", "20:00"]
 
     if request.method == 'POST':
         form = CreateBookingForm(request.POST)
         if form.is_valid():
-                booking = form.save(commit=False)
-                booking.user = request.user
-                booking.save()
-                messages.info(request, 'You have placed a booking.')
-                return redirect('my_bookings')
+                    booking = form.save(commit=False)
+                    booking.user = request.user
+                    booking.save()
+                    messages.info(request, 'You have placed a booking.')
+                    return redirect('my_bookings')
             
     return render(request, 'bookings/process_form.html', {'form': form})
 

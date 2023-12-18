@@ -13,7 +13,7 @@ class EventBooking(models.Model):
     updated_on = models.DateField(auto_now=True)
     created_on = models.DateField(auto_now=True)
     event_date = models.DateField(auto_now=False)
-    lesson_time = models.TimeField(default="12:30")
+    lesson_time = models.TimeField(default="08:00")
 
     EVENT_CHOICE = (
         ("Personal Trainer", "Personal Trainer"),

@@ -141,11 +141,20 @@ body {
     padding-bottom: 20px;
 
 }
-
+/* Booking form */
 .bookings_form_list{
     list-style: none;
     line-height: 30px;
 }
 
-/* Booking form */
+
+/* contact form */
+
+.contact-form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
 
