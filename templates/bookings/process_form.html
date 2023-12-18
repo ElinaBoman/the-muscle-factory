@@ -4,16 +4,20 @@
 
 {% block head_title %}{% trans "Create Booking" %}{% endblock %}
 
-<!--BLOCK CONTENT INNEHÅLLER KOD FRÅN ANDRA TEMPLATES. Allt innehåll från den sida som vi vill visa, visas inom block content. Här vill vi visa vår form. -->
+
 {% block content %}
-   <div class="col-12 mt-1 right">
-    <div class="row">
-        <h2>Hello {{user.username}}, would you like to create a booking?</h2>
-        <form method="post" action="{% url 'process_form' %}">
-            {% csrf_token %}
-            {{ form.as_p }}
-            <button type="submit">Submit</button>
-        </form>
-    </div>
+<div class="container-sign-in text-center">
+    <div class="col-md-8 mt-5 offset-md-1">
+        <div class="row">
+            <div class="form-group">
+                <h2>Hello {{user.username}}, would you like to create a booking?</h2>
+                <form method="post" action="{% url 'process_form' %}">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button class="btn btn-success" type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
    </div>
+</div>
 {% endblock %}

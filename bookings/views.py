@@ -12,7 +12,7 @@ from django.contrib.auth.decorators import login_required
 # Create a booking
 def process_form(request):
     form = CreateBookingForm()
-    bookable_times = ["07:30", "20:00"]
+    #bookable_times = ["07:30", "20:00"]
 
     if request.method == 'POST':
         form = CreateBookingForm(request.POST)

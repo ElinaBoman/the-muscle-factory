@@ -9,8 +9,8 @@
     <div class="row">
         <div class="col-md-8 mt-5 offset-md-1">
             <h3>{% trans "Sign In" %}</h3>
-            <p>{% blocktrans %}Welcome back to the code|star blog. To leave a comment or like a post, please log in. If you
-              have not created an account yet, then <a class="link" href="{{ signup_url }}">sign up</a>
+            <p>{% blocktrans %}Welcome back to The Muscle Factory! If you would like to make a booking, please log in. If you do not have an account, make sure to
+                 <a class="link" href="{{ signup_url }}">register</a>
               first.{% endblocktrans %}</p>
             <form class="login" method="POST" action="{% url 'account_login' %}">
                 {% csrf_token %}
