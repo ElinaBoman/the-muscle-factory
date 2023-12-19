@@ -154,7 +154,28 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #F9FAFC;
+    font-weight: bold;
 
 }
+
+.contact-form h1{
+    padding-bottom: 2em;
+}
+
+.btn{
+    width: fit-content;
+}
+
+.background-contact-form{
+    background-image: url('https://res.cloudinary.com/dcqwfgtyk/image/upload/rzdyxhwejkzyfehugxsp.jpg');
+    background-size: cover;
+    background-position: 500px center;
+
+}
+
+
 
 

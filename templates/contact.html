@@ -1,22 +1,30 @@
 {% extends "base.html" %}
 
 {% block content %}
-
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-8">
-        <form action="" method="post" class="contact-form">
-            {% csrf_token %}
-            <label for="name">Full name</label>
-            <input type="name" name="name"required>
-            <label for="email">Email</label>
-            <input type="email" name="email" required>
-            <label for="phonenumber">Phonenumber</label>
-            <input type="number" name="phonenumber">
-            <label for="message">Contact us!</label>
-            <textarea type="text" name="message" required row="5"></textarea>
-            <button type="submit">Submit</button>
-        </form>
+<div class="background-contact-form">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+            <form class="contact-form" action="" method="post">
+                {% csrf_token %}
+                <h1>Would you Like to Connect With Us? 
+                    <br>
+                    – We're Here to Help!</h1>
+                <label for="name">Full name</label>
+                <input class="form-control" type="name" name="name"required>
+                <label for="email">Email</label>
+                <input  class="form-control" type="email" name="email" required>
+                <label for="phonenumber">Phonenumber</label>
+                <input  class="form-control" type="number" name="phonenumber">
+                <label for="message">Contact us!</label>
+                <textarea class="form-control" type="text" name="message" required row="10"></textarea>
+                <label class="form-check-label">
+                    <input class="form-check-input form-control" type="checkbox"> Terms and conditions
+                </label>
+                <br>
+                <button class="btn btn-success" type="submit">Submit</button>
+            </form>
+            </div>
         </div>
     </div>
 </div>
