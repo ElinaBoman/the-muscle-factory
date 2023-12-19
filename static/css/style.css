@@ -176,6 +176,19 @@ body {
 
 }
 
+/* About us */
+.jumbotron-about{
+    color: #F9FAFC;
+    font-weight: bold;
+}
+.our-values{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 30px;
+    color: #F9FAFC;
+    background-color: rgba(0, 0, 0, 0.5);
+}
 
 
 
