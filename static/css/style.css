@@ -128,7 +128,12 @@ body {
     text-decoration: underline;
 }
 
-
+/* index.html */
+.hero-img-slide{
+    max-width: 100%;
+    height: fit-content;
+    display: inline-block
+}
 
 
 /* Sign in, bookings form */
@@ -171,8 +176,10 @@ body {
 
 .background-contact-form{
     background-image: url('https://res.cloudinary.com/dcqwfgtyk/image/upload/rzdyxhwejkzyfehugxsp.jpg');
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: 500px center;
+    background-position: -300px center;
+    
 
 }
 
