@@ -28,8 +28,14 @@ class CreateBookingForm(forms.ModelForm):
         min_date = (timezone.localdate())
         iso_string = min_date.isoformat()
         iso_split_date = iso_string.split("T")[0]
+
+
         fields = ['event_date', 'lesson_time', 'event_choice']
         widgets = {
-            'event_date':forms.DateInput(attrs={'type':'date', 'min': iso_split_date}),
-            'lesson_time':forms.Select(choices=bookable_times),
+        'event_date':forms.DateInput(attrs={'type':'date', 'min': iso_split_date}),
+        'lesson_time':forms.Select(choices=bookable_times),
         }
+
+
+
+

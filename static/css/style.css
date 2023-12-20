@@ -26,7 +26,7 @@ body {
 }
 
 .main-bg {
-    background-color: #384a70;
+    background-color: #000000;
 }
 
 .card {
@@ -178,10 +178,39 @@ body {
 
 /* About us */
 .jumbotron-about{
+    background-image:  url('https://res.cloudinary.com/dcqwfgtyk/image/upload/pexels-cottonbro-studio-3826431_r1ursy.jpg');
     color: #F9FAFC;
     font-weight: bold;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
 }
-.our-values{
+
+.border-jumbotron{
+    border: solid 4px white;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 60%;
+    align-self: center; 
+}
+
+.img-contact-form{
+    background-image: url('https://res.cloudinary.com/dcqwfgtyk/image/upload/pexels-cottonbro-studio-3826431_r1ursy.jpg');
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    border: solid 2px white;
+}
+
+.img-border-contact-form{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+   
+}
+
+.our-values-upper{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
