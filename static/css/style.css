@@ -132,7 +132,21 @@ body {
 .hero-img-slide{
     max-width: 100%;
     height: fit-content;
-    display: inline-block
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.carousel-caption{
+    color: #ffffff;
+    position: absolut;
+    top: 40%;
+    left: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 3%;
+    height: fit-content;
+    line-height: 30px;
 }
 
 
@@ -153,55 +167,16 @@ body {
 }
 
 
-/* contact form */
-
-.contact-form{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #F9FAFC;
-    font-weight: bold;
-
-}
-
-.contact-form h1{
-    padding-bottom: 2em;
-}
-
 .btn{
     width: fit-content;
 }
 
-.background-contact-form{
-    background-image: url('https://res.cloudinary.com/dcqwfgtyk/image/upload/rzdyxhwejkzyfehugxsp.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: -300px center;
-    
-
-}
 
 /* About us */
-.jumbotron-about{
-    background-image:  url('https://res.cloudinary.com/dcqwfgtyk/image/upload/pexels-cottonbro-studio-3826431_r1ursy.jpg');
-    color: #F9FAFC;
-    font-weight: bold;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
 
-}
 
-.border-jumbotron{
-    border: solid 4px white;
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 60%;
-    align-self: center; 
-}
 
+/* contact form */
 .img-contact-form{
     background-image: url('https://res.cloudinary.com/dcqwfgtyk/image/upload/pexels-cottonbro-studio-3826431_r1ursy.jpg');
     height: 250px;
@@ -217,14 +192,24 @@ body {
    
 }
 
-.our-values-upper{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    gap: 30px;
-    color: #F9FAFC;
-    background-color: rgba(0, 0, 0, 0.5);
+.background-contact-form{
+    background-image: url('https://res.cloudinary.com/dcqwfgtyk/image/upload/rzdyxhwejkzyfehugxsp.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -300px center;
 }
 
+.contact-form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #F9FAFC;
+    font-weight: bold;
 
+}
 
+.contact-form h1{
+    padding-bottom: 2em;
+}
