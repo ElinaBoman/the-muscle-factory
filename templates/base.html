@@ -20,7 +20,12 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>
+    </script>
+    <script type="text/javascript">
+        (function(){
+           emailjs.init("EnKaM6okn7N581fgK");
+        })();
+     </script>
 
 
 </head>
@@ -98,12 +103,7 @@
             <i class="fab fa-youtube-square ms-3"></i></p>
     </footer>
     <!-- Connects email contact form to main emailaccount for The Muscle Factory-->
-    <script type="text/javascript">
-        (function(){
-           emailjs.init("EnKaM6okn7N581fgK");
-           emailjs.send("service_supy7sf", "template_tgz8lrr", {name: "Aaron", notes: "What I want is..."}, "EnKaM6okn7N581fgK");
-        })();
-     </script>
+    <script src="/static/js/script.js"></script>
     <!-- Fontawsome-->
     <script src="https://kit.fontawesome.com/90ae6df711.js" crossorigin="anonymous"></script>
     <!-- Messages function that controls alers messages-->
