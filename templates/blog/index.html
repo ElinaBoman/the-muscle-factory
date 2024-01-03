@@ -6,7 +6,7 @@
     <!--The slideshow is a Bootstrap carousel. Code can be found on this link https://getbootstrap.com/docs/4.0/components/carousel/.
         The .carousel-caption conten has been changed from original code.-->
 
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="8000">
         <div class="carousel-inner">
             <div class="carousel-item active">
         <img class="d-block w-100 hero-img-slide" src='https://res.cloudinary.com/dcqwfgtyk/image/upload/pexels-victor-freitas-2261485_e1skl9.jpg' alt="First slide">
@@ -18,7 +18,8 @@
                 and embrace a lifestyle that fuels your well-being.
                 <br>
                 <strong>Let's transform together!</strong>
-            </p>   
+            </p>
+            <a href="{% url 'account_signup' %}" class="btn btn-primary">Join us NOW!</a>
           </div>
             </div>
             <div class="carousel-item carousel">
@@ -28,13 +29,15 @@
                     <hr>
                     <p> Join our thriving community! Together,
                         we make fitness a communal experience, creating a supportive environment that motivates everyone to reach 
-                        goals and beyond."</p>    
+                        goals and beyond."</p>
+                        <a href="{% url 'account_signup' %}" class="btn btn-primary">Join us NOW!</a>   
                   </div>
             </div>
             <div class="carousel-item carousel">
                 <img class="d-block w-100" src="https://res.cloudinary.com/dcqwfgtyk/image/upload/pexels-antoni-shkraba-4662344_d6iv9d" alt="Third slide">
                 <div class="carousel-caption d-none d-md-block">
-                    <h3>We are here to support you all the way!</h3>    
+                    <h3>We are here to support you all the way!</h3>
+                    <a href="{% url 'account_signup' %}" class="btn btn-primary">Join us NOW!</a>    
                   </div>
             </div>
         </div>
@@ -53,6 +56,7 @@
             <div class="row">
             {% if user.is_authenticated %}
             <h3>Welcome {{user.username}}</h3>
+
             {% endif %}
             {% for event in event_list %}
                 <div class="col-md-4">
@@ -98,15 +102,8 @@
         </nav>
         {% endif %}
     </div>
-    <script>
-        $('.carousel').carousel({
-            interval: 8000,
-            pauseOnHover: true,
-            keyboard: true,
-        })
 
-    </script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>

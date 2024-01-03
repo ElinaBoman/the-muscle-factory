@@ -25,8 +25,6 @@ class EventDetail(View):
             "blog/event_detail.html",
             {
                 "event": event_instance,
-                # "comments": comments,
-                # "liked": liked
             },
         )
 
@@ -45,5 +43,6 @@ def about(request):
 def contact(request):
     """This function render the contact page of the project."""
     return render(request,  "contact.html")
+
     
 
