@@ -42,3 +42,32 @@
         </form>
     </div>
    </div>
+(FORM)
+   {% extends "base.html" %}
+
+   {% block content %}
+   <div class="background-contact-form">
+       <div class="container">
+           <div class="row">
+               <div class="col-md-8">
+               <form class="contact-form" onsubmit="return sendMail(this)";>
+                   {% csrf_token %}
+                   <h1>Would you Like to Connect With Us? 
+                       <br>
+                       – We're Here to Help!</h1>
+                   <label for="name">Full name</label>
+                   <input class="form-control" id="name" type="name" name="name"required>
+                   <label for="email">Email</label>
+                   <input  class="form-control" id="email" type="email" name="email" required>
+                   <label for="phonenumber">Phonenumber</label>
+                   <input  class="form-control" id="phonenumber" type="number" name="phonenumber">
+                   <label for="message">Contact us!</label>
+                   <textarea class="form-control" id="message" type="text" name="message" required row="10"></textarea>
+                   <br>
+                   <button class="btn btn-success" type="submit">Submit</button>
+               </form>
+               </div>
+           </div>
+       </div>
+   </div>
+   {%endblock%}

@@ -40,9 +40,6 @@ def about(request):
         request,
         "about.html")
 
-def contact(request):
-    """This function render the contact page of the project."""
-    return render(request,  "contact.html")
 
     
 

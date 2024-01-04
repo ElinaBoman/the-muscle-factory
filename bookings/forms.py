@@ -1,5 +1,4 @@
 from django import forms
-
 from django.core.validators import MaxValueValidator
 from django.utils import timezone
 import datetime
@@ -35,6 +34,7 @@ class CreateBookingForm(forms.ModelForm):
         'event_date':forms.DateInput(attrs={'type':'date', 'min': iso_split_date}),
         'lesson_time':forms.Select(choices=bookable_times),
         }
+
 
 
 

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="background-contact-form">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+            <form method="post" action="{% url 'contact' %}">
+                {% csrf_token %}
+                {{ form.as_p }} 
+                <h1>Would you Like to Connect With Us? 
+                    <br>
+                    – We're Here to Help!</h1>
+                <button class="btn btn-success" type="submit">Submit</button>
+            </form>
+            </div>
+        </div>
+    </div>
+</div>
+{%endblock%}
