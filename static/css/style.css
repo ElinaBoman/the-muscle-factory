@@ -2,6 +2,10 @@ body {
     background-color: #F9FAFC;
 }
 
+.hide {
+    display: none;
+}
+
 .brand {
     font-family: Lato, sans-serif;
     font-size: 1.4rem;
@@ -212,4 +216,16 @@ body {
 
 .contact-form h1{
     padding-bottom: 2em;
+}
+
+#email-success {
+    color: #155724; 
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    border-radius: .25rem; 
+    padding: 1rem; 
+    margin-bottom: 1rem;
+    position: absolute;
+    left: 50%;
+    
 }
