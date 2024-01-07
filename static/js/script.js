@@ -34,9 +34,4 @@ document.querySelector('.contactForm').addEventListener('submit', function(event
     sendMail(this);
 });
 
-/* Alert messages timeoutfunction */
-setTimeout(function () {
-    let messages = document.getElementById('msg');
-    let alert = new bootstrap.Alert(messages);
-    alert.close();
-}, 2000);
+

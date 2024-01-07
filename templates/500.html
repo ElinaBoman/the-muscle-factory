@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>500 Not found</title>
+</head>
+<body>
+    <!--Text content written by chatGPT-->
+    <h1>Internal Server Error - 500</h1>
+    <p>Sorry, but it seems like we've encountered an unexpected hiccup.</p>
+    <p>Try again later or return to the home page</p>
+    <a class="btn btn-dark" href="{% url 'home' %}">Return home!</a>
+
+</body>
+</html>
+
+{% endblock %}

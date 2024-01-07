@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Not found</title>
+</head>
+<body>
+    <h1>404 Not Found</h1>
+    <p>Sorry, but the page you are looking for appears to be missing or may have been moved.</p>
+    <br>
+    <a class="btn btn-dark" href="{% url 'home' %}">Return home!</a>
+
+</body>
+</html>
+
+{% endblock %}

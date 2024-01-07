@@ -102,6 +102,14 @@
     <script src="{% static 'js/script.js' %}"></script>
     <!-- Fontawsome-->
     <script src="https://kit.fontawesome.com/90ae6df711.js" crossorigin="anonymous"></script>
+/* Alert messages timeoutfunction */
+<script>
+setTimeout(function () {
+    let messages = document.getElementById('msg');
+    let alert = new bootstrap.Alert(messages);
+    alert.close();
+}, 2000);
+</script>
 </body>
 
 </html>

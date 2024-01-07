@@ -41,5 +41,3 @@ def about(request):
         "about.html")
 
 
-    
-

@@ -9,7 +9,7 @@
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="8000">
         <div class="carousel-inner">
             <div class="carousel-item active">
-        <img class="d-block w-100 hero-img-slide" src='https://res.cloudinary.com/dcqwfgtyk/image/upload/pexels-victor-freitas-2261485_e1skl9.jpg' alt="First slide">
+        <img class="d-block w-100 hero-img-slide" src='https://res.cloudinary.com/dcqwfgtyk/image/upload/pexels-victor-freitas-2261485_e1skl9' alt="First slide">
         <div class="carousel-caption d-none d-md-block">
             <h1>OUR MISSION</h1>
             <hr>
@@ -20,7 +20,7 @@
                 <strong>Let's transform together!</strong>
             </p>
             {% if user.is_authenticated %}
-            <h3>Welcome {{user.username}}</h3>
+            <h3>Welcome back {{user.username}}!</h3>
             {% else %}
             <a href="{% url 'account_signup' %}" class="btn btn-primary">Join us NOW!</a>
             {% endif %}

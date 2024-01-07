@@ -101,6 +101,10 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'themusclefactory.wsgi.application'
 
+handler403 = 'templates.403',
+handler404 = 'templates.404',
+handler500 = 'templates.500',
+
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
