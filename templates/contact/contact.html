@@ -8,10 +8,12 @@
                 <!--<section id="email-success">
                     <p>Your email has been sent successfully!</p>
                 </section>-->
+                <div id="alert_placeholder">
+                </div>
                  <h1>Would you Like to Connect With Us? 
                     <br>
                     – We're Here to Help!</h1>
-            <form method="POST" class="contactForm" onsubmit="return (this);">
+            <form onsubmit="return sendMail(this);" method="POST" class="contactForm">
                 {% csrf_token %}
                 {{ form.as_p }}                
                 <button class="btn btn-success" type="submit">Submit</button>
