@@ -189,43 +189,33 @@ body {
 
 
 /* contact form */
-.img-contact-form{
-    background-image: url('https://res.cloudinary.com/dcqwfgtyk/image/upload/pexels-cottonbro-studio-3826431_r1ursy.jpg');
-    height: 250px;
-    width: 250px;
-    border-radius: 50%;
-    border: solid 2px white;
-}
-
-.img-border-contact-form{
-    height: 250px;
-    width: 250px;
-    border-radius: 50%;
-   
-}
-
-.background-contact-form{
-    background-image: url('https://res.cloudinary.com/dcqwfgtyk/image/upload/rzdyxhwejkzyfehugxsp.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: -300px center;
-}
-
 .contact-form{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #F9FAFC;
-    font-weight: bold;
 
 }
+
 
 .contact-form h1{
-    padding-bottom: 2em;
+    color: #fff;
+    line-height: 50px;
+    padding-top: 10%;
 }
 
+.contact-form p{
+    color: #fff;
+}
+
+.contact-form .btn{
+    margin-bottom: 10%;
+}
+.contact-form label{
+    display: block;
+}
+
+/* index.html homepage*/
+.event-posts h2{
+    color: #fff;
+
+}
 #email-success {
     color: #155724; 
     background-color: #d4edda;

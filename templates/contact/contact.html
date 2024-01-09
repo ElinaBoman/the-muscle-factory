@@ -2,22 +2,18 @@
 
 {% block content %}
 <div class="background-contact-form">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col-md-8">
-                <!--<section id="email-success">
-                    <p>Your email has been sent successfully!</p>
-                </section>-->
-                <div id="alert_placeholder">
+            <div class="col-12 text-center">
+                <div class="contact-form">
+                    <div id="alert_placeholder"></div>
+                    <h1>Would you Like to Connect With Us? </h1>
+                <form onsubmit="return sendMail(this);" method="POST">
+                    {% csrf_token %}
+                    {{ form.as_p }}                
+                    <button class="btn btn-success" type="submit">Submit</button>
+                </form>
                 </div>
-                 <h1>Would you Like to Connect With Us? 
-                    <br>
-                    – We're Here to Help!</h1>
-            <form onsubmit="return sendMail(this);" method="POST" class="contactForm">
-                {% csrf_token %}
-                {{ form.as_p }}                
-                <button class="btn btn-success" type="submit">Submit</button>
-            </form>
             </div>
         </div>
     </div>

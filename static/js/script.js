@@ -1,5 +1,5 @@
 
-
+// Sets alert messages in contactform
 class bootstrap_alert {
     constructor() { }
     static success(message) {
@@ -10,6 +10,7 @@ class bootstrap_alert {
     }
 }
 
+//Send email with emailJS, then confirms successful or unsuccessful event, then resets the contactform if event is successful.
 function sendMail(contactForm) {
     emailjs.send("service_ogoy0i8", "template_xb922ko", {
         "from_name": contactForm.name.value,
