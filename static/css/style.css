@@ -24,7 +24,7 @@ body {
 
 /* main content event */
 .main-bg {
-    background-color: #000000;
+    background-color: #E9ECEF;
 }
 
 /* event posts*/ 
@@ -88,7 +88,7 @@ body {
 
 .event-link {
     text-decoration: none;
-    color: #ffffff;
+    color: darkslategray;
 }
 
 .event-link:hover,
@@ -190,18 +190,24 @@ body {
 
 /* contact form */
 .contact-form{
+ background-color:  #E9ECEF;
+ align-items: center;
+ color: darkslategray;
+ border: rgb(255, 255, 255) 2px solid;
+ margin: 20px;
+ align-self: center;
+ padding: 20px 50px;
+}
 
+.fa-envelope{
+color: #fff;
 }
 
 
 .contact-form h1{
-    color: #fff;
     line-height: 50px;
     padding-top: 10%;
-}
-
-.contact-form p{
-    color: #fff;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 .contact-form .btn{
@@ -213,7 +219,7 @@ body {
 
 /* index.html homepage*/
 .event-posts h2{
-    color: #fff;
+    color: darkslategrey;
 
 }
 #email-success {
