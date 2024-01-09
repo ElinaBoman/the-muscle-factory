@@ -7,8 +7,8 @@ body {
 }
 
 .brand {
-    font-family: Lato, sans-serif;
-    font-size: 1.5rem;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
     font-weight: 700;
     color: #000000;
 }
@@ -212,9 +212,11 @@ color: #fff;
 
 .contact-form .btn{
     margin-bottom: 10%;
+    font-family: 'Bebas Neue', sans-serif;
 }
 .contact-form label{
     display: block;
+    font-size: small;
 }
 
 /* index.html homepage*/
