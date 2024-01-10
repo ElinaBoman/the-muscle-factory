@@ -17,6 +17,12 @@ body {
 .thin {
     font-weight: 300;
 }
+
+.font-bebas{
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+
 /* Footer */
 .dark-bg {
     background-color: #b3bdc6;
@@ -106,28 +112,6 @@ body {
     color: lightgray;
 }
 
-/* sign in */ 
-.btn-signup {
-    background-color: #2771e9;
-    color: #fff;
-}
-
-.btn-signup:hover,
-.btn-signup:active {
-    background-color: #fff;
-    color:  #2771e9;
-}
-
-.link {
-    color: #2771e9;
-    text-decoration: none;
-}
-
-.link:hover,
-.link:active {
-    color: #445261;
-    text-decoration: underline;
-}
 
 /* index.html */
 /* Bootstrap carousel */
@@ -224,13 +208,44 @@ color: #fff;
     color: darkslategrey;
 
 }
-#email-success {
-    color: #155724; 
-    background-color: #d4edda;
-    border: 1px solid #c3e6cb;
-    border-radius: .25rem; 
-    padding: 1rem; 
-    margin-bottom: 1rem;
-    position: absolute;
-    left: 50%;
+
+
+/* Signup.html */
+.container-sign-up{
+    font-family: 'apple-system', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color:  #E9ECEF;
+    color: darkslategray;
+    border: rgb(255, 255, 255) 2px solid;
+    margin: 20px;
+    align-self: center;
+    padding: 20px 50px;
+    
+    
+}
+
+.signup p{
+
+}
+.container-sign-up li{
+    display: block;
+}
+
+/* sign in */ 
+.btn-signup {
+    color: #fff;
+}
+
+
+.link {
+    color: white;
+    text-decoration: none;
+}
+
+.link:hover,
+.link:active {
+    color: #445261;
+    text-decoration: underline;
 }

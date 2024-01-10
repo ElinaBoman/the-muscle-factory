@@ -5,30 +5,30 @@
 {% block content %}
 
 
-    <div class="container-sign-in">
+    <div class="container-sign-up text-center">
         <div class="row">
-            <div class="col-md-8 mt-5 offset-md-1">
-                <h3>{% trans "Sign Up" %}</h3>
-                <h4>If you would like to create a booking, please sign up to an account first.</h4>
-    <p>
-        {% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}
-    </p>
+            <div class="col-md-9 mt-4 offset-md-1 text-center">
+                <h3 class="font-bebas">{% trans "Sign Up" %}</h3>
+                <h5 class="font-bebas">If you would like to create a booking, please sign up to an account first.</h5>
+                <p>
+                    {% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}
+                </p>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-5 mt-2 offset-md-1">
+            <div class="col-md-9 mt-4 offset-md-1 text-center">
                 <form  class="signup" id="signup_form" method="post" action="{% url 'account_signup' %}">
-                {% csrf_token %}
-                {{ form.as_p }}
-                {% if redirect_field_value %}
-                <input type="hidden"
-                       name="{{ redirect_field_name }}"
-                       value="{{ redirect_field_value }}" />
-            {% endif %}
-            <button class="btn btn-signup offset-md-5" type="submit">{% trans "Sign Up" %} &raquo;</button>
-      </form>
-    </div>
-  </div>
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    {% if redirect_field_value %}
+                        <input type="hidden"
+                        name="{{ redirect_field_name }}"
+                        value="{{ redirect_field_value }}" />
+                    {% endif %}
+                    <button class="btn btn-signup btn-success font-bebas" type="submit">{% trans "Sign Up" %} &raquo;</button>
+                </form>
+            </div>
+        </div>
 </div>
  
 {% endblock %}
