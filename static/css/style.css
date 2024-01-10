@@ -20,6 +20,7 @@ body {
 
 .font-bebas{
     font-family: 'Bebas Neue', sans-serif;
+
 }
 
 
@@ -226,19 +227,23 @@ color: #fff;
     
 }
 
-.signup p{
 
-}
 .container-sign-up li{
     display: block;
 }
 
-/* sign in */ 
-.btn-signup {
+/* login.html */ 
+
+.container-sign-in{
+    font-family: 'apple-system', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.container-sign-in a{
+    padding: 30px;
     color: #fff;
 }
-
-
 .link {
     color: white;
     text-decoration: none;
@@ -246,6 +251,6 @@ color: #fff;
 
 .link:hover,
 .link:active {
-    color: #445261;
+    color: darkslategray;
     text-decoration: underline;
 }

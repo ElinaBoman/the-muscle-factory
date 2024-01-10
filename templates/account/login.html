@@ -5,10 +5,10 @@
 {% block head_title %}{% trans "Sign In" %}{% endblock %}
 
 {% block content %}
-<div class="container-sign-in">
+<div class="container-sign-in text-center">
     <div class="row">
         <div class="col-md-8 mt-5 offset-md-1">
-            <h3>{% trans "Sign In" %}</h3>
+            <h3 class="font-bebas">{% trans "Sign In" %}</h3>
             <p>{% blocktrans %}Welcome back to The Muscle Factory! If you would like to make a booking, please log in. If you do not have an account, make sure to
                  <a class="link" href="{{ signup_url }}">register</a>
               first.{% endblocktrans %}</p>
@@ -18,7 +18,7 @@
                 {% if redirect_field_value %}
                 <input type="hidden" name="{{ redirect_field_name }}" value="{{ redirect_field_value }}" />
                 {% endif %}
-                <button class="btn btn-signup right" type="submit">{% trans "Sign In" %}</button>
+                <button class="btn btn-success right" type="submit">{% trans "Sign In" %}</button>
             </form>
         </div>
     </div>
