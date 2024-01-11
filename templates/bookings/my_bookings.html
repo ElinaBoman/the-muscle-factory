@@ -4,19 +4,19 @@
 
 {% block head_title %}{% trans "My bookings" %}{% endblock %}
 
-<!--BLOCK CONTENT INNEHÅLLER KOD FRÅN ANDRA TEMPLATES. Allt innehåll från den sida som vi vill visa, visas inom block content. Här vill vi visa vår form. -->
 {% block content %}
-<div class="container-sign-in">
+
+<div class="container-fluid">
     <div class="row">
         <div class="col-md-8 mt-5 offset-md-1">
-            <h2>My bookings:</h2>
+            <h2 class="heading">My bookings:</h2>
             {% if bookings %}
             <ul class="bookings_form_list">
                 {% for booking in bookings %}
-                <li> {{ booking.user }}</li>
-                <li> {{ booking.event_date }}</li>
-                <li> {{ booking.lesson_time }}</li>
-                <li> {{ booking.event_choice}}</li>
+                <li>Booking is for: {{ booking.user }}</li>
+                <li>Date: {{ booking.event_date }}</li>
+                <li>Starts at: {{ booking.lesson_time }}</li>
+                <li>Event choice: {{ booking.event_choice}}</li>
                     <a href="{% url 'edit_item' booking.booking_id %}">
                         <button class="btn btn-info">Edit</button>
                     </a>  
@@ -34,6 +34,10 @@
 </div>
             
         {% else %}
-        <p>You have no bookings yet.</p>
+        <p>You have no bookings.</p>
+        <a href="{% url 'process_form' %}">
+            <button class="btn btn-success">Add New Booking</button>
+        </a>
+
         {% endif %}
 {% endblock %}

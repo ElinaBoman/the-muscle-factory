@@ -29,10 +29,11 @@
      })();</script>
 </head>
 
-
 <body class="d-flex flex-column h-100 main-bg">
 
-    <!-- Navigation -->
+    <!-- Navigation, created with Code institute walktrough project,
+    "I think therefore I blog". The if statements and urls have been
+    changed to suit this project-->
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
             <a class="navbar-brand" href="{% url 'home' %}"><span class="brand">The Muscle Factory</span></a>
@@ -85,6 +86,7 @@
 <div class="container">
     <div class="row">
         <div class="col-md-8 offset-md-2">
+            <!--Code copied from Code institute walktrough project, "I think therefore I blog". This will inform the user while performing an action-->
             {% for message in messages %}
             <div class="alert {{ message.tags }} alert-dismissible fade show" id="msg" role="alert">{{ message | safe }}
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
@@ -93,6 +95,7 @@
         </div>
     </div>
 </div>
+    <!--Inside the block content the extended code renders-->
     <main class="flex-shrink-0 main-bg">
         {% block content %}
         <!-- Content Goes here -->
@@ -108,23 +111,10 @@
             <i class="fab fa-youtube-square ms-3"></i></p>
     </footer>
     
-    <!-- Connects email contact form to main emailaccount for The Muscle Factory-->
+    <!--Conects script.js-->
     <script src="{% static 'js/script.js' %}"></script>
-    <!--
-    <script type="text/javascript">
-        document.getElementById('contactForm').addEventListener('submit', function(event) {
-            event.preventDefault();
 
-        emailjs.sendForm("service_ogoy0i8", "template_xb922ko", this)
-        .then(function(response) {
-            console.log("Email sent successfully", response);
-        }, function(error) {
-            console.log("Error sending email", error);
-            });
-        });
-    </script>
--->
-<!-- Alert messages timeoutfunction -->
+    <!-- Alert messages timeoutfunction, code is from Code Institute walktrough project-->
     <script>
     setTimeout(function () {
         let messages = document.getElementById('msg');

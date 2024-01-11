@@ -11,7 +11,7 @@
             <div class="carousel-item active">
         <img class="d-block w-100 hero-img-slide" src='https://res.cloudinary.com/dcqwfgtyk/image/upload/pexels-victor-freitas-2261485_e1skl9' alt="First slide">
         <div class="carousel-caption d-none d-md-block">
-            <h1>OUR MISSION</h1>
+            <h1 class="heading">OUR MISSION</h1>
             <hr>
             <p>We're here to inspire and empower you.
                 Unleash your potential, build a supportive community,
@@ -20,7 +20,7 @@
                 <strong>Let's transform together!</strong>
             </p>
             {% if user.is_authenticated %}
-            <h3>Welcome back {{user.username}}!</h3>
+            <h3 class="heading">Welcome back {{user.username}}!</h3>
             {% else %}
             <a href="{% url 'account_signup' %}" class="btn btn-primary">Join us NOW!</a>
             {% endif %}
@@ -29,7 +29,7 @@
             <div class="carousel-item carousel">
                 <img class="d-block w-100" src="https://res.cloudinary.com/dcqwfgtyk/image/upload/erikeygkizifshv3ry6y.jpg" alt="Second slide">
                 <div class="carousel-caption d-none d-md-block">
-                    <h3>COMMUNITY</h3>
+                    <h3 class="heading">COMMUNITY</h3>
                     <hr>
                     <p> Join our thriving community! Together,
                         we make fitness a communal experience, creating a supportive environment that motivates everyone to reach 
@@ -43,7 +43,7 @@
             <div class="carousel-item carousel">
                 <img class="d-block w-100" src="https://res.cloudinary.com/dcqwfgtyk/image/upload/pexels-antoni-shkraba-4662344_d6iv9d" alt="Third slide">
                 <div class="carousel-caption d-none d-md-block">
-                    <h3>We are here to support you all the way!</h3>
+                    <h3 class="heading">We are here to support you all the way!</h3>
                     {% if user.is_authenticated %}
                     {% else %}
                     <a href="{% url 'account_signup' %}" class="btn btn-primary">Join us NOW!</a>
@@ -64,7 +64,7 @@
     <!-- Event Entries Column -->
         <div class="col-12 mt-3 left">
             <div class="row event-posts">
-                <h2>Check out our upcomming events!</h2>
+                <h2 class="heading">Check out our upcomming events!</h2>
             {% if user.is_authenticated %}
 
             {% endif %}

@@ -11,7 +11,7 @@
         <div class="col-md-8 mt-5 offset-md-1">
             <form method="post">
                 {% csrf_token %}
-                <h2>Are you sure you want to delete this booking?</h2>
+                <h2 class="heading">Are you sure you want to delete this booking?</h2>
                 <ul class="bookings_form_list">
                         <li> {{ bookings.user }}</li>
                         <li> {{ bookings.event_date }}</li>

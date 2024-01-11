@@ -1,20 +1,22 @@
 
-// Sets alert messages in contactform
-
-
+// Constants
 const contactForm = document.getElementById('contactForm')
 
+/*
+Eventlistener, prevents the email from being sent 
+before completing the functions inside view.py. Then call sendMail
+function.
+*/
 contactForm.addEventListener('submit', function(event) {
     event.preventDefault();
     sendMail(contactForm);
-    //contactForm.submit();
 });
 
 
-
-//Send email with emailJS, then confirms successful or unsuccessful event, then resets the contactform if event is successful.
+/* Send email with emailJS, then confirms successful or unsuccessful
+event. If event is successfull the contactForm will execute submit().*/
 function sendMail(contactForm) {
-    console.log('sendMail invoked');
+    
     emailjs.send("service_ogoy0i8", "template_xb922ko", {
         "from_name": contactForm.name.value,
         "from_email": contactForm.email.value,
@@ -29,7 +31,6 @@ function sendMail(contactForm) {
         function(error) {
             console.log("Error sending mail:", error);
             }
-        );  
-        
+        );      
 }
 

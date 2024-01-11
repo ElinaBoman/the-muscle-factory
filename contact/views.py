@@ -13,8 +13,10 @@ def contact(request):
             form.save()
             messages.success(request, 'Your message has been sent successfully!')
             return redirect('contact')
+
     else:
         form = ContactForm()
+    
     return render(request, 'contact/contact.html', {'form': form})
 
 
