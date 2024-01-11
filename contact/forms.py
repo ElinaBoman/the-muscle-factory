@@ -1,10 +1,11 @@
 from django import forms
+from django.db import models
+from .models import ContactForm
 
 
-# Create your models here.
 
-class ContactForm(forms.Form):
-    name = forms.CharField(max_length=50, required=True)
-    lastname = forms.CharField(max_length=50)
-    email = forms.EmailField(required=True)
-    message = forms.CharField(widget=forms.Textarea)
+
+class ContactForm(forms.ModelForm):
+    class Meta:
+        model = ContactForm
+        fields = ['name', 'lastname', 'phonenumber', 'email', 'message']

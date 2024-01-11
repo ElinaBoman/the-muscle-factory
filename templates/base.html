@@ -24,11 +24,9 @@
     <link rel="icon" href="{% static 'favicon/favicon.ico' %}" type="image/x-icon">
    <!-- The following two script tags are for connecting emailjs and the emailfunction, credits: https://www.emailjs.com/-->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function(){
-           emailjs.init("4sMAYT_IBWfqmsb9d");
-        })();
-     </script>
+    <script> (function(){
+        emailjs.init("4sMAYT_IBWfqmsb9d");
+     })();</script>
 </head>
 
 
@@ -112,16 +110,28 @@
     
     <!-- Connects email contact form to main emailaccount for The Muscle Factory-->
     <script src="{% static 'js/script.js' %}"></script>
-    <!-- Fontawsome-->
-<!-- Alert messages timeoutfunction */-->
-<script>
-setTimeout(function () {
+    <!--
+    <script type="text/javascript">
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
 
-    let messages = document.getElementById('msg');
-    let alert = new bootstrap.Alert(messages);
-    alert.close();
-}, 2000);
-</script>
+        emailjs.sendForm("service_ogoy0i8", "template_xb922ko", this)
+        .then(function(response) {
+            console.log("Email sent successfully", response);
+        }, function(error) {
+            console.log("Error sending email", error);
+            });
+        });
+    </script>
+-->
+<!-- Alert messages timeoutfunction -->
+    <script>
+    setTimeout(function () {
+        let messages = document.getElementById('msg');
+        let alert = new bootstrap.Alert(messages);
+        alert.close();
+    }, 2000);
+    </script>
 </body>
 
 </html>

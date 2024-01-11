@@ -74,3 +74,71 @@
 
    removed link from head tag
    https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css
+
+   onsubmit="return sendMail(this);
+
+   (function(){
+    emailjs.init("4sMAYT_IBWfqmsb9d");
+ })();
+
+
+ <script type="text/javascript">
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        emailjs.sendForm("service_ogoy0i8", "template_xb922ko", this)
+        .then(function(response) {
+            console.log("Email sent successfully", response);
+        }, function(error) {
+            console.log("Error sending email", error);
+        });
+    });
+</script>
+
+
+
+def send_email(form_data):
+    template_params = {
+        "from_name": form_data.get('name'),
+        "from_email": form_data.get('email'),
+        "message":  form_data.get('message')
+    }
+    emailjs_response = emailjs.send("service_ogoy0i8", "template_xb922ko", template_params)
+
+    if emailjs_response and emailjs_response.status == 200:
+        return {'success': True, 'message': 'E-post skickad framgångsrikt.'}
+    else:
+        return {'success': False, 'message': 'Fel vid sändning av e-post.'}
+
+
+
+         name = form.cleaned_data['name']
+            lastname = form.cleaned_data['lastname']
+            email = form.cleaned_data['email']
+            phonenumber = form.cleaned_data['phonenumber']
+            message = form.cleaned_data['message']
+           
+            html = render_to_string('contact/contactformdata.html'), {
+                'name': name,
+                'lastname': lastname,
+                'email': email,
+                'phonenumber': phonenumber,
+                'message': message
+            }
+            print('HTML content:', html)
+            send_mail('The contact form subject', 'This is the message', 'noreply@themusclefactory.com', ['elinaholmberg45@gmail.com'], html_message=html)
+            print('success!')
+            return redirect('contact')
+
+
+
+
+class bootstrap_alert {
+    constructor() { }
+    static success(message) {
+        $('#alert_placeholder').html('<div class="alert alert-success"><a class="close" data-bs-dismiss="alert">×</a><span>' + message + '</span></div>');
+    }
+    static error(message) {
+        $('#alert_placeholder').html('<div class="alert alert-danger"><a class="close" data-bs-dismiss="alert">×</a><span>' + message + '</span></div>');
+    }
+}

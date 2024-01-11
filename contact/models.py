@@ -1,13 +1,16 @@
 from django.db import models
-from django import forms
 
 
+class ContactForm(models.Model):
+    name = models.CharField(max_length=50, blank=False)
+    lastname = models.CharField(max_length=50)
+    phonenumber = models.IntegerField()
+    email = models.EmailField(blank=False)
+    message = models.TextField(blank=False)
 
-# Create your models here.
 
-class ContactForm(forms.Form):
-    name = forms.CharField(max_length=50, required=True)
-    lastname = forms.CharField(max_length=50)
-    phonenumber = forms.IntegerField()
-    email = forms.EmailField(required=True)
-    message = forms.CharField(widget=forms.Textarea)
+    class Meta:
+        ordering = ["email"]
+
+    def __str__(self):
+         return f"{self.name} - {self.email}"
