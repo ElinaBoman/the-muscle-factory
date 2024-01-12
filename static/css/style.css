@@ -141,6 +141,7 @@ body {
     height: fit-content;
     line-height: 30px;
     margin-bottom: 30px;
+    padding: 30px;
 }
 
 
@@ -189,7 +190,11 @@ body {
  border: rgb(255, 255, 255) 2px solid;
  margin: 20px;
  align-self: center;
- padding: 20px 50px;
+ padding: 10px;
+}
+
+#id_message{
+    width: 230px;
 }
 
 .fa-envelope{
