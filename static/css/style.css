@@ -117,6 +117,12 @@ body {
 
 /* index.html */
 /* Bootstrap carousel */
+
+.event-posts h2{
+    color: darkslategrey;
+}
+
+
 .carousel-inner img{
     max-height: 800px;
     object-fit: cover;
@@ -217,12 +223,6 @@ color: #fff;
     font-size: small;
 }
 
-/* index.html homepage*/
-.event-posts h2{
-    color: darkslategrey;
-
-}
-
 
 /* Signup.html */
 .container-sign-up{
@@ -235,11 +235,8 @@ color: #fff;
     border: rgb(255, 255, 255) 2px solid;
     margin: 20px;
     align-self: center;
-    padding: 20px 50px;
-    
-    
+    padding: 20px 50px; 
 }
-
 
 .container-sign-up li{
     display: block;
@@ -247,15 +244,49 @@ color: #fff;
 
 /* login.html */ 
 
-.container-sign-in{
+.container-login{
     font-family: 'apple-system', sans-serif;
-    font-size: 1rem;
     font-weight: 400;
-    line-height: 1.5;
+    color: #000000;
+    border: #fff 2px solid;
+    background-color:  #E9ECEF;
+    margin: 2%;
+    padding: 2%;
+    
 }
-.container-sign-in a{
-    padding: 30px;
-    color: #fff;
+
+.container-login h3{
+    font-family: 'Bebas Neue', sans-serif;
+}
+.container-login a{
+    color: darkslategray;
+}
+
+.helptext{
+    display: none;
+}
+
+.container-logout h2{
+ font-family: 'Bebas Neue', sans-serif;
+ 
+}
+
+/* logout.html */
+.container-logout{
+    border: #ffffff solid 2px;
+    margin: 2%;
+    padding: 2%;
+
+}
+
+.container-logout h2{
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+/* Password_reset.html*/
+
+.password-reset{
+    background-color: #23BBBB;
 }
 .link {
     color: white;

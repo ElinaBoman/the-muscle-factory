@@ -5,14 +5,14 @@
 {% block head_title %}{% trans "Sign In" %}{% endblock %}
 
 {% block content %}
-<div class="container-sign-in text-center">
+<div class="container-login">
     <div class="row">
         <div class="col-md-8 mt-5 offset-md-1">
-            <h3 class="font-bebas">{% trans "Sign In" %}</h3>
-            <p>{% blocktrans %}Welcome back to The Muscle Factory! If you would like to make a booking, please log in. If you do not have an account, make sure to
-                 <a class="link" href="{{ signup_url }}">register</a>
-              first.{% endblocktrans %}</p>
-            <form class="login" method="POST" action="{% url 'account_login' %}">
+            <h3>{% trans "Sign In" %}</h3>
+            <p>{% blocktrans %}Welcome back to The Muscle Factory!
+                If you would like to make a booking, please log in. If you do not have an account, make sure to
+                <a class="link" href="{{ signup_url }}">register</a> first.{% endblocktrans %}</p>
+            <form method="POST" action="{% url 'account_login' %}">
                 {% csrf_token %}
                 {{ form.as_p }}
                 {% if redirect_field_value %}
