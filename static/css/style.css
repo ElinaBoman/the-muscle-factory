@@ -174,7 +174,10 @@ body {
 /* Booking form */
 .bookings_form_list{
     list-style: none;
-    line-height: 30px;
+    line-height: 1.5rem;
+    border: #fff 2px solid;
+    padding: 2%;
+
    
 }
 
@@ -182,7 +185,10 @@ body {
     margin-bottom: 10px;
 }
 
-
+.form-btn{
+    margin: 10px;
+    margin-left: inherit;
+}
 
 /* About us */
 
@@ -233,11 +239,14 @@ color: #fff;
     background-color:  #E9ECEF;
     color: darkslategray;
     border: rgb(255, 255, 255) 2px solid;
-    margin: 20px;
+    margin: 2%;
     align-self: center;
     padding: 20px 50px; 
 }
 
+.container-sign, h2{
+    font-family: 'Bebas Neue', sans-serif;
+}
 .container-sign-up li{
     display: block;
 }
@@ -257,9 +266,6 @@ color: #fff;
 
 .container-login h3{
     font-family: 'Bebas Neue', sans-serif;
-}
-.container-login a{
-    color: darkslategray;
 }
 
 .helptext{
@@ -289,12 +295,12 @@ color: #fff;
     background-color: #23BBBB;
 }
 .link {
-    color: white;
+    color: rgb(39, 41, 169);
     text-decoration: none;
 }
 
 .link:hover,
 .link:active {
-    color: darkslategray;
+    color: rgb(134, 141, 218);
     text-decoration: underline;
 }

@@ -3,15 +3,13 @@
 {% block head_title %} {% trans "Signup" %} {% endblock %}
 
 {% block content %}
-
-
     <div class="container-sign-up text-center">
         <div class="row">
             <div class="col-md-9 mt-4 offset-md-1 text-center">
-                <h3 class="font-bebas">{% trans "Sign Up" %}</h3>
-                <h5 class="font-bebas">If you would like to create a booking, please sign up to an account first.</h5>
+                <h2>{% trans "Sign Up" %}</h2>
+                <h5>If you would like to create a booking, please sign up to an account first.</h5>
                 <p>
-                    {% blocktrans %}Already have an account? Then please <a href="{{ login_url }}">sign in</a>.{% endblocktrans %}
+                    {% blocktrans %}Already have an account? Then please <a class="link" href="{{ login_url }}">sign in</a>.{% endblocktrans %}
                 </p>
             </div>
         </div>
@@ -30,5 +28,4 @@
             </div>
         </div>
 </div>
- 
 {% endblock %}

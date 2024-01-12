@@ -6,7 +6,7 @@
 
 <!--BLOCK CONTENT INNEHÅLLER KOD FRÅN ANDRA TEMPLATES. Allt innehåll från den sida som vi vill visa, visas inom block content. Här vill vi visa vår form. -->
 {% block content %}
-<div class="container-sign-in">
+<div class="container">
     <div class="row">
         <div class="col-md-8 mt-5 offset-md-1">
             <form method="post">
@@ -18,13 +18,12 @@
                         <li> {{ bookings.lesson_time }}</li>
                         <li> {{ bookings.event_choice }}</li>
                 </ul>
-                <button class="btn btn-danger">Delete</button>
-        </form>
-       
+                <button class="btn btn-danger">Delete</button> 
+            </form>
+            <a href="{% url 'my_bookings' %}">
+                <button class="btn btn-info form-btn">Return</button>
+            </a>
         </div> 
-        <a href="{% url 'my_bookings' %}">
-            <button class="btn btn-info">Return</button>
-        </a>
     </div>
 </div>
 {% endblock %}
