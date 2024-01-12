@@ -30,6 +30,7 @@ function sendMail(contactForm) {
     
         function(error) {
             console.log("Error sending mail:", error);
+            return;
             }
         );      
 }

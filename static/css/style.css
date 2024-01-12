@@ -158,16 +158,25 @@ body {
     font-weight: 500;
     font-family:Georgia, 'Times New Roman', Times, serif, sans-serif;
 }
+
+/* Edit item */
+
+.edit_item{
+    border: #fff 2px solid;
+   padding: 20px;
+   padding-bottom: 20px;
+}
 /* Booking form */
 .bookings_form_list{
     list-style: none;
     line-height: 30px;
+   
 }
 
-
-.btn{
-    width: fit-content;
+.bookings_form_list li{
+    margin-bottom: 10px;
 }
+
 
 
 /* About us */
