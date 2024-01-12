@@ -136,13 +136,11 @@ body {
 
 .carousel-caption{
     color: #ffffff;
-    position: absolut;
-    top: 40%;
-    left: 50%;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 3%;
     height: fit-content;
     line-height: 30px;
+    margin-bottom: 30px;
 }
 
 
