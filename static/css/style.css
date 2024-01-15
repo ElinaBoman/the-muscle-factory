@@ -29,6 +29,10 @@ body {
     background-color: #b3bdc6;
 }
 
+.link-footer {
+    color: white;
+}
+
 /* main content event */
 .main-bg {
     background-color: #E9ECEF;
@@ -168,21 +172,24 @@ body {
 
 .edit_item{
     border: #fff 2px solid;
-   padding: 20px;
-   padding-bottom: 20px;
+    padding: 20px;
+    padding-bottom: 20px;
 }
 /* Booking form */
 .bookings_form_list{
     list-style: none;
     line-height: 1.5rem;
+    font-weight: 600;
     border: #fff 2px solid;
-    padding: 2%;
-
-   
+    padding: 2%; 
 }
 
 .bookings_form_list li{
     margin-bottom: 10px;
+}
+
+#id_options_field li{
+    display: block;
 }
 
 .form-btn{
@@ -252,7 +259,6 @@ color: #fff;
 }
 
 /* login.html */ 
-
 .container-login{
     font-family: 'apple-system', sans-serif;
     font-weight: 400;
@@ -289,13 +295,9 @@ color: #fff;
     font-family: 'Bebas Neue', sans-serif;
 }
 
-/* Password_reset.html*/
 
-.password-reset{
-    background-color: #23BBBB;
-}
 .link {
-    color: rgb(39, 41, 169);
+    color: rgb(27, 127, 233);
     text-decoration: none;
 }
 
