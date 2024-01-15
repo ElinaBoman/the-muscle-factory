@@ -29,11 +29,14 @@ class CreateBookingForm(forms.ModelForm):
         iso_split_date = iso_string.split("T")[0]
 
 
-        fields = ['event_date', 'lesson_time', 'event_choice']
+        fields = ['event_date', 'lesson_time', 'event_choice', 'option_yes', 'option_no', 'extra_comments']
         widgets = {
         'event_date':forms.DateInput(attrs={'type':'date', 'min': iso_split_date}),
         'lesson_time':forms.Select(choices=bookable_times),
+        'option_yes':forms.CheckboxInput(attrs={'class': 'checkbox'}),
+        'option_no':forms.CheckboxInput(attrs={'class': 'checkbox'}),
         }
+
 
 
 

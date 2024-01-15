@@ -7,7 +7,7 @@ from .forms import CreateBookingForm
 from .models import EventBooking
 from django.contrib.auth.decorators import login_required
 
-
+@login_required
 def process_form(request):
     '''
     Create booking by user request. Checks if bookingis uniqe, if it is the booking will be saved.

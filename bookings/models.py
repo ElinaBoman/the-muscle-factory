@@ -25,7 +25,12 @@ class EventBooking(models.Model):
 
     BOOKING_STATUS = ((0, "Awaiting Approval"), (1, "Confirmed"))
     booking_status = models.IntegerField(choices=BOOKING_STATUS, default=0)
-
+    extra_comments = models.TextField(null=True)
+    smiley_happy = "\U0001F604"
+    star_smiley = "\U0001F929"
+    option_yes = models.BooleanField(default=False, verbose_name='This is my first appointment!' + star_smiley)
+    option_no = models.BooleanField(default=False, verbose_name="I'm a recurring member!" + smiley_happy)
+    
     class Meta:
         ordering = ["event_date"]
 
