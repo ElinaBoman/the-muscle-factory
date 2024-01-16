@@ -122,6 +122,10 @@ body {
 /* index.html */
 /* Bootstrap carousel */
 
+.info-opening{
+    border: white 2px solid;
+}
+
 .event-posts h2{
     color: darkslategrey;
 }
