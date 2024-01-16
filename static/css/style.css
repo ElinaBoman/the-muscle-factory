@@ -124,6 +124,7 @@ body {
 
 .info-opening{
     border: white 2px solid;
+    padding: 2%;
 }
 
 .event-posts h2{
@@ -190,11 +191,19 @@ body {
 
 .bookings_form_list li{
     margin-bottom: 10px;
+    list-style: none;
 }
 
-#id_options_field li{
-    display: block;
+#id_options_field {
+    list-style: none;
+
 }
+
+
+label[for="id_extra_comments"] {
+    color: #23BBBB;
+    display: block;
+  }
 
 .form-btn{
     margin: 10px;

@@ -25,7 +25,7 @@ class EventBooking(models.Model):
 
     BOOKING_STATUS = ((0, "Awaiting Approval"), (1, "Confirmed"))
     booking_status = models.IntegerField(choices=BOOKING_STATUS, default=0)
-    extra_comments = models.TextField(null=True)
+    extra_comments = models.TextField(null=True, verbose_name='Anything you would like to add?')
    
     star_smiley = "\U0001F929"
     OPTIONS = [
