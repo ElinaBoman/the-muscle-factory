@@ -5,7 +5,6 @@
     
     <!--The slideshow is a Bootstrap carousel. Code can be found on this link https://getbootstrap.com/docs/4.0/components/carousel/.
         The .carousel-caption conten has been changed from original code.-->
-
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="8000">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -63,37 +62,45 @@
             <span class="sr-only">Next</span>
         </a>
     </div>
-    <!--Opening houers and address-->
-    <div class="container mt-5 mb-4 info-opening">
+    <!--Membership levels-->
+    <div class="container-fluid mt-5 mb-4">
         <div class="row">
-            <div class="col-sm mt-5">
+            <div class="col-sm mt-2">
                 <h2 class="heading">Welcome to The Muscle Factory</h2>
                 <p>Discover a fitness haven at The Muscle Factory, where dedication meets
                     innovation. Our state-of-the-art facility is designed to elevate 
                     fitness journey and empower you to achieve your wellness goals.
                 </p>
             </div>
-                <div class="row">
-                    <div class="col-sm-12 col-md-5 mt-3 offset-md-1">
-                        <h6 class="heading">Opening Hours:</h6>
-                        <hr>
-                        <p>Monday to Friday: 6:00 AM - 10:00 PM</p>
-                        <p>Saturday: 8:00 AM - 8:00 PM</p>
-                        <p>Sunday: 8:00 AM - 8:00 PM</p>
-                    </div>
-                    <div class="col-sm-12 col-md-5 mt-3 offset-md-1">
-                        <h6 class="heading">Address:</h6>
-                        <hr>
-                        <p>The Muscle Factory</p>
-                        <p>Drottningholms Slott Slottsstallet 11</p>
-                        <p>Stockholm Sweden<p>
-                    </div>
-                    </div>
-                </div> 
+            <h3>Membership Levels</h3>
+            <div class="text-center col-md-4">
+                <h4>GOLD</h4>
+                <span><i class="fa-solid fa-medal fa-5x" style="color: #FFD43B;"></i></span>
+                <h5>Price: $50/month</h5>
+                <ul>Benefits:
+                    <li>Unlimited access to the gym 7 days a week from 07:00 to 17:00</li>
+                    <li>2 free wellness treatments per month (e.g., massage, PT or Rehab)</li>
+                </ul>
+            </div>
+            <div class="text-center col-md-4">
+                <h4>SILVER</h4>
+                <span><i class="fa-solid fa-medal fa-5x" style="color: #b6b5b4;"></i></span>
+                <h5>Price: $40/month</h5>
+                <ul>Benefits:
+                    <li>Unlimited access to the gym 7 days a week from 07:00 to 17:00</li>
+                    <li>1 free wellness treatments per month (e.g., massage, PT or Rehab)</li>
+                </ul>
+            </div>
+            <div class="text-center col-md-4">
+                <h4>BRONS</h4>
+                <span><i class="fa-solid fa-medal fa-5x" style="color: #e58934;"></i></span>
+                <h5>Price: $30/month</h5>
+                <ul>Benefits:
+                    <li>Unlimited access to the gym 7 days a week from 07:00 to 17:00</li>
+                </ul>
             </div>
         </div>
     </div>
-
     <!-- Event Entries Column -->
         <div class="col-12 mt-3 left">
             <div class="row event-posts">
@@ -131,7 +138,6 @@
                 {% endfor %}
             </div>
         </div>
-        </div>
         {% if is_paginated %}
         <nav aria-label="Page navigation">
             <ul class="pagination justify-content-center">
@@ -144,8 +150,6 @@
             </ul>
         </nav>
         {% endif %}
-    </div>
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>

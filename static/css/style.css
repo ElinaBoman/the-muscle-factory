@@ -84,7 +84,6 @@ body {
 }
 
 .masthead-image:after {
-    content: "";
     position: absolute;
     top: 0;
     right: 90%;
@@ -126,6 +125,12 @@ body {
     border: white 2px solid;
     padding: 2%;
 }
+
+.membership-medals {
+    border: #ffff 1px solid;
+
+}
+
 
 .event-posts h2{
     color: darkslategrey;
@@ -283,7 +288,6 @@ color: #fff;
     background-color:  #E9ECEF;
     margin: 2%;
     padding: 2%;
-    
 }
 
 .container-login h3{
