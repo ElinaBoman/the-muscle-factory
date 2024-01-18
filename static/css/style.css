@@ -20,7 +20,6 @@ body {
 
 .btn, .heading{
     font-family: 'Bebas Neue', sans-serif;
-
 }
 
 
@@ -28,6 +27,12 @@ body {
 .dark-bg {
     background-color: #b3bdc6;
 }
+
+.short-hr {
+    width: 50%;
+    color: darkslategray;
+}
+
 
 .link-footer {
     color: white;
@@ -128,9 +133,15 @@ body {
 
 .membership-medals {
     border: #ffff 1px solid;
-
+    margin: 2%;
+    padding: 20px;
+    width: fit-content;
 }
 
+.membership-medals li {
+    font-weight: 300;
+    line-height: 1.5rem;
+}
 
 .event-posts h2{
     color: darkslategrey;
