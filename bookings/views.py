@@ -53,7 +53,10 @@ def edit_item(request, booking_id):
     
     '''
     bookings = get_object_or_404(EventBooking, booking_id=booking_id)
+    print('Lesson time before form:', bookings.lesson_time)
     form = CreateBookingForm(instance=bookings)
+    print("Lesson Time from Form:", form['lesson_time'].value())
+
     context = {
     'bookings': bookings,
     'form': form
@@ -85,3 +88,4 @@ def delete_booking(request, booking_id):
 
 
     
+

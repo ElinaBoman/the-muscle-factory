@@ -1,7 +1,7 @@
 from django.db import models
 import uuid
 from django.contrib.auth.models import User
-from cloudinary.models import CloudinaryField
+from datetime import datetime, time
 
 
 # Create your models here.
@@ -13,7 +13,7 @@ class EventBooking(models.Model):
     updated_on = models.DateField(auto_now=True)
     created_on = models.DateField(auto_now=True)
     event_date = models.DateField(auto_now=False)
-    lesson_time = models.TimeField(default="08:00")
+    lesson_time = models.TimeField(default=time(8, 0))
 
     EVENT_CHOICE = (
         ("Personal Trainer", "Personal Trainer"),
@@ -25,7 +25,7 @@ class EventBooking(models.Model):
 
     BOOKING_STATUS = ((0, "Awaiting Approval"), (1, "Confirmed"))
     booking_status = models.IntegerField(choices=BOOKING_STATUS, default=0)
-    extra_comments = models.TextField(null=True, verbose_name='Anything you would like to add?')
+    extra_comments = models.TextField(null=True, blank=True, verbose_name='Anything you would like to add?')
    
     star_smiley = "\U0001F929"
     OPTIONS = [

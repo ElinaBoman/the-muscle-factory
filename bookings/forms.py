@@ -1,12 +1,7 @@
 from django import forms
-from django.core.validators import MaxValueValidator
 from django.utils import timezone
 import datetime
-from django.db.models import Sum
 from django.db import models
-import uuid
-from django.contrib.auth.models import User
-from cloudinary.models import CloudinaryField
 from .models import EventBooking
 
 '''
@@ -16,9 +11,11 @@ bookable_times will show the user what times that are aviable to book.
 class CreateBookingForm(forms.ModelForm):
     class Meta:
         model = EventBooking
-        bookable_times = [(f"{hour:02d}:{minute:02d}", f"{hour:02d}:{minute:02d} AM")
-        for hour in range(7, 17) for minute in (0, 30)
-    ]
+
+        bookable_times = [
+            (f"{hour:02d}:{minute:02d}", f"{hour:02d}:{minute:02d}")
+            for hour in range(8, 17) for minute in (0, 30)
+        ]
         '''
         This will take todays date in a isoformat that we split to only use the part before the T.
         This we can later use to set min value for dates inside widgets, event_date.
