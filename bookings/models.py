@@ -13,8 +13,19 @@ class EventBooking(models.Model):
     updated_on = models.DateField(auto_now=True)
     created_on = models.DateField(auto_now=True)
     event_date = models.DateField(auto_now=False)
-    lesson_time = models.TimeField(default=time(8, 0))
-
+    TIME_INTERVALL = (
+        ("08:00",  "08:00"),
+        ("09:00", "09:00"),
+        ("10:00", "10:00"),
+        ("11:00", "11:00"),
+        ("12:00", "12:00"),
+        ("13:00", "13:00"),
+        ("14:00", "14:00"),
+        ("15:00", "15:00"),
+        ("16:00", "16:00")
+    )
+    lesson_time = models.CharField(max_length=10, choices=TIME_INTERVALL)
+    
     EVENT_CHOICE = (
         ("Personal Trainer", "Personal Trainer"),
         ("Dietist", "Dietist"),
