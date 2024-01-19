@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% load i18n %}
+
+{% block head_title %}{% trans "Create Booking" %}{% endblock %}
+
+{% block content %}
+
+
+    <div class="container-fluid edit_item">
+        <div class="row">
+            <div class="col-md-8 mt-5 offset-md-1">
+                {% if memberlevel == 'brons' %}
+                <span><i class="fa-solid fa-medal fa-5x" style="color: #e58934;"></i></span>
+                {% endif %}
+                <h2 class="heading">Hello {{user.username}}, select your preffered memberlevel!</h2>
+                <form method="post">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button class="btn btn-success" type="submit">Update</button>
+                </form>
+                <a href="{% url 'home' %}">
+                    <button class="btn btn-danger form-btn">Cancel</button>
+                </a>
+                </div>
+            </div>
+        </div>
+   </div>
+{% endblock %}

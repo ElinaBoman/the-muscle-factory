@@ -7,6 +7,7 @@ from .forms import CreateBookingForm
 from .models import EventBooking
 from django.contrib.auth.decorators import login_required
 
+
 @login_required
 def process_form(request):
     '''
@@ -83,3 +84,4 @@ def delete_booking(request, booking_id):
     return render(request, 'bookings/delete_booking.html', {'bookings': bookings})
 
 
+    

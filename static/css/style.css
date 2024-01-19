@@ -122,7 +122,6 @@ body {
     color: lightgray;
 }
 
-
 /* index.html */
 /* Bootstrap carousel */
 
@@ -133,8 +132,8 @@ body {
 
 .membership-medals {
     border: #ffff 1px solid;
-    margin: 2%;
-    padding: 20px;
+    margin: 1%;
+    padding: 1%;
     width: fit-content;
 }
 
