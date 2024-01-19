@@ -55,7 +55,7 @@ The main goals for this project was:
 
 * Create a website using Django Framework 
 
-* Learn moore about: Bootstrap, python, javascript, CSS and HTML
+* Use: Bootstrap, python, javascript, CSS and HTML
 
 * Create a website with full CRUD functionallity
 
@@ -65,5 +65,7 @@ The main goals for this project was:
 
 * Set up email functionallity and use auto-reply
 
+## User Stories
 
+![User Stories](./themusclefactory/docs/readme%20docs/UX.png)
 
