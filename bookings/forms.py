@@ -3,6 +3,8 @@ from django.utils import timezone
 import datetime
 from django.db import models
 from .models import EventBooking
+import datetime as dt
+from django.forms import Select
 
 '''
 This class will create the structure of the form.
@@ -19,18 +21,18 @@ class CreateBookingForm(forms.ModelForm):
         min_date = (timezone.localdate())
         iso_string = min_date.isoformat()
         iso_split_date = iso_string.split("T")[0]
+
         '''
-        bookable_times will show the user what times that are aviable to book.
-        
-        bookable_times = [
-            (f"{hour:02d}:{minute:02d}", f"{hour:02d}:{minute:02d}")
-            for hour in range(9, 17) for minute in (0, 30)
-        ]
+        HOUR_CHOICES will show avaible times in a select box.
+        Credits to tutor John at Code Institute who helped me create code.
         '''
-        fields = ['event_date', 'lesson_time', 'event_choice', 'options_field', 'extra_comments']
+        HOUER_CHOICES = [(dt.time(hour=x), '{:02d}:00'.format(x)) for x in range(8, 18)]
+
+        fields = ['event_date', 'start_time', 'event_choice', 'options_field', 'extra_comments']
         widgets = {
         'event_date':forms.DateInput(attrs={'type':'date', 'min': iso_split_date}),
         'options_field': forms.RadioSelect(),
+        'start_time': Select(choices=HOUER_CHOICES),
         }
 
         labels = {

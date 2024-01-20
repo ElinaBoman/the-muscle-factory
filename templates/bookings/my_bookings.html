@@ -11,12 +11,15 @@
         <div class="col-md-8 mt-5 offset-md-1">
             <h2 class="heading">My bookings:</h2>
             {% if bookings %}
-            <ul class="bookings_form_list">
+            <ul class="bookings_form_list thin">
                 {% for booking in bookings %}
                 <li>Booking is for: {{ booking.user }}</li>
                 <li>Date: {{ booking.event_date }}</li>
-                <li>Starts at: {{ booking.lesson_time }}</li>
+                <li>Starts at: {{ booking.start_time }}</li>
                 <li>Event choice: {{ booking.event_choice}}</li>
+                {% if booking.extra_comments %}
+                <li>Your comment: {{ booking.extra_comments }}</li>
+                {% endif %}
                     <a href="{% url 'edit_item' booking.booking_id %}">
                         <button class="btn btn-info">Edit</button>
                     </a>  
