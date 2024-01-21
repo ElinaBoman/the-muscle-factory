@@ -19,8 +19,8 @@ def process_form(request):
         form = CreateBookingForm(request.POST)
         if form.is_valid():
             event_date = form.cleaned_data['event_date']
-            lesson_time = form.cleaned_data['lesson_time']
-            stored_bookings = EventBooking.objects.filter(event_date = str(event_date), lesson_time = str(lesson_time))
+            start_time = form.cleaned_data['start_time']
+            stored_bookings = EventBooking.objects.filter(event_date = str(event_date), start_time = str(start_time))
             if stored_bookings.exists():
                 messages.info(request, 'Chosen time and date have already been booked. Please try another time or date.')
             else:
