@@ -68,4 +68,5 @@ The main goals for this project was:
 ## User Stories
 
 ![User Stories](./themusclefactory/docs/readme%20docs/UX.png)
+![User Stories](./themusclefactory/docs/readme%20docs/lucidchart.png)
 
