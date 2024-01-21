@@ -1,7 +1,4 @@
-body {
-    background-color: #F9FAFC;
-}
-
+/* Main styles */
 .hide {
     display: none;
 }
@@ -13,7 +10,6 @@ body {
     color: #000000;
 }
 
-
 .thin {
     font-weight: 300;
 }
@@ -22,28 +18,16 @@ body {
     font-family: 'Bebas Neue', sans-serif;
 }
 
-
-/* Footer */
-.dark-bg {
-    background-color: #b3bdc6;
-}
-
-.short-hr {
-    width: 50%;
+.heading {
     color: darkslategray;
 }
 
-
-.link-footer {
-    color: white;
-}
-
-/* main content event */
 .main-bg {
     background-color: #E9ECEF;
 }
 
-/* event posts*/ 
+
+/* event posts code copied from Code Institute walktrough project*/ 
 .card {
     border: white 2px;
     background-color: transparent;
@@ -66,6 +50,7 @@ body {
     margin: 4px;
     text-transform: uppercase;
 }
+
 
 /* Event information, code copied from Code Institute walktrough project */ 
 .masthead {
@@ -123,8 +108,6 @@ body {
 }
 
 /* index.html */
-/* Bootstrap carousel */
-
 .info-opening{
     border: white 2px solid;
     padding: 2%;
@@ -147,11 +130,11 @@ body {
 }
 
 
+/* Bootstrap carousel */
 .carousel-inner img{
     max-height: 800px;
     object-fit: cover;
 }
-
 
 .hero-img-slide{
     width: 100%;
@@ -163,7 +146,6 @@ body {
     height: 100%;
 }
 
-
 .carousel-caption{
     color: #ffffff;
     background-color: rgba(0, 0, 0, 0.5);
@@ -174,27 +156,17 @@ body {
     padding: 30px;
 }
 
-
-/* Sign in, bookings form */
-.container-sign-in {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #F9FAFC;
-    border: darkslategray 2px solid;
-    width: 500px;
-    margin: auto;
-    margin-top: 20px;
-    padding-bottom: 20px;
-    font-weight: 500;
-    font-family:Georgia, 'Times New Roman', Times, serif, sans-serif;
+.carousel-caption h2, h3 {
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 /* Edit item */
-
 .edit_item{
     border: #fff 2px solid;
     padding: 20px;
     padding-bottom: 20px;
 }
+
 /* Booking form */
 .bookings_form_list{
     list-style: none;
@@ -214,9 +186,8 @@ body {
 
 }
 
-
 label[for="id_extra_comments"] {
-    color: #23BBBB;
+    color: #000000;
     display: block;
   }
 
@@ -225,6 +196,7 @@ label[for="id_extra_comments"] {
     margin-left: inherit;
 }
 
+
 /* About us */
 .about-image{
     width: 100%;
@@ -232,19 +204,18 @@ label[for="id_extra_comments"] {
     max-width: 500px;
 }
 
+
 /* contact form */
 .contact-form{
  background-color:  #E9ECEF;
- align-items: center;
  color: darkslategray;
  border: rgb(255, 255, 255) 2px solid;
- margin: 20px;
- align-self: center;
- padding: 10px;
+ padding: 30px;
 }
 
 #id_message{
-    width: 230px;
+ width: 100%;
+ max-width: 400px;
 }
 
 .fa-envelope{
@@ -335,4 +306,19 @@ color: #fff;
 .link:active {
     color: rgb(134, 141, 218);
     text-decoration: underline;
+}
+
+
+/* Footer */
+.dark-bg {
+    background-color: #b3bdc6;
+}
+
+.short-hr {
+    width: 50%;
+    color: darkslategray;
+}
+
+.link-footer {
+    color: white;
 }
