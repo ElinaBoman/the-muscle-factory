@@ -183,7 +183,6 @@
 
 #id_options_field {
     list-style: none;
-
 }
 
 label[for="id_extra_comments"] {
@@ -222,7 +221,6 @@ label[for="id_extra_comments"] {
 color: #fff;
 }
 
-
 .contact-form h1{
     line-height: 50px;
     padding-top: 10%;
@@ -233,6 +231,7 @@ color: #fff;
     margin-bottom: 10%;
     font-family: 'Bebas Neue', sans-serif;
 }
+
 .contact-form label{
     display: block;
     font-size: small;
@@ -256,9 +255,11 @@ color: #fff;
 .container-sign, h2{
     font-family: 'Bebas Neue', sans-serif;
 }
+
 .container-sign-up li{
     display: block;
 }
+
 
 /* login.html */ 
 .container-login{
@@ -281,7 +282,6 @@ color: #fff;
 
 .container-logout h2{
  font-family: 'Bebas Neue', sans-serif;
- 
 }
 
 /* logout.html */
@@ -289,13 +289,11 @@ color: #fff;
     border: #ffffff solid 2px;
     margin: 2%;
     padding: 2%;
-
 }
 
 .container-logout h2{
     font-family: 'Bebas Neue', sans-serif;
 }
-
 
 .link {
     color: rgb(27, 127, 233);
