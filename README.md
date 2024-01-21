@@ -67,6 +67,66 @@ The main goals for this project was:
 
 ## User Stories
 
-![User Stories](./themusclefactory/docs/readme%20docs/UX.png)
-![User Stories](./themusclefactory/docs/readme%20docs/lucidchart.png)
+The Mucle Factory project was planned trough user stories. Theese stories were created from a user and site owner perspective. The stories describes what the project should include and would set the over all planing structure.
 
+One importent part of this project was to use a agile development method. This would make the customers perspective very important but since this is not a real project with real customers, user stories were made up by creating potential customers and site owners. 
+
+In agile development iterative and incremental development is a very important part. So by adressing user stories the development of building The Muscle Factory could be split into smalller and easier to manage segments that could be iterated and improved by each iteration. 
+
+As there was not a team bulding this project it might be hard to fully grasp the concept of agile development, since teamwork is a big part of that. Instead of having a team, I choose to create a chatgroup on Slack. Working with the critisim I got from fellow students, this turned out to be a very good idea. I got a lot of feedback that I later on implemented in my project, so big credits to my fiends on Slack. 
+
+A Kanban board was created on GitHub to structure the project development. By taking all my user stories and labeling with their significanse for this project, it was a lot easier to assess each user storie after their relevance.
+
+Not all user stories were finished, but they all user stories with the label "MUST HAVE" were completed.
+
+
+![User Stories](./themusclefactory/docs/readme%20docs/UX.png)
+
+[Click to view Kanban board](https://github.com/users/ElinaBoman/projects/5/views/1)
+
+### #2 As a user I can make bookings on the website so that I can plan my schedule
+The user can create bookings and also view them on the website. 
+
+
+### #3 As a user I can edit/delete bookings on the website so that I can change my schedule
+There are options for the user to edit and delete their bookings.
+
+### #4 As a user I can create an account so I can see my bookings
+There is a fully functioning authentication system so each user can view their own bookings and manage them. 
+
+### #5 As a site owner I can create events so that I can display them on the website
+In the admin panel the site owner can create events so that the website is allways up to date.
+
+### #6 As a site owner I can edit events so that I can display changes on the website
+The site owner can manage the events, including changing published events.
+
+### #7 As a site owner I can get in contact with clients so that I can connect with clients
+There is a contact form on the website collecting user information entered by the user. The user can, of course, choose if they want to display their full name and phone number; only the name and email are required. User informaiton is displayed in the admin panel.
+
+### #8 As a site owner I can delete events so that I can remove it from the website
+The events can be deleted in the admin panel.
+
+### #9 As a user I can see available dates in a calendar so that I can schedule private sessions
+The booking form will only show available dates and time in their widgets.
+
+### #10 As a site owner I can display pictures of the gym so I can attract more clients
+This has not been fully completed. There is a picture of the gym in the Bootstrap carousel, but it's not clear enough that the image represents the gym. This would be a future implementation.
+
+### #11 As a site owner I can display and edit information about employees specialization so that I can attract more clients
+This has not been completed. Even tough there is information about the employees, the admin does not have the abillity to change this information yet. This would me a future implementation. 
+
+### #12 As a user I can use the website on my phone so that I can make, edit and delete bookings with ease from my phone
+The website is fully responsive and all booking features works on all viewports.
+
+### #13 As a site owner I can display information on the website so that I can inform clients about services and events
+All services are described on the website.
+
+
+
+
+
+
+![User Stories](./themusclefactory/docs/readme%20docs/lucidchart.png)
+## Libraries and Software
+
+Lucidchart - https://www.lucidchart.com/
