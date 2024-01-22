@@ -158,8 +158,39 @@ The Muscle Factory website is devided between if a user is authenticated or not.
 - Logout
     - For user to sign out.
 
+### Wireframes
 
+<details>
+    <summary>Smaller devices</summary>
 
+![Small](./themusclefactory/docs/readme%20docs/wireframes/wireframes-sm-landing-about-contact.png)
+
+![Small](./themusclefactory/docs/readme%20docs/wireframes/wireframes-sm-create-delete.png)
+</details>
+
+<details>
+  <summary>Medium devices</summary>
+
+![Medium](./themusclefactory/docs/readme%20docs/wireframes/wireframes-md-landing-about.png)
+
+![Medium](./themusclefactory/docs/readme%20docs/wireframes/wireframes-md-contact.png)
+
+![Medium](./themusclefactory/docs/readme%20docs/wireframes/wireframes-md-create-bookings.png)
+</details>
+<details>
+ <summary>Large devices</summary>
+
+![Large](./themusclefactory/docs/readme%20docs/wireframes/wireframes-lg-landing.png)
+
+![Large](./themusclefactory/docs/readme%20docs/wireframes/wireframes-lg-about.png)
+
+![Large](./themusclefactory/docs/readme%20docs/wireframes/wireframes-lg-contacts.png)
+
+![Large](./themusclefactory/docs/readme%20docs/wireframes/wireframes-lg-create.png)
+
+![Large](./themusclefactory/docs/readme%20docs/wireframes/wireframes-lg-delete.png)
+
+</details>
 
 
 
