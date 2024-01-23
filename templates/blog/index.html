@@ -19,7 +19,7 @@
                 <strong>Let's transform together!</strong>
             </p>
             {% if user.is_authenticated %}
-            <h3 class="heading">Welcome back {{user.username}}!</h3>
+            <h3>Welcome back {{user.username}}!</h3>
             {% else %}
             <a href="{% url 'account_signup' %}" class="btn btn-primary">Join us NOW!</a>
             {% endif %}
@@ -73,7 +73,6 @@
                 </p>
             </div>
             <h3 class="text-center heading">Membership Levels</h3>
-            <hr>
             <div class="text-center col-md-3 membership-medals">
                 <h3 class="heading">GOLD</h3>
                 <span><i class="fa-solid fa-medal fa-5x" style="color: #FFD43B;"></i></span>

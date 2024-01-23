@@ -15,13 +15,12 @@ class EventBooking(models.Model):
             ("Massage", "Massage"),
         )
     
-    BOOKING_STATUS = ((0, "Awaiting Approval"), (1, "Confirmed"))
-    
     star_smiley = "\U0001F929"
     OPTIONS = [
         ('option_yes', 'Yes' + star_smiley),
         ('option_no', 'No'),
     ]
+    BOOKING_STATUS = ((0, "Awaiting Approval"), (1, "Confirmed"))
 
     booking_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="user_booking")

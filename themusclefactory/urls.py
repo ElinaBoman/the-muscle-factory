@@ -25,8 +25,6 @@ urlpatterns = [
     path('bookings/', include('bookings.urls'), name='bookings_urls'),
     path('account/', include('allauth.urls')),
     path('contact/', include('contact.urls')),
-    path('membership/', include('membership.urls')),
-
 ]
 
 

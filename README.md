@@ -44,6 +44,9 @@ The main goal for the website is to attract new members and also take care of me
 ### Colors and Fonts
 To create a clean and proffessinal looking website calm colors were used. The main colors are gray but then there are some color pops to catch the eye of the user. This adds a bit of playfulness to the over all clinic looking front. Since this is a company that focus more on the longterm healt of members with not only gym membership but also massage, rehab and dietist it's more of a clinical gym and therefore the colors are more on the cool side. 
 
+![Palette](./themusclefactory/docs/readme%20docs/colorpalette.png)
+
+
 The fonts that are used are mainly clean and thin with dark colors. The headings are bold and thick creating a strong and sturdy look. The main text is balanced nicely with the thiner text creating a easy to read front. 
 The font for heading has been borrowed from GoogleFonts, and the main text is set to the font of apple device's. 
 * Heading: Bebas Neue, fallback: sans-serif
@@ -132,33 +135,62 @@ The Muscle Factory website is devided between if a user is authenticated or not.
 #### For a user who is not signed in following views avaialable are:
 - Home
 
-    - This is the landing page. Here, any user can read about membership prices and view some inspirational paragraphs. There is also a button that will take unregistered users to the registration form.
+Landing page: Any user can read about membership prices and view some inspirational paragraphs. There is also a button that will take unregistered users to the registration form.
 
 - Registration:
-    - Here the user can sign up for an account.
+
+Any user can sign up for an account. The user needs to enter username, email and password.
 - Contact Us
-    - Here the any user can send an email to The Muscle Factory.
+
+Any user can send an email to The Muscle Factory. The contact form will send out an auto reply from The Muscle Factory.
 
 - About Us
-    - Here any user can read about the company, employees and services. 
+
+Information about the company is displayed here. The user can read about provided services and employees.
 
 - Bookings
-    - This view will inform user in order to create a booking he/she needs an account. The user is provided a link to registration.
+
+The bookings page will render different content depending on whether the user is authenticated or not. For a signed-in user, a booking form will allow the user to book services. If the user is not signed in, the bookings link will instead render the registration form.
+
 
 
 #### For a user who is signed in, following views are avaialable:
 - Home
-    - Registration button is exchanged with a greating to user.
+
+Registration button is exchanged with a greating to user.
 - Contact Us
 - About Us
-- Bookings
-    - When user is authenticated bookings view will allow user to enter a booking trough a form.
+- Bookings: 
+When user is authenticated bookings view will allow user to enter a booking trough a form. To submit the form, the user needs to:
+    
+    - Choose service. The service provided are Personal trainer, Rehab, Massage or Dietist.
+    - Choose time and date. The time and date widgets will only show avaialble dates and times. 
+    - Enter if this is the users first appointment.
+    - Extra comments, if there is anything the user would like to add, this field is not required.
 - My Bookings
-    - Here all bookings made by a user will be displayed and provide CRUD functionality.
+
+All bookings made by a user will be displayed, providing full CRUD functionality. If the user wants to delete a specific booking, the delete button will first render a view, asking if the user really wants to delete the booking. If the user deletes the booking, an alert will inform the user that the chosen booking has been deleted.
+If the user would like to edit a booking, the booking form renders with prepopulated fields. If the user updated the booking there will be an alert informing user, that the booking has been updated.
+If user wants to add a new booking from My Bookings view, the booking form will render.
+
 - Logout
-    - For user to sign out.
+
+If signes out there is a alert message letting the user know if event was successfull. 
+
+### Flowchart
+To view project structure, see flowchart:
+<details>
+<summary>Lucidchart</summary>
+
+![Lucidchart](./themusclefactory/docs/readme%20docs/lucidchart.png)
+</details>
+
 
 ### Wireframes
+
+To plan the design and responsivness of The Muscle Factory a tool called Balsamiq was used. This was in the early stages of the project and the images created dosn't represent the finished product. Balsamiq was used to visualize the project in diffrent wireframes.
+
+See Balsamiq wireframes below:  
 
 <details>
     <summary>Smaller devices</summary>
@@ -192,19 +224,41 @@ The Muscle Factory website is devided between if a user is authenticated or not.
 
 </details>
 
+## Database
 
+To store user information a relational database was used called PostgreSQL. The database is managed trough ElephantSQL. Read more about ElephantSQL in deployment section. 
 
+#### The project contains four apps: User(AllAuth), Blog, Bookings and Contact.
 
+Models connected to the database:
 
+The User model is a part of Django's built-in models. This creates an authentication system and allows users to create accounts and make unique bookings.
 
+The EventBooking model is a part of the bookings app and is for the user to create bookings. This is related to the Django built-in User model. It will create unique bookings for each user.
 
+The ContactForm model is not related to any other model since it is not unique to any user. This model will save messages from users in the database but also send an email to both The Muscle Factory and an auto-reply to the user.
 
+The Event model is for the admin to create events that will render on the landing page. This is to make it easy for the site owner to keep the website updated with relevant events. This is also related to the User model, but is for site owner and his/hers employees. 
 
+![Database Models](./themusclefactory/docs/readme%20docs/db-models.png)
 
+## General features
 
+### Header and Navigation
+The header and navigation menu is responsive and will change to suit different wireframes. On bigger screens the meny will display all navigation elemets, but on smaller screens the elements will be contained in a hamburger bar.
+### Footer
+### Register
+### About us
+### Contact us
+### My bookings
+- Edit
+- Delete
+- Add 
+### Login
+### Logout
 
-
-![User Stories](./themusclefactory/docs/readme%20docs/lucidchart.png)
 ## Libraries and Software
 
 Lucidchart - https://www.lucidchart.com/
+
+Coolors - https://coolors.co/

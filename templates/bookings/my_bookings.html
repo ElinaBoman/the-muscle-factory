@@ -17,9 +17,12 @@
                 <li>Date: {{ booking.event_date }}</li>
                 <li>Starts at: {{ booking.start_time }}</li>
                 <li>Event choice: {{ booking.event_choice}}</li>
+                <li>Status: {{ booking.booking_status }}</li> 
                 {% if booking.extra_comments %}
                 <li>Your comment: {{ booking.extra_comments }}</li>
                 {% endif %}
+               
+                
                     <a href="{% url 'edit_item' booking.booking_id %}">
                         <button class="btn btn-info">Edit</button>
                     </a>  

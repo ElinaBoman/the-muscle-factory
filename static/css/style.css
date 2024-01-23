@@ -6,7 +6,7 @@
 .brand {
     font-family: 'Bebas Neue', sans-serif;
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 800;
     color: #000000;
 }
 
@@ -104,7 +104,7 @@
 
 .event-subtitle {
     margin-left: 5%;
-    color: lightgray;
+    color: #d3d3d3;
 }
 
 /* index.html */
@@ -218,7 +218,7 @@ label[for="id_extra_comments"] {
 }
 
 .fa-envelope{
-color: #fff;
+color: #2c2b2bd4;
 }
 
 .contact-form h1{
