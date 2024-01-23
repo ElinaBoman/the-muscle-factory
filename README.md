@@ -240,7 +240,7 @@ The ContactForm model is not related to any other model since it is not unique t
 
 The Event model is for the admin to create events that will render on the landing page. This is to make it easy for the site owner to keep the website updated with relevant events. This is also related to the User model, but is for site owner and his/hers employees. 
 
-![Database Models](./themusclefactory/docs/readme%20docs/db-models.png)
+  ![Database Models](./themusclefactory/docs/readme%20docs/db-models.png)
 
 ## General features
 
@@ -287,6 +287,7 @@ The logout page is for the user to sign out. Before a user can sign out, they ha
 #### JavaScript
 #### Python
 ### Testing User Stories
+![Database Models](./themusclefactory/docs/readme%20docs/userstorie-testing.png)
 ### Manuel Testing
 ## Future Improvments
 ## Bugs
