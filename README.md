@@ -245,19 +245,90 @@ The Event model is for the admin to create events that will render on the landin
 ## General features
 
 ### Header and Navigation
-The header and navigation menu is responsive and will change to suit different wireframes. On bigger screens the meny will display all navigation elemets, but on smaller screens the elements will be contained in a hamburger bar.
-### Footer
-### Register
-### About us
-### Contact us
-### My bookings
-- Edit
-- Delete
-- Add 
-### Login
-### Logout
+The header and navigation menu are responsive and will change to suit different wireframes. On bigger screens, the menu will display all navigation elements, but on smaller screens, the elements will be contained in a hamburger bar. The navbar also contains a kettlebell logo, same as in the title.
+The navbar elements change depending on whether the user is signed in or not. For a user who is not signed in, the navigation elements are Home, About us, Contact us, and Booking. If the user is signed in, there will also be a link to My bookings.
 
-## Libraries and Software
+### Home
+The Home page is the landing page. This page contains a Bootstrap carousel with some pictures of the gym, members, and healthy food. This is to immediately describe the company to any user. The pictures are chosen because they resemble community and health. If the user is signed in, there will be a greeting displayed in the carousel. If a user is not signed in, there will instead be a 'Join us now' button that will take the user to the registration form. This is to have as few steps as possible between entering the website and getting users to sign up. The user does not need to look for the registration form since it's the first button on the landing page.
+
+After the carousel, there is some informative text about the company and also the different memberships available.
+
+The user can then read about upcoming events that are posted by the admin. Here fun and creative events are displayed. Not only describing training events but also social events since The Muscle Factory is all about creating a community with a supportive environment between members and employees. The events are clickable and will render more information about the event.
+
+### Footer
+The footer has the same information on all pages. It contains opening hours, address, and links to social media. The footer is responsive and will change to fit different wireframes.
+
+### Register
+The Register/Sign up page collects Username, email address, and password. There is also a link to go directly to sign in, which will render the login form. There is information that describes criteria for selecting a password, making it easier for the user to create an account. The form is a part of Django's built-in allauth templates but has been styled to suit this project.
+
+### About us
+The 'About Us' page briefly describes The Muscle Factory's services and employees. The main reason to have this page was to create a more personal connection to users. For a person who has never been to The Muscle Factory, it might seem scary to go to a new gym. In order to make new users feel more comfortable, the pictures of the employees show friendly faces. The description of services is made to make the user feel more secure and let them know that the services are personalized and unique to each user.
+
+### Contact us
+The Contact Us page provides a form for any user to reach out. The form will be stored in the database where the admin can view them in Django's built-in Admin panel. The form will also send an email to The Muscle Factory's email account, and the user will receive an auto-reply. There is also an alert message informing the user of success or errors with the form. The fields collected are Name, Last name, Phone number, Email, and Message. The user can choose if they want to fill out the whole form. Only Name, Email, and Message are required.
+
+### Bookings
+If a user has not signed in, the Bookings link will instead take the user to the registration form. For a user who is signed in, there will be a form to create a booking. The form fields are Event date, Start time, Event choice. There is also a question if this is the user's first appointment. Lastly, the user can add information if there is anything they would like to add. The form will be saved to the database, where the admin can view bookings and approve appointments in the admin panel.
+
+### My bookings
+My bookings will be available to signed-in users. Here the user can view their bookings. The user can also choose to Edit, Delete, or Add their bookings.
+
+### Login
+If a user is registered, they can log in. This is a part of Django's built-in allauth forms. The user can choose to enter 'Remember me' to make future sign-ins easier. If the user does not have an account yet, there is a link to the registration form. When the user has successfully signed in, there will be an alert message.
+
+### Logout
+The logout page is for the user to sign out. Before a user can sign out, they have to confirm their action. If the user confirms that they want to sign out, the user will be logged out, and an alert message will confirm the action.
+
+## Testing
+
+### Code Validation
+#### HTML
+#### CSS
+#### JavaScript
+#### Python
+### Testing User Stories
+### Manuel Testing
+## Future Improvments
+## Bugs
+## Libraries Languages and Software
+## Deployment
+### Fork repository
+- Log in to your GitHub account, or create a account if you don't have one
+- Go to GitHub repository that you would like to fork. To
+find the repository, search for the repository URL inside the search bar
+- At the top of the site in the right corner of repository page there should be a button called "Fork". Click this button
+- Choose where you would like to fork the repository
+- GitHub will then create a clone of repository at choosen location. By default you should be directed to forked repository inside your gitHub account
+### To deploy project in Heroku
+- Create a Heroku account
+- Log in to Heroku account
+- In the dashboard choose "Create new app". It's located in the middle of the dashboard
+- Give the new app a name and choose what region you are from
+- When information is entered, find the tabs to Overview, Resources, Deploy, Metrics, Activity, Access and Settings. This should be in the upper right of the site. Click the "Settings" tab
+- Find the Config Vars section and click the "Reveal Config
+Vars" Enter information if there is hidden information in the GitHub repository. In this project a creds.json file was entered. If you don't have any hidden information in GitHub, step over the two following sections
+- Inside Create config vars, enter KEYS and VALUE. Inside KEYS enter CREDS and copy and paste information from creds.json file, into VALUE. Click the "Add" button
+- Add a new KEY with PORT and VALUE 8000. Click the "Add" button
+- Scroll down to the Buildpacks section. Click the"Add buildpack" button
+- Choose buildpack Python and "Save changes". Add another buildpack with nodjs. Save changes. It is important that the buildpacks are added in the correct order. Drag and drop buildpacks if they are in the wrong order
+- When buildpacks are in order. Locate the "Deploy" tab. It's found on the left side of the "Settings" tab
+- In the Deployment method section, choose GitHub to connect to the repository. Confirm request to connect to GitHub
+- Search for repo-name. This is the name of the repository. Click "Search"
+- Click "Connect" to link Heroku app to GitHub repository
+- Scroll down to Automatic deploy section and Manual deploy section
+- Choose how the project should be deployed. If Enable Automatic Deploys, Heroku rebuilds the app every time new changes are pushed inside the working enviroment
+- If Manual deploy is chosen the current state of the project will be deployed. For this alternative click "Deploy Branch".
+- When the project is deployed there will be four green circles with checkmarks inside. There should be a message "Your app was successfully deployed.". Click the "View" button to see deployed project. If steps are followed there should be a mock terminal with project inside of it. Program starts automagically
+### To deploy project in GitHub
+Note, this program uses Heroku to function. This means that deployment can not function if only GitHub is used. Follow steps described inside "To deploy project in Heroku".
+
+- First, navigate to the Settings tab
+- In the dropdown menu scroll down to Pages
+- Inside the Pages tab choose Source, Deploy from branch
+- Under the branch enter main and /(root)
+- Enter save
+- When the site has been deployed a Manilla folder will show up with a red ribbon
+## Credits
 
 Lucidchart - https://www.lucidchart.com/
 
