@@ -289,11 +289,7 @@ The logout page is for the user to sign out. Before a user can sign out, they ha
 ### Testing User Stories
 ![Database Models](./themusclefactory/docs/readme%20docs/userstorie-testing.png)
 ### Manuel Testing
-| Feature        | Acction           |  Expectation  |
-| -------------- |:-----------------:| -------------:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+[Click Me](/themusclefactory/docs/readme%20docs/README-TESTING.md)
 ## Future Improvments
 ## Bugs
 ## Libraries Languages and Software

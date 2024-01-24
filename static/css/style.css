@@ -74,6 +74,7 @@
 }
 
 .masthead-image:after {
+    content: "";
     position: absolute;
     top: 0;
     right: 90%;
@@ -254,10 +255,7 @@ color: #2c2b2bd4;
 
 .container-sign, h2{
     font-family: 'Bebas Neue', sans-serif;
-}
-
-.container-sign-up li{
-    
+    color: darkslategray;
 }
 
 label[for="id_username"] {

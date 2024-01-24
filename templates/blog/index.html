@@ -101,10 +101,10 @@
             </div>
         </div>
     </div>
-    <!-- Event Entries Column -->
+    <!-- Event Entries Column created in Code institute walk through, view repo: https://github.com/Code-Institute-Solutions/Django3blog/blob/master/11_messages/templates/index.html  -->
     <div class="col-12 mt-3 left">
+        <h2 class="heading text-center">Check out our upcoming events!</h2>
         <div class="row event-posts">
-            <h2 class="heading text-center">Check out our upcoming events!</h2>
             {% for event in event_list %}
             <div class="col-md-4">
                 <div class="card mb-4">
@@ -128,10 +128,6 @@
                     </div>
                 </div>
             </div>
-            {% if forloop.counter|divisibleby:3 and not forloop.last %}
-        </div>
-        <div class="row event-posts">
-            {% endif %}
             {% endfor %}
         </div>
     </div>

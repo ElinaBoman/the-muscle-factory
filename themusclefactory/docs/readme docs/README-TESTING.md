@@ -16,7 +16,7 @@
 | Feature        |            Action           |             Expectation         |          Result           |
 | -------------- |:----------------------------:| :------------------------------:| :-------------------------|
 | About us       | |  |  | 
-| Responsivness  | |  |n
+| Responsivness  | Change screensze to view responsivness | Columns are split nicely on all wireframes | Full responsivness |
 
 | Feature        |            Action           |             Expectation         |          Result           |
 | -------------- |:----------------------------:| :------------------------------:| :-------------------------|
