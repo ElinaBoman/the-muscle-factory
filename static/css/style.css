@@ -257,8 +257,24 @@ color: #2c2b2bd4;
 }
 
 .container-sign-up li{
-    display: block;
+    
 }
+
+label[for="id_username"] {
+    display: none;
+  }
+
+label[for= "id_email"] {
+    display: none;
+}
+
+label[for="id_password1"] {
+    display: none;
+  }
+
+label[for="id_password2"] {
+    display: none;
+  }
 
 
 /* login.html */ 
