@@ -83,7 +83,7 @@
 | Feature        |            Action           |             Expectation         |          Result           |
 | -------------- |:----------------------------:| :------------------------------:| :-------------------------|
 | Delete | |  | |
-| Booking | Ceck | Correct booking is fetched | Correct booking is fetched | 
+| Booking | Check | Correct booking is fetched | Correct booking is fetched | 
 |'Delete' button|  Click delete button | Removes booking from my bookings | Booking is removed |
 |'Return' button | Click return | Takes user back to my bookings without deleting booking | Redirect to My bookings |
 | Alert message | Try deleting booking | If user deletes booking, there is a info alert message | Booking is deleted | 
