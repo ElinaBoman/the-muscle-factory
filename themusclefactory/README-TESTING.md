@@ -52,7 +52,7 @@
 | Booking status |  | The booking is shown in  admin panel, and in My bookings  |
 
 
-| Feature        |            Acction           |             Expectation         |          Result           |
+| Feature        |            Action           |             Expectation         |          Result           |
 | -------------- |:----------------------------:| :------------------------------:| :-------------------------|
 | My Bookings |  |  | |
 | Booking is for | Check | Shows name for user who created booking | Correct name | 
@@ -66,7 +66,7 @@
 | 'Add' button| Click add button | Takes user to bookings form | Renders booking form | 
 
 
-| Feature        |            Acction           |             Expectation         |          Result           |
+| Feature        |            Action           |             Expectation         |          Result           |
 | -------------- |:----------------------------:| :------------------------------:| :-------------------------|
 | Edit | |  | |
 | Event date widget | Check info | Field should be occupied by previous information | Correct info is fetched | 
@@ -80,7 +80,7 @@
 | Admin panel | Log in to admin panel, check bookings| Updated bookings should be updated | Bookings are updated | 
 
 
-| Feature        |            Acction           |             Expectation         |          Result           |
+| Feature        |            Action           |             Expectation         |          Result           |
 | -------------- |:----------------------------:| :------------------------------:| :-------------------------|
 | Delete | |  | |
 | Booking | Ceck | Correct booking is fetched | Correct booking is fetched | 
@@ -90,58 +90,59 @@
 | Admin panel | Check is deleted booking is removed from admin panel, booking | The deleted booking is removed from admin panel | Booking is deleted from admin panel | 
 
 
-| Feature        |            Acction           |             Expectation         |          Result           |
+| Feature        |            Action           |             Expectation         |          Result           |
 | -------------- |:----------------------------:| :------------------------------:| :-------------------------|
 | Register |  |  | |
 | Sign in link | Click sign in link | Takes user to sign in form | User is redirected to sign in form | 
 | Username | Try not entering username: Enter user name | User can enter username | If no username user is adviced to add username: User name is added
-| Password | Try not adding password: Try adding wrong password: Add correct password  | User can create a password | If no password user is adviced to enter password: If password is incorrect user is adviced to try different password: If Correct password user is signed in |
+| Password | Try not adding password: Add password | User can create a password | If no password user is adviced to enter password: If password is incorrect user is adviced to try different password: If Correct password user is signed in |
 | Email| Try not adding email: Try adding allready existing email: Try adding email | User can enter email | If no email is enterd user can still create an account: Existing email, user is informed email adress is already in use: If new email is added a new account is created |
 | 'Sign in' button | Click sign in button | User is signed in | User is signed in | 
 | Alert message | Check when signing in | User will se a alert massage is signed in successfully | Alert message is displayed | 
 
 
-| Feature        |            Acction           |             Expectation         |          Result           |
+| Feature        |            Action           |             Expectation         |          Result           |
 | -------------- |:----------------------------:| :------------------------------:| :-------------------------|
 | Sign in  |  | | |
-| Register link | Click register link | Takes user to registration form |  | 
-| Username field | Try entering username| User can enter username |n
-| Password field | try entering wrong password: Enter correct password| User can enter password | |
-| Alert message | Check when signing in | Signed in user will recieve alert message| pass | 
-| 'Remember me' checkbox | Click remember me check box | When remember me is checked the user is rememberd | pass | 
+| Register link | Click register link | Takes user to registration form | Renders register form | 
+| Username field | Try entering username| User can enter username | Username is added |
+| Password field | Try entering wrong password: Enter correct password| User can enter password | If password is incorrect user is adviced to try different password or username: If correct password, user is signed in |
+| Alert message | Check when signing in | Signed in user will recieve alert message| Alert is displayed | 
+| 'Remember me' checkbox | Click remember me check box | When remember me is checked the user is rememberd | User is rememberd | 
 
-| Feature        |            Acction           |             Expectation         |          Result           |
+| Feature        |            Action           |             Expectation         |          Result           |
 | -------------- |:----------------------------:| :------------------------------:| :-------------------------|
 | Sign out  | |  | |
-|'Sign out' button | Click sign out button| Signes user out | pass | 
-|'Return' button | Click return | Takes user back to homepage |n
-| Alert message | Ceck when signing out  | Signed out user will recieve Alert success message | pass | 
+|'Sign out' button | Click sign out button| Signes user out | User is signed out | 
+| Alert message | Ceck when signing out  | Signed out user will recieve Alert success message | Success alert is displayed | 
+|'Return' button | Click return | Takes user back to homepage | Redirects to Home |
 
 
-| Feature        |            Acction           |             Expectation         |          Result           |
+
+| Feature        |            Action           |             Expectation         |          Result           |
 | -------------- |:----------------------------:| :------------------------------:| :-------------------------|
 | Navbar  |  |  | |
-| 'Home' button |Click Home button| Takes user to homepage | pass | 
-| 'About us' button |Click About us button | Takes user to About us |n |
-| 'Contact us' button | Click Contact us button | Takes user to Contact us | pass | 
-| 'Bookings' button (signed in) |Click bookings button | Takes user to registration form | pass | 
-| 'Bookings' button (not signed in)| Click bookings button | Renders booking form |n
-| 'My Bookings' button | Click My bookings button | Shows signed in user their booking | pass | 
-| 'Sign in' button | Click Sign in button | Takes user to sign in form | pass | 
-| 'Register' button | Click Register button| Takes user to registration, will disappear if user is signed in |n
-| 'Sign out' button | Click Sign out button| Takes user to sign out page | pass | 
-| 'Logo' button| Click logo | Logo takes user to homepage  | |
-| Hamburger bar |check on smaller wireframes| Will appear on smaller wireframes | pass | 
+| 'Home' button |Click Home button| Takes user to homepage | Renders homepage | 
+| 'About us' button |Click About us button | Takes user to About us | Renders About us page |
+| 'Contact us' button | Click Contact us button | Takes user to Contact us | Renders Contact us page | 
+| 'Bookings' button (signed in) |Click bookings button | Takes user to registration form | Renders booking page | 
+| 'Bookings' button (not signed in)| Click bookings button | Renders booking form | Renders registration form |
+| 'My Bookings' button | Click My bookings button | Shows signed in user their booking | Render my bookings page | 
+| 'Sign in' button | Click Sign in button | Takes user to sign in form | Renders sign in form | 
+| 'Register' button | Click Register button| Takes user to registration, will disappear if user is signed in | Renders registration form |
+| 'Sign out' button | Click Sign out button| Takes user to sign out page | Renders sign out page | 
+| 'Logo' button| Click logo | Logo takes user to homepage  | renders homepage |
+| Hamburger bar |check on smaller wireframes| Will appear on smaller wireframes | Wireframes smaller than 768px will show nav-menu in hamburger bar | 
 
 
 
 
-| Feature        |            Acction           |             Expectation         |          Result           |
+| Feature        |            Action           |             Expectation         |          Result           |
 | -------------- |:----------------------------:| :------------------------------:| :-------------------------|
 | Footer |  |  |  | 
-| 'Facebook' link | Click Facebook link | Takes user to Facebook |n
-| 'Instagram' link |Click Instagram link | Takes user to Instagram | pass | 
-| 'Youtube' link | click Youtube link| Takes user to Youtube |n |
+| 'Facebook' link | Click Facebook link | Takes user to Facebook | Redirects to Facebook homepage|
+| 'Instagram' link |Click Instagram link | Takes user to Instagram | Redirects Instagram homepage | 
+| 'Youtube' link | click Youtube link| Takes user to Youtube | Redirects Youtube homepage |
 
 
 
