@@ -102,54 +102,52 @@
         </div>
     </div>
     <!-- Event Entries Column -->
-        <div class="col-12 mt-3 left">
-            <div class="row event-posts">
-                <h2 class="heading text-center">Check out our upcomming events!</h2>
-            {% if user.is_authenticated %}
-
-            {% endif %}
+    <div class="col-12 mt-3 left">
+        <div class="row event-posts">
+            <h2 class="heading text-center">Check out our upcoming events!</h2>
             {% for event in event_list %}
-                <div class="col-md-4">
-                    <div class="card mb-4">
-                        <div class="card-body">
-                            <div class="image-container">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <div class="image-container">
                             {% if "placeholder" in event.featured_image.url %}
-                                <img class="card-img-top"
-                                    src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg">
+                            <img class="card-img-top"
+                                src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg">
                             {% else %}
-                                <img class="card-img-top" src=" {{ event.featured_image.url }}">
+                            <img class="card-img-top" src="{{ event.featured_image.url }}">
                             {% endif %}
-                                <div class="image-flash">
-                                    <p class="author">COACH: {{ event.author }}</p>
-                                </div>
+                            <div class="image-flash">
+                                <p class="author">COACH: {{ event.author }}</p>
                             </div>
-                            <a href="{% url 'event_detail' event.slug  %}" class="event-link">
-                                <h2 class="card-title">{{ event.title }}</h2>
-                                <p class="card-text">{{ event.excerpt }}</p>
-                            </a>
-                            <hr/>
                         </div>
+                        <a href="{% url 'event_detail' event.slug %}" class="event-link">
+                            <h2 class="card-title">{{ event.title }}</h2>
+                            <p class="card-text">{{ event.excerpt }}</p>
+                        </a>
+                        <hr />
                     </div>
                 </div>
-                {% if forloop.counter|divisibleby:3 %}
             </div>
-            <div class="row">
-                {% endif %}
-                {% endfor %}
-            </div>
+            {% if forloop.counter|divisibleby:3 and not forloop.last %}
         </div>
-        {% if is_paginated %}
-        <nav aria-label="Page navigation">
-            <ul class="pagination justify-content-center">
-                {% if page_obj.has_previous %}
-                <li><a href="?page={{ page_obj.previous_page_number }}" class="page-link">&laquo; PREV </a></li>
-                {% endif %}
-                {% if page_obj.has_next %}
-                <li><a href="?page={{ page_obj.next_page_number }}" class="page-link"> NEXT &raquo;</a></li>
-                {% endif %}
-            </ul>
-        </nav>
-        {% endif %}
+        <div class="row event-posts">
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+    
+    {% if is_paginated %}
+    <nav aria-label="Page navigation">
+        <ul class="pagination justify-content-center">
+            {% if page_obj.has_previous %}
+            <li><a href="?page={{ page_obj.previous_page_number }}" class="page-link">&laquo; PREV </a></li>
+            {% endif %}
+            {% if page_obj.has_next %}
+            <li><a href="?page={{ page_obj.next_page_number }}" class="page-link"> NEXT &raquo;</a></li>
+            {% endif %}
+        </ul>
+    </nav>
+    {% endif %}
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
