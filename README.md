@@ -432,22 +432,23 @@ Theese are some future improvments I wish to do:
 - Bootstrap
 
 ### Packages
+- psycop2: PostgreSQL
+- dj3-cloudinary-storage
+- Gunicorn
 - Django
 <details>
 <summary>All Django-packages</summary>
 
 ![Django-framework](/themusclefactory/docs/readme%20docs/images/django-framework.png)
 </details>
-- psycop2: PostgreSQL
-- dj3-cloudinary-storage
-- Gunicorn
+
 <details>
 <summary>All packages</summary>
 
 ![Packages](/themusclefactory/docs/readme%20docs/images/packages.png)
 </details>
 
-Framework and Websites
+### Framework and Websites
 - Flake8
 - chatGPT
 - Pexels
@@ -458,7 +459,7 @@ Framework and Websites
 - Code Institutes py linter
 - Gitpod
 - GitHub
-- LucidChart
+- LucidChart: https://www.lucidchart.com/
 - Balsamiq
 - Google Fonts
 - Font Awesome
@@ -472,7 +473,7 @@ Framework and Websites
 - Stack Overflow
 - W3Schools
 - Youtube
-- Coolors
+- Coolors: https://coolors.co/
 - Am I responsive
 - Code institute tutorials/ Walktrough project
 - Lighthouse testing
@@ -482,7 +483,7 @@ Framework and Websites
 ### Fork repository
 - Log in to your GitHub account, or create a account if you don't have one
 - Go to GitHub repository that you would like to fork. To
-find the repository, search for the repository URL inside the search bar
+  find the repository, search for the repository URL inside the search bar
 - At the top of the site in the right corner of repository page there should be a button called "Fork". Click this button
 - Choose where you would like to fork the repository
 - GitHub will then create a clone of repository at choosen location. By default you should be directed to forked repository inside your gitHub account
@@ -492,8 +493,8 @@ find the repository, search for the repository URL inside the search bar
 - In the dashboard choose "Create new app". It's located in the middle of the dashboard
 - Give the new app a name and choose what region you are from
 - When information is entered, find the tabs to Overview, Resources, Deploy, Metrics, Activity, Access and Settings. This should be in the upper right of the site. Click the "Settings" tab
-- Find the Config Vars section and click the "Reveal Config
-Vars" Enter information if there is hidden information in the GitHub repository. In this project a creds.json file was entered. If you don't have any hidden information in GitHub, step over the two following sections
+- Find the Config Vars section and click the "Reveal Config Vars" Enter information if there is hidden information in the GitHub repository. In this project a creds.json file was entered. If you don't    
+  have any hidden information in GitHub, step over the two following sections
 - Inside Create config vars, enter KEYS and VALUE. Inside KEYS enter CREDS and copy and paste information from creds.json file, into VALUE. Click the "Add" button
 - Add a new KEY with PORT and VALUE 8000. Click the "Add" button
 - Scroll down to the Buildpacks section. Click the"Add buildpack" button
@@ -508,7 +509,8 @@ Vars" Enter information if there is hidden information in the GitHub repository.
 - When the project is deployed there will be four green circles with checkmarks inside. There should be a message "Your app was successfully deployed.". Click the "View" button to see deployed project. If steps are followed there should be a mock terminal with project inside of it. Program starts automagically
 
 ## Credits
-
-Lucidchart - https://www.lucidchart.com/
-
-Coolors - https://coolors.co/
+- I want to thank my fantastic mentor, Brian O'Hare, who always helps me with great feedback.
+- I want to express my gratitude to my fiancé, who helped me proofread this fantastic README. He also tried to break my project several times, which helped me locate errors.
+- I also want to extend my thanks to my colleagues on Slack. Thank you so much for taking the time to help me improve my project.
+- Special thanks to Code Institute's tutor support, especially John, who helped me with some real headaches.
+- Last but not least, thank you to Code Institute for this truly enjoyable and informative project.
