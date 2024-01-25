@@ -414,6 +414,7 @@ Theese are some future improvments I wish to do:
 - Create a function for admin to adjust information about services and employees
 
 ## Bugs
+
 ## Technologies used
 ### Libraries
 - datetime
@@ -477,13 +478,25 @@ Theese are some future improvments I wish to do:
 
 
 ## Deployment
-### Fork repository
-- Log in to your GitHub account, or create a account if you don't have one
-- Go to GitHub repository that you would like to fork. To
-  find the repository, search for the repository URL inside the search bar
-- At the top of the site in the right corner of repository page there should be a button called "Fork". Click this button
-- Choose where you would like to fork the repository
-- GitHub will then create a clone of repository at choosen location. By default you should be directed to forked repository inside your gitHub account
+### Create Heroku app
+- Install Django and Gunicorn
+- Install libraries: dj_database_url and psycopg2
+- Install Cloudinary Libraries
+- Create requirements.txt file
+- Create project with command django-admin startproject themusclefactory . (replace 
+  themusclefactory with your project name). Do not forget the "." in the end, it's very important.
+- Create app with command: python manage.py startapp blog (Replace 'blog' with name of    your app)
+- To create database models run: python manage.py makemigrations
+- Then run: python manage.py migrate
+### Before Deployment
+- Set DEBUG=False in settings.py
+- Run pip3 freeze --local > requirements.txt
+- Make sure that you have created a file called Procfile in project root. Start up
+  command is inside Procfile and will inform Heroku how to run the app.
+- Add your created apps in settings.py under INSTALLED_APPS
+- To run website you need to add allowed hosts under ALLOWED_HOSTS in settings.py. You    
+  can find the host name if you try opening up the project with: python manage.py runserver.
+
 ### To deploy project in Heroku
 - Create a Heroku account
 - Log in to Heroku account
@@ -504,6 +517,14 @@ Theese are some future improvments I wish to do:
 - Choose how the project should be deployed. If Enable Automatic Deploys, Heroku rebuilds the app every time new changes are pushed inside the working enviroment
 - If Manual deploy is chosen the current state of the project will be deployed. For this alternative click "Deploy Branch".
 - When the project is deployed there will be four green circles with checkmarks inside. There should be a message "Your app was successfully deployed.". Click the "View" button to see deployed project. If steps are followed there should be a mock terminal with project inside of it. Program starts automagically
+
+### Fork repository in GitHub
+- Log in to your GitHub account, or create a account if you don't have one
+- Go to GitHub repository that you would like to fork. To
+  find the repository, search for the repository URL inside the search bar
+- At the top of the site in the right corner of repository page there should be a button called "Fork". Click this button
+- Choose where you would like to fork the repository
+- GitHub will then create a clone of repository at choosen location. By default you should be directed to forked repository inside your gitHub account
 
 ## Credits
 - I want to thank my fantastic mentor, Brian O'Hare, who always helps me with great feedback.
