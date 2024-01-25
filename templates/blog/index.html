@@ -1,54 +1,62 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <!--The slideshow is a Bootstrap carousel. Code can be found on this link https://getbootstrap.com/docs/4.0/components/carousel/.
+<!--The slideshow is a Bootstrap carousel. Code can be found on this link https://getbootstrap.com/docs/4.0/components/carousel/.
         The .carousel-caption conten has been changed from original code.-->
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="8000">
         <div class="carousel-inner">
             <div class="carousel-item active">
-        <img class="d-block w-100 hero-img-slide" src="https://res.cloudinary.com/dcqwfgtyk/image/upload/t_man-bar-fill/v1703079785/pexels-victor-freitas-2261485_e1skl9.jpg" alt="First slide">
-        <div class="carousel-caption d-none d-md-block col-md-8 col-lg-8">
-            <h3>OUR MISSION</h3>
-            <hr>
-            <p>We're here to inspire and empower you.
-                Unleash your potential, build a supportive community,
-                and embrace a lifestyle that fuels your well-being.
-                <br>
-                <strong>Let's transform together!</strong>
-            </p>
-            {% if user.is_authenticated %}
-            <h3>Welcome back {{user.username}}!</h3>
-            {% else %}
-            <a href="{% url 'account_signup' %}" class="btn btn-primary">Join us NOW!</a>
-            {% endif %}
-          </div>
+                <img class="d-block w-100 hero-img-slide"
+                    src="https://res.cloudinary.com/dcqwfgtyk/image/upload/t_man-bar-fill/v1703079785/pexels-victor-freitas-2261485_e1skl9.jpg"
+                    alt="First slide">
+                <div class="carousel-caption d-none d-md-block col-md-8 col-lg-8">
+                    <h3>OUR MISSION</h3>
+                    <hr>
+                    <p>We're here to inspire and empower you.
+                        Unleash your potential, build a supportive community,
+                        and embrace a lifestyle that fuels your well-being.
+                        <br>
+                        <strong>Let's transform together!</strong>
+                    </p>
+                    {% if user.is_authenticated %}
+                    <h3>Welcome back {{user.username}}!</h3>
+                    {% else %}
+                    <a href="{% url 'account_signup' %}" class="btn btn-primary">Join us NOW!</a>
+                    {% endif %}
+                </div>
             </div>
             <div class="carousel-item carousel">
-                <img class="d-block w-100" src="https://res.cloudinary.com/dcqwfgtyk/image/upload/t_community-fill/v1705048846/pexels-cori-emmalea-rodriguez-1187086_emvlgs.jpg" alt="Second slide">
+                <img class="d-block w-100"
+                    src="https://res.cloudinary.com/dcqwfgtyk/image/upload/t_community-fill/v1705048846/pexels-cori-emmalea-rodriguez-1187086_emvlgs.jpg"
+                    alt="Second slide">
                 <div class="carousel-caption d-none d-md-block col-md-8 col-lg-8">
                     <h3>COMMUNITY</h3>
                     <hr>
                     <p> Join our thriving community! Together,
-                        we make fitness a communal experience, creating a supportive environment that motivates everyone to reach 
+                        we make fitness a communal experience, creating a supportive environment that motivates everyone to
+                        reach
                         goals and beyond."</p>
-                        {% if user.is_authenticated %}
-                        {% else %}
-                        <a href="{% url 'account_signup' %}" class="btn btn-primary">Join us NOW!</a>   
-                        {% endif %}
-                  </div>
-            </div>
-            <div class="carousel-item carousel">
-                <img class="d-block w-100" src="https://res.cloudinary.com/dcqwfgtyk/image/upload/t_table-food-fill/v1705049845/pexels-fauxels-3184192_ctdg7d.jpg" alt="Third slide">
-                <div class="carousel-caption d-none d-md-block col-md-8 col-lg-8">
-                    <h3>We are here to support you all the way!</h3>
-                        <p>Our fantastic personal trainers are aviable 5 days a week. We can also offer a healty diet plan, rehab or massage!
-                            <br>
-                            Book a meeting with us!</p>
                     {% if user.is_authenticated %}
                     {% else %}
                     <a href="{% url 'account_signup' %}" class="btn btn-primary">Join us NOW!</a>
-                    {% endif %}   
-                  </div>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="carousel-item carousel">
+                <img class="d-block w-100"
+                    src="https://res.cloudinary.com/dcqwfgtyk/image/upload/t_table-food-fill/v1705049845/pexels-fauxels-3184192_ctdg7d.jpg"
+                    alt="Third slide">
+                <div class="carousel-caption d-none d-md-block col-md-8 col-lg-8">
+                    <h3>We are here to support you all the way!</h3>
+                    <p>Our fantastic personal trainers are aviable 5 days a week. We can also offer a healty diet plan,
+                        rehab or massage!
+                        <br>
+                        Book a meeting with us!</p>
+                    {% if user.is_authenticated %}
+                    {% else %}
+                    <a href="{% url 'account_signup' %}" class="btn btn-primary">Join us NOW!</a>
+                    {% endif %}
+                </div>
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -66,7 +74,7 @@
             <div class="col-sm mt-2 text-center">
                 <h1 class="heading">Welcome to The Muscle Factory</h1>
                 <p>Discover a fitness haven at The Muscle Factory, where dedication meets
-                    innovation. Our state-of-the-art facility is designed to elevate 
+                    innovation. Our state-of-the-art facility is designed to elevate
                     fitness journey and empower you to achieve your wellness goals.
                 </p>
             </div>
@@ -113,7 +121,8 @@
                         <div class="image-container">
                             {% if "placeholder" in event.featured_image.url %}
                             <img class="card-img-top"
-                                src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg" alt="Computor with codeing window open">
+                                src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg"
+                                alt="Computor with codeing window open">
                             {% else %}
                             <img class="card-img-top" src="{{ event.featured_image.url }}">
                             {% endif %}
@@ -132,7 +141,7 @@
             {% endfor %}
         </div>
     </div>
-    
+
     {% if is_paginated %}
     <nav aria-label="Page navigation">
         <ul class="pagination justify-content-center">
@@ -148,4 +157,4 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-{% endblock %}
+    {% endblock %}
