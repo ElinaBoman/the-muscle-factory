@@ -280,21 +280,22 @@ If a user is registered, they can log in. This is a part of Django's built-in al
 The logout page is for the user to sign out. Before a user can sign out, they have to confirm their action. If the user confirms that they want to sign out, the user will be logged out, and an alert message will confirm the action.
 
 ## Testing
-Nu Html Checker
-Nu CSS Checker
-Lighthouse Testing
 ### Code Validation
-
 #### HTML
+All html code has gone trough Nu Html Checker. There were few errors. The errors comes from Djangos framework code. The errors has been documented and can be found inside registration.html
 <details>
 <summary>home.html</summary>
 https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fthe-muscle-factory-9f171161969d.herokuapp.com%2F
 </details>
 
 <details>
+<summary>about.html</summary>
+https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fthe-muscle-factory-9f171161969d.herokuapp.com%2Fabout%2F
+</details>
+
+<details>
 <summary>login.html</summary>
 https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fthe-muscle-factory-9f171161969d.herokuapp.com%2Faccount%2Flogin%2F
-signup.html
 </details>
 
 <details>
@@ -319,7 +320,7 @@ https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fthe-muscle-factory
 
 <details>
 <summary>edit_item.html</summary>
-https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fthe-muscle-factory-9f171161969d.herokuapp.com%2Fbookings%2Fmy_bookings%2Fedit_item%2Fe632fec1-63d7-4ba1-a429-0ec236cd98d8%2F
+https://validator.w3.org/nu/?showsource=yes&useragent=Validator.nu%2FLV+http%3A%2F%2Fvalidator.w3.org%2Fservices&acceptlanguage=&doc=https%3A%2F%2Fthe-muscle-factory-9f171161969d.herokuapp.com%2Fbookings%2Fmy_bookings%2Fedit_item%2Fe632fec1-63d7-4ba1-a429-0ec236cd98d8%2F
 </details>
 
 <details>
@@ -342,22 +343,27 @@ https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fthe-muscle-factory
 https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fthe-muscle-factory-9f171161969d.herokuapp.com%2F404%2F#textarea
 </details>
 
-<details>
-<summary>about.html</summary>
-https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fthe-muscle-factory-9f171161969d.herokuapp.com%2Fabout%2F
-</details>
 
 ### CSS 
 All CSS passed trough validation and shows no errors:
+<details>
+<summary>style.css</summary>
+
 ![css](./themusclefactory/docs/readme%20docs/validation/css-validation/css-validation.png)
+</details>
 
 ### JavaScript
 All Javascript files has passed through validation and shows no errors:
-![jshint](./themusclefactory/docs/readme%20docs/validation/js-validation/jshint.png)
-### Python
+<details>
+<summary>script.js</summary>
 
+![js](./themusclefactory/docs/readme%20docs/validation/js-validation/jshint.png)
+</details>
+
+### Python
 <details>
 <summary>Blog app</summary>
+
 All Python files has passed through validation and shows no errors:
 admin.py
 ![blog-admin](./themusclefactory/docs/readme%20docs/validation/python-linter-ci/blog-adminlinter.png)
@@ -408,12 +414,14 @@ urls.py
 ![main-urls](./themusclefactory/docs/readme%20docs/validation/python-linter-ci/the-muscle-factory-urlslinter.png)
 </details>
 
-
-
 ### Testing User Stories
-![Database Models](./themusclefactory/docs/readme%20docs/userstorie-testing.png)
+![userstories](./themusclefactory/docs/readme%20docs/ux-testing/userstorie-testing.png)
 ### Manuel Testing
 [Click Me](/themusclefactory/docs/readme%20docs/README-TESTING.md)
+
+### Lighthouse testing
+![Lighthouse](/themusclefactory/docs/readme%20docs/images/lighthouse-testing.png)
+
 ## Future Improvments
 ## Bugs
 ## Libraries Languages and Software
