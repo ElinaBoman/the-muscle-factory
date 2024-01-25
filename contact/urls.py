@@ -1,6 +1,4 @@
-from . import views
-from django.shortcuts import render, HttpResponse
-from django.urls import path, include
+from django.urls import path
 from .views import contact
 
 urlpatterns = [

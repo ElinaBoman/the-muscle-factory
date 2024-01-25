@@ -234,7 +234,7 @@ color: #2c2b2bd4;
 }
 
 .contact-form label{
-    display: block;
+    display: block !important;
     font-size: small;
 }
 
