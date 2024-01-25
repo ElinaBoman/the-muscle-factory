@@ -30,7 +30,7 @@ class CreateBookingForm(forms.ModelForm):
             'start_time',
             'event_choice',
             'options_field',
-            'extra_comments'
+            'extra_comments',
         ]
 
         widgets = {
