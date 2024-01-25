@@ -4,7 +4,7 @@
 }
 
 .navbar {
-    background-color: #e6eeee;
+    background-color: #f8f8f8;
 }
 .brand {
     font-family: 'Bebas Neue', sans-serif;
@@ -216,7 +216,7 @@ label[for="id_extra_comments"] {
  background-color:  #E9ECEF;
  color: darkslategray;
  border: rgb(255, 255, 255) 2px solid;
- padding: 30px;
+ padding: 5%;
 }
 
 #id_message{
@@ -248,15 +248,11 @@ color: #2c2b2bd4;
 /* Signup.html */
 .container-sign-up{
     font-family: 'apple-system', sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
     line-height: 1.5;
     background-color:  #E9ECEF;
-    color: darkslategray;
     border: rgb(255, 255, 255) 2px solid;
     margin: 2%;
-    align-self: center;
-    padding: 20px 50px; 
+    padding: 2%; 
 }
 
 .container-sign, h2{
@@ -294,6 +290,7 @@ label[for="id_password2"] {
 
 .container-login h3{
     font-family: 'Bebas Neue', sans-serif;
+    color: darkslategray;
 }
 
 .helptext{
@@ -302,6 +299,7 @@ label[for="id_password2"] {
 
 .container-logout h2{
  font-family: 'Bebas Neue', sans-serif;
+ color: darkslategray;
 }
 
 /* logout.html */
@@ -316,13 +314,13 @@ label[for="id_password2"] {
 }
 
 .link {
-    color: rgb(27, 127, 233);
+    color: rgb(35, 122, 215);
     text-decoration: none;
 }
 
 .link:hover,
 .link:active {
-    color: rgb(134, 141, 218);
+    color: rgb(139, 174, 221);
     text-decoration: underline;
 }
 
