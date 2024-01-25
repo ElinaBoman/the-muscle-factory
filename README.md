@@ -57,43 +57,6 @@ Not all user stories were finished, but all user stories with the label "MUST HA
 ![User Stories](./themusclefactory/docs/readme%20docs/ux-testing/UX.png)
 
 
-### User Stories Implementation
--  #2 As a user I can make bookings on the website so that I can plan my schedule
-The user can create bookings and also view them on the website.
-
--  #3 As a user I can edit/delete bookings on the website so that I can change my schedule
-There are options for the user to edit and delete their bookings.
-
--  #4 As a user I can create an account so I can see my bookings
-There is a fully functioning authentication system so each user can view their own bookings and manage them.
-
--  #5 As a site owner I can create events so that I can display them on the website
-In the admin panel the site owner can create events so that the website is allways up to date.
-
--  #6 As a site owner I can edit events so that I can display changes on the website
-The site owner can manage the events, including changing published events.
-
--  #7 As a site owner I can get in contact with clients so that I can connect with clients
-There is a contact form on the website collecting user information entered by the user. The user can, of course, choose if they want to display their full name and phone number; only the name and email are required. User informaiton is displayed in the admin panel.
-
--  #8 As a site owner I can delete events so that I can remove it from the website
-The events can be deleted in the admin panel.
-
--  #9 As a user I can see available dates in a calendar so that I can schedule private sessions
-The booking form will only show available dates and time in their widgets.
-
--  #10 As a site owner I can display pictures of the gym so I can attract more clients
-This has not been fully completed. There is a picture of the gym in the Bootstrap carousel, but it's not clear enough that the image represents the gym. This would be a future implementation.
-
--  #11 As a site owner I can display and edit information about employees specialization so that I can attract more clients
-This has not been completed. Even tough there is information about the employees, the admin does not have the abillity to change this information yet. This would me a future implementation. 
-
--  #12 As a user I can use the website on my phone so that I can make, edit and delete bookings with ease from my phone
-The website is fully responsive and all booking features works on all viewports.
-
--  #13 As a site owner I can display information on the website so that I can inform clients about services and events
-All services are described on the website.
-
 ### Colors and Fonts
 To create a clean and proffessinal looking website calm colors were used. The main colors are gray but then there are some color pops to catch the eye of the user. This adds a bit of playfulness to the over all clinic looking front. Since this is a company that focus more on the longterm healt of members with not only gym membership but also massage, rehab and dietist it's more of a clinical gym and therefore the colors are more on the cool side. 
 
@@ -164,7 +127,6 @@ To view project structure, see flowchart:
 
 
 ### Wireframes
-
 To plan the design and responsivness of The Muscle Factory a tool called Balsamiq was used. This was in the early stages of the project and the images created dosn't represent the finished product. Balsamiq was used to visualize the project in diffrent wireframes.
 
 See Balsamiq wireframes below:  
@@ -202,11 +164,9 @@ See Balsamiq wireframes below:
 </details>
 
 ## Database
-
 To store user information a relational database was used called PostgreSQL. The database is managed trough ElephantSQL. Read more about ElephantSQL in deployment section. 
 
 #### The project contains four apps: User(AllAuth), Blog, Bookings and Contact.
-
 The User model is a part of Django's built-in models. This creates an authentication system and allows users to create accounts and make unique bookings.
 
 The EventBooking model is a part of the bookings app and is for the user to create bookings. This is related to the Django built-in User model. It will create unique bookings for each user.
@@ -404,17 +364,120 @@ urls.py
 ![main-urls](./themusclefactory/docs/readme%20docs/validation/python-linter-ci/the-muscle-factory-urlslinter.png)
 </details>
 
+## User Stories Implementation
+-  #2 As a user I can make bookings on the website so that I can plan my schedule
+The user can create bookings and also view them on the website.
+
+-  #3 As a user I can edit/delete bookings on the website so that I can change my schedule
+There are options for the user to edit and delete their bookings.
+
+-  #4 As a user I can create an account so I can see my bookings
+There is a fully functioning authentication system so each user can view their own bookings and manage them.
+
+-  #5 As a site owner I can create events so that I can display them on the website
+In the admin panel the site owner can create events so that the website is allways up to date.
+
+-  #6 As a site owner I can edit events so that I can display changes on the website
+The site owner can manage the events, including changing published events.
+
+-  #7 As a site owner I can get in contact with clients so that I can connect with clients
+There is a contact form on the website collecting user information entered by the user. The user can, of course, choose if they want to display their full name and phone number; only the name and email are required. User informaiton is displayed in the admin panel.
+
+-  #8 As a site owner I can delete events so that I can remove it from the website
+The events can be deleted in the admin panel.
+
+-  #9 As a user I can see available dates in a calendar so that I can schedule private sessions
+The booking form will only show available dates and time in their widgets.
+
+-  #10 As a site owner I can display pictures of the gym so I can attract more clients
+This has not been fully completed. There is a picture of the gym in the Bootstrap carousel, but it's not clear enough that the image represents the gym. This would be a future implementation.
+
+-  #11 As a site owner I can display and edit information about employees specialization so that I can attract more clients
+This has not been completed. Even tough there is information about the employees, the admin does not have the abillity to change this information yet. This would me a future implementation. 
+
+-  #12 As a user I can use the website on my phone so that I can make, edit and delete bookings with ease from my phone
+The website is fully responsive and all booking features works on all viewports.
+
+-  #13 As a site owner I can display information on the website so that I can inform clients about services and events
+All services are described on the website.
 ### Testing User Stories
 ![userstories](./themusclefactory/docs/readme%20docs/ux-testing/userstorie-testing.png)
 ### Manuel Testing
+Follow link to view manual testing:
 [Click Me](/themusclefactory/docs/readme%20docs/README-TESTING.md)
 
 ### Lighthouse testing
 ![Lighthouse](/themusclefactory/docs/readme%20docs/images/lighthouse-testing.png)
 
 ## Future Improvments
+There are a lot of approvments I wish to do. This was a super fun project and I had to restrict myself to only create a MVP. 
+Theese are some future improvments I wish to do:
+- Add more styling to bookings pages
+- Create new app to let members choose membership level
+- Create better performance rate
+- Create a function for admin to adjust information about services and employees
+
 ## Bugs
-## Libraries Languages and Software
+## Technologies used
+### Libraries
+- datetime
+- uuid
+
+### Languages
+- Html
+- CSS
+- Python
+- Javascript
+- Django
+- Bootstrap
+
+### Packages
+- Django
+<details>
+<summary>All Django-packages</summary>
+
+![Django-framework](/themusclefactory/docs/readme%20docs/images/django-framework.png)
+</details>
+- psycop2: PostgreSQL
+- dj3-cloudinary-storage
+- Gunicorn
+<details>
+<summary>All packages</summary>
+
+![Packages](/themusclefactory/docs/readme%20docs/images/packages.png)
+</details>
+
+Framework and Websites
+- Flake8
+- chatGPT
+- Pexels
+- Google
+- CSS validator
+- Html validator
+- Jshint
+- Code Institutes py linter
+- Gitpod
+- GitHub
+- LucidChart
+- Balsamiq
+- Google Fonts
+- Font Awesome
+- Bootstrap
+- Favicon
+- Cloudinary
+- Google Excel
+- Heroku
+- PostgreSQL
+- EmailJS
+- Stack Overflow
+- W3Schools
+- Youtube
+- Coolors
+- Am I responsive
+- Code institute tutorials/ Walktrough project
+- Lighthouse testing
+
+
 ## Deployment
 ### Fork repository
 - Log in to your GitHub account, or create a account if you don't have one
