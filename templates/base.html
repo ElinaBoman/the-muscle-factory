@@ -24,7 +24,7 @@
     <!--Font Awsome credits: https://fontawesome.com/-->
     <script src="https://kit.fontawesome.com/90ae6df711.js" crossorigin="anonymous"></script>
     <!--Favicon link credits: https://favicon.io/favicon-converter/-->
-    <link rel="icon" href="{% static 'favicon/favicon.ico' %}" type="image/x-icon">
+    <link rel="shortcut icon" href=" {% static 'favicon/favicon.ico' %}" type="image/x-icon">
     <!-- The following two script tags are for connecting emailjs and the emailfunction, credits: https://www.emailjs.com/-->
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script>
@@ -41,7 +41,9 @@
     The if statements and urls have been changed to suit this project-->
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="{% url 'home' %}"><span class="brand"><img src="/static/favicon/favicon.ico" alt="kettlebell">The Muscle Factory</span></a>
+            <a class="navbar-brand" href="{% url 'home' %}"><span class="brand"><img class="logo-kb"
+                src="https://res.cloudinary.com/dcqwfgtyk/image/upload/v1706014854/static/favicon/favicon-32x32.73c8048b8b09.png" 
+                alt="kettlebell">The Muscle Factory</span></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
