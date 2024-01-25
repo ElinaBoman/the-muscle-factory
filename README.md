@@ -232,7 +232,7 @@ The logout page is for the user to sign out. Before a user can sign out, they ha
 ## Testing
 ### Code Validation
 #### HTML
-All html code has gone trough Nu Html Checker. There were few errors. The errors comes from Djangos framework code. The errors has been documented and can be found inside registration.html and edit_item.html.
+All html code has gone trough Nu Html Checker. There were few errors. The errors comes from Djangos framework code. The errors has been documented and can be found inside registration.html and edit_item.html. Note that event_detail link is not provided, this is because the link will throw error because of changing event posts. The code has been validated without any event added. 
 <details>
 <summary>home.html</summary>
 https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fthe-muscle-factory-9f171161969d.herokuapp.com%2F
@@ -256,11 +256,6 @@ https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fthe-muscle-factory
 <details>
 <summary>registration.html</summary>
 https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fthe-muscle-factory-9f171161969d.herokuapp.com%2Faccount%2Fsignup%2F
-</details>
-
-<details>
-<summary>event_detail.html</summary>
-https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fthe-muscle-factory-9f171161969d.herokuapp.com%2Fthe-best-event-ever-known-to-man%2F
 </details>
 
 <details>
@@ -450,22 +445,22 @@ Theese are some future improvments I wish to do:
 </details>
 
 ### Framework and Websites
-- Flake8
-- chatGPT
-- Pexels
-- Google
-- CSS validator
-- Html validator
-- Jshint
-- Code Institutes py linter
-- Gitpod
-- GitHub
+- Flake8: https://flake8.pycqa.org/en/latest/
+-  chatGPT: https://chat.openai.com/
+- Pexels: https://www.pexels.com/sv-se/
+- Google: https://www.google.com/webhp?hl=sv&sa=X&sqi=2&pjf=1&ved=0ahUKEwjD2YDFqvmDAxW_AhAIHcSrBckQPAgJ
+- CSS validator: https://jigsaw.w3.org/css-validator/
+- Html validator: https://validator.w3.org/
+- Jshint: https://jshint.com/
+- Code Institutes py linter: https://pep8ci.herokuapp.com/
+- Gitpod: https://gitpod.io/workspaces
+- GitHub: https://github.com/
 - LucidChart: https://www.lucidchart.com/
-- Balsamiq
-- Google Fonts
-- Font Awesome
-- Bootstrap
-- Favicon
+- Balsamiq: https://balsamiq.com/
+- Google Fonts: https://fonts.google.com/
+- Font Awesome: https://fontawesome.com/
+- Bootstrap: https://getbootstrap.com/ and https://getbootstrap.com/docs/5.3/getting-started/introduction/
+- Favicon: https://favicon.io/
 - Cloudinary
 - Google Excel
 - Heroku
@@ -478,6 +473,7 @@ Theese are some future improvments I wish to do:
 - Am I responsive
 - Code institute tutorials/ Walktrough project
 - Lighthouse testing
+- Perchance: https://perchance.org/ai-photo-generator?fbclid=IwAR2sOEfkPK5GW5uKOcfqvSraVwiDcZFSIkrOV8UP88daEPPKWJUa7ZwwuTo
 
 
 ## Deployment
