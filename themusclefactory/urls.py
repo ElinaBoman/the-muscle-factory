@@ -15,8 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from contact import views
-from django.views.generic import TemplateView
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -26,6 +25,3 @@ urlpatterns = [
     path('account/', include('allauth.urls')),
     path('contact/', include('contact.urls')),
 ]
-
-
-

@@ -6,33 +6,32 @@
 
 {% block content %}
 
-<div class="container-fluid">
+<div class="container">
     <div class="row">
-        <div class="col-md-8 mt-5 offset-md-1">
+        <div class="col-md-8 mt-5 mb-2">
             <h2 class="heading">My bookings:</h2>
             {% if bookings %}
-            <ul class="bookings_form_list thin">
+            <ul>
                 {% for booking in bookings %}
-                <li>Booking is for: {{ booking.user }}</li>
-                <li>Date: {{ booking.event_date }}</li>
-                <li>Starts at: {{ booking.start_time }}</li>
-                <li>Event choice: {{ booking.event_choice}}</li>
-                <li>Status: {{ booking.booking_status }}</li> 
-                {% if booking.extra_comments %}
-                <li>Your comment: {{ booking.extra_comments }}</li>
-                {% endif %}
-               
-                
-                    <a href="{% url 'edit_item' booking.booking_id %}">
-                        <button class="btn btn-info">Edit</button>
-                    </a>  
-                    <a href="{% url 'delete_booking' booking.booking_id %}">
-                        <button class="btn btn-danger">Delete</button>            
-                    </a>
-                    <a href="{% url 'process_form' %}">
-                        <button class="btn btn-success">Add</button>
-                    </a>
-                    <hr>
+                <div class="list-booking-form">
+                    <li>Booking is for: {{ booking.user }}</li>
+                    <li>Date: {{ booking.event_date }}</li>
+                    <li>Starts at: {{ booking.start_time }}</li>
+                    <li>Event choice: {{ booking.event_choice}}</li>
+                    <li>Status: {{ booking.booking_status }}</li> 
+                    {% if booking.extra_comments %}
+                    <li>Your comment: {{ booking.extra_comments }}</li>
+                    {% endif %}
+                        <a href="{% url 'edit_item' booking.booking_id %}">
+                            <button class="btn btn-info">Edit</button>
+                        </a>  
+                        <a href="{% url 'delete_booking' booking.booking_id %}">
+                            <button class="btn btn-danger">Delete</button>            
+                        </a>
+                        <a href="{% url 'process_form' %}">
+                            <button class="btn btn-success">Add</button>
+                        </a>
+                </div>
                 {% endfor %}
             </ul>
         </div>

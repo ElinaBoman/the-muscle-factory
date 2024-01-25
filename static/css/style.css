@@ -177,10 +177,17 @@
     padding: 2%; 
 }
 
-.bookings_form_list li{
-    margin-bottom: 10px;
+
+.list-booking-form{
     list-style: none;
+    border: #fff solid 2px;
+    line-height: 2rem;
+    padding: 4%;
+    margin: 2%;
+    font-weight: 600;
 }
+
+
 
 #id_options_field {
     list-style: none;
@@ -195,7 +202,6 @@ label[for="id_extra_comments"] {
     margin: 10px;
     margin-left: inherit;
 }
-
 
 /* About us */
 .about-image{
