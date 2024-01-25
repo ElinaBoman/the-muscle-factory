@@ -35,7 +35,8 @@
                     <p> Join our thriving community! Together,
                         we make fitness a communal experience, creating a supportive environment that motivates everyone to
                         reach
-                        goals and beyond."</p>
+                        goals and beyond."
+                    </p>
                     {% if user.is_authenticated %}
                     {% else %}
                     <a href="{% url 'account_signup' %}" class="btn btn-primary">Join us NOW!</a>
@@ -124,7 +125,7 @@
                                 src="https://codeinstitute.s3.amazonaws.com/fullstack/blog/default.jpg"
                                 alt="Computor with codeing window open">
                             {% else %}
-                            <img class="card-img-top" src="{{ event.featured_image.url }}">
+                            <img class="card-img-top" src="{{ event.featured_image.url }}" alt="Unique event picture">
                             {% endif %}
                             <div class="image-flash">
                                 <p class="author">COACH: {{ event.author }}</p>
