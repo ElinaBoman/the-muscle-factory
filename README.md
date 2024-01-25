@@ -284,49 +284,70 @@ Nu Html Checker
 Nu CSS Checker
 Lighthouse Testing
 ### Code Validation
-#### HTML
 
+#### HTML
 <details>
 <summary>home.html</summary>
 https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fthe-muscle-factory-9f171161969d.herokuapp.com%2F
 </details>
 
-
-logout.html
-https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fthe-muscle-factory-9f171161969d.herokuapp.com%2Faccount%2Flogin%2F
-
-login.html
+<details>
+<summary>login.html</summary>
 https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fthe-muscle-factory-9f171161969d.herokuapp.com%2Faccount%2Flogin%2F
 signup.html
+</details>
 
-Registration *
+<details>
+<summary>logout.html</summary>
+https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fthe-muscle-factory-9f171161969d.herokuapp.com%2Faccount%2Flogin%2F
+</details>
+
+<details>
+<summary>registration.html</summary>
 https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fthe-muscle-factory-9f171161969d.herokuapp.com%2Faccount%2Fsignup%2F
+</details>
 
-event_detail.html
+<details>
+<summary>event_detail.html</summary>
 https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fthe-muscle-factory-9f171161969d.herokuapp.com%2Fthe-best-event-ever-known-to-man%2F
+</details>
 
-delete_booking.html
+<details>
+<summary>delete_booking.html</summary>
 https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fthe-muscle-factory-9f171161969d.herokuapp.com%2Fbookings%2Fmy_bookings%2Fdelete_booking%2Fe632fec1-63d7-4ba1-a429-0ec236cd98d8
+</details>
 
-edit_item.html *
+<details>
+<summary>edit_item.html</summary>
 https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fthe-muscle-factory-9f171161969d.herokuapp.com%2Fbookings%2Fmy_bookings%2Fedit_item%2Fe632fec1-63d7-4ba1-a429-0ec236cd98d8%2F
+</details>
 
-my_bookings.html
+<details>
+<summary>my_bookings.html</summary>
 https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fthe-muscle-factory-9f171161969d.herokuapp.com%2Fbookings%2Fmy_bookings%2F#textarea
+</details>
 
-process_form.html *
+<details>
+<summary>process_form.html</summary>
 https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fthe-muscle-factory-9f171161969d.herokuapp.com%2Fbookings%2Fprocess_form%2F#textarea
+</details>
 
-contact.html
+<details>
+<summary>contact.html</summary>
 https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fthe-muscle-factory-9f171161969d.herokuapp.com%2Fcontact%2Fcontact%2F
+</details>
 
-error404.html
+<details>
+<summary>error404.html</summary>
 https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fthe-muscle-factory-9f171161969d.herokuapp.com%2F404%2F#textarea
+</details>
 
-about.html
+<details>
+<summary>about.html</summary>
 https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fthe-muscle-factory-9f171161969d.herokuapp.com%2Fabout%2F
+</details>
 
-### 
+### CSS 
 All CSS passed trough validation and shows no errors:
 ![css](./themusclefactory/docs/readme%20docs/validation/css-validation/css-validation.png)
 
