@@ -240,7 +240,7 @@ The ContactForm model is not related to any other model since it is not unique t
 
 The Event model is for the admin to create events that will render on the landing page. This is to make it easy for the site owner to keep the website updated with relevant events. This is also related to the User model, but is for site owner and his/hers employees. 
 
-  ![Database Models](./themusclefactory/docs/readme%20docs/db-models.png)
+  ![Database Models](./themusclefactory/docs/readme%20docs/images/db-models.png)
 
 ## General features
 
@@ -305,26 +305,58 @@ Lighthouse Testing
 ### JavaScript
 ![jshint](./themusclefactory/docs/readme%20docs/validation/js-validation/jshint.png)
 ### Python
+
+<details>
+<summary>Blog app</summary>
+
+admin.py
 ![blog-admin](./themusclefactory/docs/readme%20docs/validation/python-linter-ci/blog-adminlinter.png)
+views.py
 ![blog-views](./themusclefactory/docs/readme%20docs/validation/python-linter-ci/blog-viewslinter.png)
+urls.py
 ![blog-urls](./themusclefactory/docs/readme%20docs/validation/python-linter-ci/blog-urlslinter.png)
+models.py
 ![blog-models](./themusclefactory/docs/readme%20docs/validation/python-linter-ci/blogmodel-pylinter.png)
+</details>
 
+<details>
+<summary>Bookings app</summary>
+
+admin.py
 ![bookings-admin](./themusclefactory/docs/readme%20docs/validation/python-linter-ci/bookings-adminlinter.png)
+view.py
 ![bookings-views](./themusclefactory/docs/readme%20docs/validation/python-linter-ci/bookings-viewslinter.png)
+forms.py
 ![bookings-forms](./themusclefactory/docs/readme%20docs/validation/python-linter-ci/bookings-formlinter.png)
+models.py
 ![bookings-models](./themusclefactory/docs/readme%20docs/validation/python-linter-ci/bookings-modelslinter.png)
+urls.py
 ![bookings-urls](./themusclefactory/docs/readme%20docs/validation/python-linter-ci/bookings-urlslinter.png)
+</details>
 
+<details>
+<summary>Contact app</summary>
+
+admin.py
 ![contact-admin](./themusclefactory/docs/readme%20docs/validation/python-linter-ci/contact-adminlinter.png)
+forms.py
 ![contact-forms](./themusclefactory/docs/readme%20docs/validation/python-linter-ci/contact-formslinter.png)
+models.py
 ![contact-models](./themusclefactory/docs/readme%20docs/validation/python-linter-ci/contact-modellinter.png)
+urls.py
 ![contact-urls](./themusclefactory/docs/readme%20docs/validation/python-linter-ci/contact-urlslinter.png)
+view.py
 ![contact-views](./themusclefactory/docs/readme%20docs/validation/python-linter-ci/contact-viewslinter.png)
+</details>
 
+<details>
+<summary>The Muscle Factory: main project</summary>
+
+settings.py
 ![main-settings](./themusclefactory/docs/readme%20docs/validation/python-linter-ci/settings-pylinter.png)
+urls.py
 ![main-urls](./themusclefactory/docs/readme%20docs/validation/python-linter-ci/the-muscle-factory-urlslinter.png)
-
+</details>
 
 
 
