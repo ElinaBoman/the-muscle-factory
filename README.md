@@ -20,38 +20,6 @@ Link to live website can be found here:
 
 ![Am I resppnsive](./themusclefactory/docs/readme%20docs/images/air.png)
 
-## Table of Contents
-## UX
-## Project Goals
-## User Stories
-## Flowchart
-## General features
-## Testing
-## Code Validation
-## Testing User Stories
-## Manual Testing
-## Future improvements
-## Bugs
-## Libraries and Software
-## Final Result
-## Deployment
-## Github Pages
-## Credits
-
-## UX
-The main goal for the website is to attract new members and also take care of members bookings. It was important that the website had a clean proffesional front. To make the website more interesting and also be able to show The Muscle Factorys matra a Bootstrap Carousel was placed on the landing page. The carousel shows images of the gym, members and some healty food to immideatly let the user know what the website is all about. The fist slide for example lets the user know that it's The Muscle Factorys misson to help members create a healthier lifestyle, but also how important it's to have a helpful community that supports members all the way.
-
-### Colors and Fonts
-To create a clean and proffessinal looking website calm colors were used. The main colors are gray but then there are some color pops to catch the eye of the user. This adds a bit of playfulness to the over all clinic looking front. Since this is a company that focus more on the longterm healt of members with not only gym membership but also massage, rehab and dietist it's more of a clinical gym and therefore the colors are more on the cool side. 
-
-![Palette](./themusclefactory/docs/readme%20docs/images/colorpalette.png)
-
-
-The fonts that are used are mainly clean and thin with dark colors. The headings are bold and thick creating a strong and sturdy look. The main text is balanced nicely with the thiner text creating a easy to read front. 
-The font for heading has been borrowed from GoogleFonts, and the main text is set to the font of apple device's. 
-* Heading: Bebas Neue, fallback: sans-serif
-* Main text: apple-system, fallback: sans-serif
-
 ### Project Goals
 
 The main goals for this project was:
@@ -68,7 +36,10 @@ The main goals for this project was:
 
 * Set up email functionallity and use auto-reply
 
-## User Stories
+## UX
+The main goal for the website is to attract new members and also take care of members bookings. It was important that the website had a clean proffesional front. To make the website more interesting and also be able to show The Muscle Factorys matra a Bootstrap Carousel was placed on the landing page. The carousel shows images of the gym, members and some healty food to immideatly let the user know what the website is all about. The fist slide for example lets the user know that it's The Muscle Factorys misson to help members create a healthier lifestyle, but also how important it's to have a helpful community that supports members all the way.
+
+### User Stories
 The Mucle Factory project was planned trough user stories. Theese stories were created from a user and site owner perspective. The stories describes what the project should include and would set the over all planing structure.
 
 One importent part of this project was to use a agile development method. This would make the customers perspective very important but since this is not a real project with real customers, user stories were made up by creating potential customers and site owners. 
@@ -86,12 +57,9 @@ Not all user stories were finished, but all user stories with the label "MUST HA
 ![User Stories](./themusclefactory/docs/readme%20docs/ux-testing/UX.png)
 
 
-
-
 ### User Stories Implementation
 -  #2 As a user I can make bookings on the website so that I can plan my schedule
 The user can create bookings and also view them on the website.
-
 
 -  #3 As a user I can edit/delete bookings on the website so that I can change my schedule
 There are options for the user to edit and delete their bookings.
@@ -126,8 +94,17 @@ The website is fully responsive and all booking features works on all viewports.
 -  #13 As a site owner I can display information on the website so that I can inform clients about services and events
 All services are described on the website.
 
+### Colors and Fonts
+To create a clean and proffessinal looking website calm colors were used. The main colors are gray but then there are some color pops to catch the eye of the user. This adds a bit of playfulness to the over all clinic looking front. Since this is a company that focus more on the longterm healt of members with not only gym membership but also massage, rehab and dietist it's more of a clinical gym and therefore the colors are more on the cool side. 
 
-## Flowchart
+![Palette](./themusclefactory/docs/readme%20docs/images/colorpalette.png)
+
+
+The fonts that are used are mainly clean and thin with dark colors. The headings are bold and thick creating a strong and sturdy look. The main text is balanced nicely with the thiner text creating a easy to read front. 
+The font for heading has been borrowed from GoogleFonts, and the main text is set to the font of apple device's. 
+* Heading: Bebas Neue, fallback: sans-serif
+* Main text: apple-system, fallback: sans-serif
+
 
 ### Front End Structure
 The Muscle Factory website is devided between if a user is authenticated or not. To view the full front end website the user must be registrerd and signed in. 
@@ -153,7 +130,6 @@ Information about the company is displayed here. The user can read about provide
 The bookings page will render different content depending on whether the user is authenticated or not. For a signed-in user, a booking form will allow the user to book services. If the user is not signed in, the bookings link will instead render the registration form.
 
 
-
 #### For a user who is signed in, following views are avaialable:
 - Home
 
@@ -176,6 +152,7 @@ If user wants to add a new booking from My Bookings view, the booking form will 
 - Logout
 
 If signes out there is a alert message letting the user know if event was successfull. 
+
 
 ### Flowchart
 To view project structure, see flowchart:
@@ -230,8 +207,6 @@ To store user information a relational database was used called PostgreSQL. The 
 
 #### The project contains four apps: User(AllAuth), Blog, Bookings and Contact.
 
-Models connected to the database:
-
 The User model is a part of Django's built-in models. This creates an authentication system and allows users to create accounts and make unique bookings.
 
 The EventBooking model is a part of the bookings app and is for the user to create bookings. This is related to the Django built-in User model. It will create unique bookings for each user.
@@ -240,13 +215,16 @@ The ContactForm model is not related to any other model since it is not unique t
 
 The Event model is for the admin to create events that will render on the landing page. This is to make it easy for the site owner to keep the website updated with relevant events. This is also related to the User model, but is for site owner and his/hers employees. 
 
-  ![Database Models](./themusclefactory/docs/readme%20docs/images/db-models.png)
+![Database Models](./themusclefactory/docs/readme%20docs/images/db-models.png)
 
 ## General features
 
 ### Header and Navigation
 The header and navigation menu are responsive and will change to suit different wireframes. On bigger screens, the menu will display all navigation elements, but on smaller screens, the elements will be contained in a hamburger bar. The navbar also contains a kettlebell logo, same as in the title.
 The navbar elements change depending on whether the user is signed in or not. For a user who is not signed in, the navigation elements are Home, About us, Contact us, and Booking. If the user is signed in, there will also be a link to My bookings.
+![Header and Nav](./themusclefactory/docs/readme%20docs/images/features/header-navbar.png)
+![Smaller nav](./themusclefactory/docs/readme%20docs/images/features/navbar-smaller.png)
+![Nav bar collapsable](./themusclefactory/docs/readme%20docs/images/features/navbar.png)
 
 ### Home
 The Home page is the landing page. This page contains a Bootstrap carousel with some pictures of the gym, members, and healthy food. This is to immediately describe the company to any user. The pictures are chosen because they resemble community and health. If the user is signed in, there will be a greeting displayed in the carousel. If a user is not signed in, there will instead be a 'Join us now' button that will take the user to the registration form. This is to have as few steps as possible between entering the website and getting users to sign up. The user does not need to look for the registration form since it's the first button on the landing page.
@@ -255,34 +233,46 @@ After the carousel, there is some informative text about the company and also th
 
 The user can then read about upcoming events that are posted by the admin. Here fun and creative events are displayed. Not only describing training events but also social events since The Muscle Factory is all about creating a community with a supportive environment between members and employees. The events are clickable and will render more information about the event.
 
+![Index](./themusclefactory/docs/readme%20docs/images/features/index-medals.png)
+![Index](./themusclefactory/docs/readme%20docs/images/features/events-index.png)
+
 ### Footer
 The footer has the same information on all pages. It contains opening hours, address, and links to social media. The footer is responsive and will change to fit different wireframes.
+![Index](./themusclefactory/docs/readme%20docs/images/features/footer.png)
 
 ### Register
 The Register/Sign up page collects Username, email address, and password. There is also a link to go directly to sign in, which will render the login form. There is information that describes criteria for selecting a password, making it easier for the user to create an account. The form is a part of Django's built-in allauth templates but has been styled to suit this project.
+![Signup](./themusclefactory/docs/readme%20docs/images/features/signup.png)
 
 ### About us
 The 'About Us' page briefly describes The Muscle Factory's services and employees. The main reason to have this page was to create a more personal connection to users. For a person who has never been to The Muscle Factory, it might seem scary to go to a new gym. In order to make new users feel more comfortable, the pictures of the employees show friendly faces. The description of services is made to make the user feel more secure and let them know that the services are personalized and unique to each user.
+![About](./themusclefactory/docs/readme%20docs/images/features/aboutus.png)
 
 ### Contact us
 The Contact Us page provides a form for any user to reach out. The form will be stored in the database where the admin can view them in Django's built-in Admin panel. The form will also send an email to The Muscle Factory's email account, and the user will receive an auto-reply. There is also an alert message informing the user of success or errors with the form. The fields collected are Name, Last name, Phone number, Email, and Message. The user can choose if they want to fill out the whole form. Only Name, Email, and Message are required.
+![Database Models](./themusclefactory/docs/readme%20docs/images/features/contact-form.png)
 
 ### Bookings
 If a user has not signed in, the Bookings link will instead take the user to the registration form. For a user who is signed in, there will be a form to create a booking. The form fields are Event date, Start time, Event choice. There is also a question if this is the user's first appointment. Lastly, the user can add information if there is anything they would like to add. The form will be saved to the database, where the admin can view bookings and approve appointments in the admin panel.
+![Bookings](./themusclefactory/docs/readme%20docs/images/features/create-booking.png)
 
 ### My bookings
 My bookings will be available to signed-in users. Here the user can view their bookings. The user can also choose to Edit, Delete, or Add their bookings.
+![My bookings](./themusclefactory/docs/readme%20docs/images/features/)
 
 ### Login
 If a user is registered, they can log in. This is a part of Django's built-in allauth forms. The user can choose to enter 'Remember me' to make future sign-ins easier. If the user does not have an account yet, there is a link to the registration form. When the user has successfully signed in, there will be an alert message.
+![Login](./themusclefactory/docs/readme%20docs/images/features/signin.png)
 
 ### Logout
 The logout page is for the user to sign out. Before a user can sign out, they have to confirm their action. If the user confirms that they want to sign out, the user will be logged out, and an alert message will confirm the action.
+![Login](./themusclefactory/docs/readme%20docs/images/features/signout.png)
+
 
 ## Testing
 ### Code Validation
 #### HTML
-All html code has gone trough Nu Html Checker. There were few errors. The errors comes from Djangos framework code. The errors has been documented and can be found inside registration.html
+All html code has gone trough Nu Html Checker. There were few errors. The errors comes from Djangos framework code. The errors has been documented and can be found inside registration.html and edit_item.html.
 <details>
 <summary>home.html</summary>
 https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fthe-muscle-factory-9f171161969d.herokuapp.com%2F
