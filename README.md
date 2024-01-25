@@ -513,4 +513,5 @@ Theese are some future improvments I wish to do:
 - I want to express my gratitude to my fiancé, who helped me proofread this fantastic README. He also tried to break my project several times, which helped me locate errors.
 - I also want to extend my thanks to my colleagues on Slack. Thank you so much for taking the time to help me improve my project.
 - Special thanks to Code Institute's tutor support, especially John, who helped me with some real headaches.
+- This README was inspired by github user gStarHigh and 
 - Last but not least, thank you to Code Institute for this truly enjoyable and informative project.
