@@ -18,7 +18,7 @@ The idé for The Muscle Factory is based on my sisters personal trainer company.
 Link to live website can be found here:
 [Click Me](https://the-muscle-factory-9f171161969d.herokuapp.com/)
 
-![Am I resppnsive](./themusclefactory/docs/readme%20docs/images/air.png)
+![Am I resppnsive](docs/readme%20docs/images/air.png)
 
 ### Project Goals
 
@@ -54,13 +54,13 @@ Not all user stories were finished, but all user stories with the label "MUST HA
 
 [Click to view Kanban board](https://github.com/users/ElinaBoman/projects/5/views/1)
 
-![User Stories](./themusclefactory/docs/readme%20docs/ux-testing/UX.png)
+![User Stories](docs/readme%20docs/ux-testing/UX.png)
 
 
 ### Colors and Fonts
 To create a clean and proffessinal looking website calm colors were used. The main colors are gray but then there are some color pops to catch the eye of the user. This adds a bit of playfulness to the over all clinic looking front. Since this is a company that focus more on the longterm healt of members with not only gym membership but also massage, rehab and dietist it's more of a clinical gym and therefore the colors are more on the cool side. 
 
-![Palette](./themusclefactory/docs/readme%20docs/images/colorpalette.png)
+![Palette](docs/readme%20docs/images/colorpalette.png)
 
 
 The fonts that are used are mainly clean and thin with dark colors. The headings are bold and thick creating a strong and sturdy look. The main text is balanced nicely with the thiner text creating a easy to read front. 
@@ -122,7 +122,7 @@ To view project structure, see flowchart:
 <details>
 <summary>Lucidchart</summary>
 
-![Lucidchart](./themusclefactory/docs/readme%20docs/images/lucidchart.png)
+![Lucidchart](docs/readme%20docs/images/lucidchart.png)
 </details>
 
 
@@ -134,32 +134,32 @@ See Balsamiq wireframes below:
 <details>
     <summary>Smaller devices</summary>
 
-![Small](./themusclefactory/docs/readme%20docs/wireframes/wireframes-sm-landing-about-contact.png)
+![Small](docs/readme%20docs/wireframes/wireframes-sm-landing-about-contact.png)
 
-![Small](./themusclefactory/docs/readme%20docs/wireframes/wireframes-sm-create-delete.png)
+![Small](docs/readme%20docs/wireframes/wireframes-sm-create-delete.png)
 </details>
 
 <details>
   <summary>Medium devices</summary>
 
-![Medium](./themusclefactory/docs/readme%20docs/wireframes/wireframes-md-landing-about.png)
+![Medium](docs/readme%20docs/wireframes/wireframes-md-landing-about.png)
 
-![Medium](./themusclefactory/docs/readme%20docs/wireframes/wireframes-md-contact.png)
+![Medium](docs/readme%20docs/wireframes/wireframes-md-contact.png)
 
-![Medium](./themusclefactory/docs/readme%20docs/wireframes/wireframes-md-create-bookings.png)
+![Medium](docs/readme%20docs/wireframes/wireframes-md-create-bookings.png)
 </details>
 <details>
  <summary>Large devices</summary>
 
-![Large](./themusclefactory/docs/readme%20docs/wireframes/wireframes-lg-landing.png)
+![Large](docs/readme%20docs/wireframes/wireframes-lg-landing.png)
 
-![Large](./themusclefactory/docs/readme%20docs/wireframes/wireframes-lg-about.png)
+![Large](docs/readme%20docs/wireframes/wireframes-lg-about.png)
 
-![Large](./themusclefactory/docs/readme%20docs/wireframes/wireframes-lg-contacts.png)
+![Large](docs/readme%20docs/wireframes/wireframes-lg-contacts.png)
 
-![Large](./themusclefactory/docs/readme%20docs/wireframes/wireframes-lg-create.png)
+![Large](docs/readme%20docs/wireframes/wireframes-lg-create.png)
 
-![Large](./themusclefactory/docs/readme%20docs/wireframes/wireframes-lg-delete.png)
+![Large](docs/readme%20docs/wireframes/wireframes-lg-delete.png)
 
 </details>
 
@@ -175,16 +175,16 @@ The ContactForm model is not related to any other model since it is not unique t
 
 The Event model is for the admin to create events that will render on the landing page. This is to make it easy for the site owner to keep the website updated with relevant events. This is also related to the User model, but is for site owner and his/hers employees. 
 
-![Database Models](./themusclefactory/docs/readme%20docs/images/db-models.png)
+![Database Models](docs/readme%20docs/images/db-models.png)
 
 ## General features
 
 ### Header and Navigation
 The header and navigation menu are responsive and will change to suit different wireframes. On bigger screens, the menu will display all navigation elements, but on smaller screens, the elements will be contained in a hamburger bar. The navbar also contains a kettlebell logo, same as in the title.
 The navbar elements change depending on whether the user is signed in or not. For a user who is not signed in, the navigation elements are Home, About us, Contact us, and Booking. If the user is signed in, there will also be a link to My bookings.
-![Header and Nav](./themusclefactory/docs/readme%20docs/images/features/header-navbar.png)
-![Smaller nav](./themusclefactory/docs/readme%20docs/images/features/navbar-smaller.png)
-![Nav bar collapsable](./themusclefactory/docs/readme%20docs/images/features/navbar.png)
+![Header and Nav](docs/readme%20docs/images/features/header-navbar.png)
+![Smaller nav](docs/readme%20docs/images/features/navbar-smaller.png)
+![Nav bar collapsable](docs/readme%20docs/images/features/navbar.png)
 
 ### Home
 The Home page is the landing page. This page contains a Bootstrap carousel with some pictures of the gym, members, and healthy food. This is to immediately describe the company to any user. The pictures are chosen because they resemble community and health. If the user is signed in, there will be a greeting displayed in the carousel. If a user is not signed in, there will instead be a 'Join us now' button that will take the user to the registration form. This is to have as few steps as possible between entering the website and getting users to sign up. The user does not need to look for the registration form since it's the first button on the landing page.
@@ -193,40 +193,40 @@ After the carousel, there is some informative text about the company and also th
 
 The user can then read about upcoming events that are posted by the admin. Here fun and creative events are displayed. Not only describing training events but also social events since The Muscle Factory is all about creating a community with a supportive environment between members and employees. The events are clickable and will render more information about the event.
 
-![Index](./themusclefactory/docs/readme%20docs/images/features/index-medals.png)
-![Index](./themusclefactory/docs/readme%20docs/images/features/events-index.png)
+![Index](docs/readme%20docs/images/features/index-medals.png)
+![Index](docs/readme%20docs/images/features/events-index.png)
 
 ### Footer
 The footer has the same information on all pages. It contains opening hours, address, and links to social media. The footer is responsive and will change to fit different wireframes.
-![Index](./themusclefactory/docs/readme%20docs/images/features/footer.png)
+![Index](docs/readme%20docs/images/features/footer.png)
 
 ### Register
 The Register/Sign up page collects Username, email address, and password. There is also a link to go directly to sign in, which will render the login form. There is information that describes criteria for selecting a password, making it easier for the user to create an account. The form is a part of Django's built-in allauth templates but has been styled to suit this project.
-![Signup](./themusclefactory/docs/readme%20docs/images/features/signup.png)
+![Signup](docs/readme%20docs/images/features/signup.png)
 
 ### About us
 The 'About Us' page briefly describes The Muscle Factory's services and employees. The main reason to have this page was to create a more personal connection to users. For a person who has never been to The Muscle Factory, it might seem scary to go to a new gym. In order to make new users feel more comfortable, the pictures of the employees show friendly faces. The description of services is made to make the user feel more secure and let them know that the services are personalized and unique to each user.
-![About](./themusclefactory/docs/readme%20docs/images/features/aboutus.png)
+![About](docs/readme%20docs/images/features/aboutus.png)
 
 ### Contact us
 The Contact Us page provides a form for any user to reach out. The form will be stored in the database where the admin can view them in Django's built-in Admin panel. The form will also send an email to The Muscle Factory's email account, and the user will receive an auto-reply. There is also an alert message informing the user of success or errors with the form. The fields collected are Name, Last name, Phone number, Email, and Message. The user can choose if they want to fill out the whole form. Only Name, Email, and Message are required.
-![Database Models](./themusclefactory/docs/readme%20docs/images/features/contact-form.png)
+![Database Models](docs/readme%20docs/images/features/contact-form.png)
 
 ### Bookings
 If a user has not signed in, the Bookings link will instead take the user to the registration form. For a user who is signed in, there will be a form to create a booking. The form fields are Event date, Start time, Event choice. There is also a question if this is the user's first appointment. Lastly, the user can add information if there is anything they would like to add. The form will be saved to the database, where the admin can view bookings and approve appointments in the admin panel.
-![Bookings](./themusclefactory/docs/readme%20docs/images/features/create-booking.png)
+![Bookings](docs/readme%20docs/images/features/create-booking.png)
 
 ### My bookings
 My bookings will be available to signed-in users. Here the user can view their bookings. The user can also choose to Edit, Delete, or Add their bookings.
-![My bookings](./themusclefactory/docs/readme%20docs/images/features/)
+![My bookings](docs/readme%20docs/images/features/)
 
 ### Login
 If a user is registered, they can log in. This is a part of Django's built-in allauth forms. The user can choose to enter 'Remember me' to make future sign-ins easier. If the user does not have an account yet, there is a link to the registration form. When the user has successfully signed in, there will be an alert message.
-![Login](./themusclefactory/docs/readme%20docs/images/features/signin.png)
+![Login](docs/readme%20docs/images/features/signin.png)
 
 ### Logout
 The logout page is for the user to sign out. Before a user can sign out, they have to confirm their action. If the user confirms that they want to sign out, the user will be logged out, and an alert message will confirm the action.
-![Login](./themusclefactory/docs/readme%20docs/images/features/signout.png)
+![Login](docs/readme%20docs/images/features/signout.png)
 
 
 ## Testing
@@ -299,7 +299,7 @@ All CSS passed trough validation and shows no errors:
 <details>
 <summary>style.css</summary>
 
-![css](./themusclefactory/docs/readme%20docs/validation/css-validation/css-validation.png)
+![css](docs/readme%20docs/validation/css-validation/css-validation.png)
 </details>
 
 ### JavaScript
@@ -307,7 +307,7 @@ All Javascript files has passed through validation and shows no errors:
 <details>
 <summary>script.js</summary>
 
-![js](./themusclefactory/docs/readme%20docs/validation/js-validation/jshint.png)
+![js](docs/readme%20docs/validation/js-validation/jshint.png)
 </details>
 
 ### Python
@@ -316,52 +316,52 @@ All Javascript files has passed through validation and shows no errors:
 
 All Python files has passed through validation and shows no errors:
 admin.py
-![blog-admin](./themusclefactory/docs/readme%20docs/validation/python-linter-ci/blog-adminlinter.png)
+![blog-admin](docs/readme%20docs/validation/python-linter-ci/blog-adminlinter.png)
 views.py
-![blog-views](./themusclefactory/docs/readme%20docs/validation/python-linter-ci/blog-viewslinter.png)
+![blog-views](docs/readme%20docs/validation/python-linter-ci/blog-viewslinter.png)
 urls.py
-![blog-urls](./themusclefactory/docs/readme%20docs/validation/python-linter-ci/blog-urlslinter.png)
+![blog-urls](docs/readme%20docs/validation/python-linter-ci/blog-urlslinter.png)
 models.py
-![blog-models](./themusclefactory/docs/readme%20docs/validation/python-linter-ci/blogmodel-pylinter.png)
+![blog-models](docs/readme%20docs/validation/python-linter-ci/blogmodel-pylinter.png)
 </details>
 
 <details>
 <summary>Bookings app</summary>
 
 admin.py
-![bookings-admin](./themusclefactory/docs/readme%20docs/validation/python-linter-ci/bookings-adminlinter.png)
+![bookings-admin](docs/readme%20docs/validation/python-linter-ci/bookings-adminlinter.png)
 view.py
-![bookings-views](./themusclefactory/docs/readme%20docs/validation/python-linter-ci/bookings-viewslinter.png)
+![bookings-views](docs/readme%20docs/validation/python-linter-ci/bookings-viewslinter.png)
 forms.py
-![bookings-forms](./themusclefactory/docs/readme%20docs/validation/python-linter-ci/bookings-formlinter.png)
+![bookings-forms](docs/readme%20docs/validation/python-linter-ci/bookings-formlinter.png)
 models.py
-![bookings-models](./themusclefactory/docs/readme%20docs/validation/python-linter-ci/bookings-modelslinter.png)
+![bookings-models](docs/readme%20docs/validation/python-linter-ci/bookings-modelslinter.png)
 urls.py
-![bookings-urls](./themusclefactory/docs/readme%20docs/validation/python-linter-ci/bookings-urlslinter.png)
+![bookings-urls](docs/readme%20docs/validation/python-linter-ci/bookings-urlslinter.png)
 </details>
 
 <details>
 <summary>Contact app</summary>
 
 admin.py
-![contact-admin](./themusclefactory/docs/readme%20docs/validation/python-linter-ci/contact-adminlinter.png)
+![contact-admin](docs/readme%20docs/validation/python-linter-ci/contact-adminlinter.png)
 forms.py
-![contact-forms](./themusclefactory/docs/readme%20docs/validation/python-linter-ci/contact-formslinter.png)
+![contact-forms](docs/readme%20docs/validation/python-linter-ci/contact-formslinter.png)
 models.py
-![contact-models](./themusclefactory/docs/readme%20docs/validation/python-linter-ci/contact-modellinter.png)
+![contact-models](docs/readme%20docs/validation/python-linter-ci/contact-modellinter.png)
 urls.py
-![contact-urls](./themusclefactory/docs/readme%20docs/validation/python-linter-ci/contact-urlslinter.png)
+![contact-urls](docs/readme%20docs/validation/python-linter-ci/contact-urlslinter.png)
 view.py
-![contact-views](./themusclefactory/docs/readme%20docs/validation/python-linter-ci/contact-viewslinter.png)
+![contact-views](docs/readme%20docs/validation/python-linter-ci/contact-viewslinter.png)
 </details>
 
 <details>
 <summary>The Muscle Factory: main project</summary>
 
 settings.py
-![main-settings](./themusclefactory/docs/readme%20docs/validation/python-linter-ci/settings-pylinter.png)
+![main-settings](docs/readme%20docs/validation/python-linter-ci/settings-pylinter.png)
 urls.py
-![main-urls](./themusclefactory/docs/readme%20docs/validation/python-linter-ci/the-muscle-factory-urlslinter.png)
+![main-urls](docs/readme%20docs/validation/python-linter-ci/the-muscle-factory-urlslinter.png)
 </details>
 
 ## User Stories Implementation
@@ -400,14 +400,15 @@ The website is fully responsive and all booking features works on all viewports.
 
 -  #13 As a site owner I can display information on the website so that I can inform clients about services and events
 All services are described on the website.
+
 ### Testing User Stories
-![userstories](./themusclefactory/docs/readme%20docs/ux-testing/userstorie-testing.png)
+![userstories](docs/readme%20docs/ux-testing/userstorie-testing.png)
 ### Manuel Testing
 Follow link to view manual testing:
-[Click Me](/themusclefactory/docs/readme%20docs/README-TESTING.md)
+[Click Me](docs/readme%20docs/README-TESTING.md)
 
 ### Lighthouse testing
-![Lighthouse](/themusclefactory/docs/readme%20docs/images/lighthouse-testing.png)
+![Lighthouse](docs/readme%20docs/images/lighthouse-testing.png)
 
 ## Future Improvments
 There are a lot of approvments I wish to do. This was a super fun project and I had to restrict myself to only create a MVP. 
@@ -439,13 +440,13 @@ Theese are some future improvments I wish to do:
 <details>
 <summary>All Django-packages</summary>
 
-![Django-framework](/themusclefactory/docs/readme%20docs/images/django-framework.png)
+![Django-framework](docs/readme%20docs/images/django-framework.png)
 </details>
 
 <details>
 <summary>All packages</summary>
 
-![Packages](/themusclefactory/docs/readme%20docs/images/packages.png)
+![Packages](docs/readme%20docs/images/packages.png)
 </details>
 
 ### Framework and Websites
