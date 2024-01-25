@@ -18,7 +18,7 @@ The idé for The Muscle Factory is based on my sisters personal trainer company.
 Link to live website can be found here:
 [Click Me](https://the-muscle-factory-9f171161969d.herokuapp.com/)
 
-![Am I resppnsive](./themusclefactory/docs/readme%20docs/air.png)
+![Am I resppnsive](./themusclefactory/docs/readme%20docs/images/air.png)
 
 ## Table of Contents
 ## UX
@@ -44,7 +44,7 @@ The main goal for the website is to attract new members and also take care of me
 ### Colors and Fonts
 To create a clean and proffessinal looking website calm colors were used. The main colors are gray but then there are some color pops to catch the eye of the user. This adds a bit of playfulness to the over all clinic looking front. Since this is a company that focus more on the longterm healt of members with not only gym membership but also massage, rehab and dietist it's more of a clinical gym and therefore the colors are more on the cool side. 
 
-![Palette](./themusclefactory/docs/readme%20docs/colorpalette.png)
+![Palette](./themusclefactory/docs/readme%20docs/images/colorpalette.png)
 
 
 The fonts that are used are mainly clean and thin with dark colors. The headings are bold and thick creating a strong and sturdy look. The main text is balanced nicely with the thiner text creating a easy to read front. 
@@ -83,7 +83,7 @@ Not all user stories were finished, but all user stories with the label "MUST HA
 
 [Click to view Kanban board](https://github.com/users/ElinaBoman/projects/5/views/1)
 
-![User Stories](./themusclefactory/docs/readme%20docs/UX.png)
+![User Stories](./themusclefactory/docs/readme%20docs/ux-testing/UX.png)
 
 
 
@@ -182,7 +182,7 @@ To view project structure, see flowchart:
 <details>
 <summary>Lucidchart</summary>
 
-![Lucidchart](./themusclefactory/docs/readme%20docs/lucidchart.png)
+![Lucidchart](./themusclefactory/docs/readme%20docs/images/lucidchart.png)
 </details>
 
 
@@ -281,18 +281,53 @@ The logout page is for the user to sign out. Before a user can sign out, they ha
 
 ## Testing
 Nu Html Checker
-
-
-
-
-
 Nu CSS Checker
 Lighthouse Testing
 ### Code Validation
 #### HTML
-#### CSS
-#### JavaScript
-#### Python
+![index](./themusclefactory/docs/readme%20docs/validation/html-validation/index.png)
+![base](./themusclefactory/docs/readme%20docs/validation/html-validation/g)
+![login](./themusclefactory/docs/readme%20docs/userstorie-testing.png)
+![logout](./themusclefactory/docs/readme%20docs/userstorie-testing.png)
+![registration](./themusclefactory/docs/readme%20docs/userstorie-testing.png)
+![event_detail](./themusclefactory/docs/readme%20docs/userstorie-testing.png)
+![delete_booking](./themusclefactory/docs/readme%20docs/userstorie-testing.png)
+![edit_item](./themusclefactory/docs/readme%20docs/userstorie-testing.png)
+![my_bookings](./themusclefactory/docs/readme%20docs/userstorie-testing.png)
+![process_form](./themusclefactory/docs/readme%20docs/userstorie-testing.png)
+![contact.html](./themusclefactory/docs/readme%20docs/userstorie-testing.png)
+![error404](./themusclefactory/docs/readme%20docs/userstorie-testing.png)
+![about](./themusclefactory/docs/readme%20docs/userstorie-testing.png)
+
+### 
+![css](./themusclefactory/docs/readme%20docs/validation/css-validation/css-validation.png)
+
+### JavaScript
+![jshint](./themusclefactory/docs/readme%20docs/validation/js-validation/jshint.png)
+### Python
+![blog-admin](./themusclefactory/docs/readme%20docs/validation/python-linter-ci/blog-adminlinter.png)
+![blog-views](./themusclefactory/docs/readme%20docs/validation/python-linter-ci/blog-viewslinter.png)
+![blog-urls](./themusclefactory/docs/readme%20docs/validation/python-linter-ci/blog-urlslinter.png)
+![blog-models](./themusclefactory/docs/readme%20docs/validation/python-linter-ci/blogmodel-pylinter.png)
+
+![bookings-admin](./themusclefactory/docs/readme%20docs/validation/python-linter-ci/bookings-adminlinter.png)
+![bookings-views](./themusclefactory/docs/readme%20docs/validation/python-linter-ci/bookings-viewslinter.png)
+![bookings-forms](./themusclefactory/docs/readme%20docs/validation/python-linter-ci/bookings-formlinter.png)
+![bookings-models](./themusclefactory/docs/readme%20docs/validation/python-linter-ci/bookings-modelslinter.png)
+![bookings-urls](./themusclefactory/docs/readme%20docs/validation/python-linter-ci/bookings-urlslinter.png)
+
+![contact-admin](./themusclefactory/docs/readme%20docs/validation/python-linter-ci/contact-adminlinter.png)
+![contact-forms](./themusclefactory/docs/readme%20docs/validation/python-linter-ci/contact-formslinter.png)
+![contact-models](./themusclefactory/docs/readme%20docs/validation/python-linter-ci/contact-modellinter.png)
+![contact-urls](./themusclefactory/docs/readme%20docs/validation/python-linter-ci/contact-urlslinter.png)
+![contact-views](./themusclefactory/docs/readme%20docs/validation/python-linter-ci/contact-viewslinter.png)
+
+![main-settings](./themusclefactory/docs/readme%20docs/validation/python-linter-ci/settings-pylinter.png)
+![main-urls](./themusclefactory/docs/readme%20docs/validation/python-linter-ci/the-muscle-factory-urlslinter.png)
+
+
+
+
 ### Testing User Stories
 ![Database Models](./themusclefactory/docs/readme%20docs/userstorie-testing.png)
 ### Manuel Testing
@@ -328,15 +363,7 @@ Vars" Enter information if there is hidden information in the GitHub repository.
 - Choose how the project should be deployed. If Enable Automatic Deploys, Heroku rebuilds the app every time new changes are pushed inside the working enviroment
 - If Manual deploy is chosen the current state of the project will be deployed. For this alternative click "Deploy Branch".
 - When the project is deployed there will be four green circles with checkmarks inside. There should be a message "Your app was successfully deployed.". Click the "View" button to see deployed project. If steps are followed there should be a mock terminal with project inside of it. Program starts automagically
-### To deploy project in GitHub
-Note, this program uses Heroku to function. This means that deployment can not function if only GitHub is used. Follow steps described inside "To deploy project in Heroku".
 
-- First, navigate to the Settings tab
-- In the dropdown menu scroll down to Pages
-- Inside the Pages tab choose Source, Deploy from branch
-- Under the branch enter main and /(root)
-- Enter save
-- When the site has been deployed a Manilla folder will show up with a red ribbon
 ## Credits
 
 Lucidchart - https://www.lucidchart.com/
