@@ -16,7 +16,7 @@ contactForm.addEventListener('submit', function(event) {
 /* Send email with emailJS, then confirms successful or unsuccessful
 event. If event is successfull the contactForm will execute submit().*/
 function sendMail(contactForm) {
-    
+    emailjs.init("your_user_id");
     emailjs.send("service_supy7sf", "template_tgz8lrr", {
         "from_name": contactForm.name.value,
         "from_email": contactForm.email.value,
