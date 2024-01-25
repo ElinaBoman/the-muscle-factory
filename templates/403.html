@@ -1,19 +1,12 @@
 {% extends "base.html" %}
 
 {% block content %}
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>403 Not found</title>
-</head>
-<body>
+<!-- Error page, text content written by chatGPT: https://chat.openai.com/-->
+<div>
     <h1>Oops! Page Not Found - 403 Error</h1>
+    <br>
     <p>Sorry, the page you are looking for is not here.</p>
     <a class="btn btn-dark" href="{% url 'home' %}">Return home!</a>
-</body>
-</html>
+</div>
 
 {% endblock %}
