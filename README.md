@@ -285,30 +285,59 @@ Nu CSS Checker
 Lighthouse Testing
 ### Code Validation
 #### HTML
-![index](./themusclefactory/docs/readme%20docs/validation/html-validation/index.png)
-![base](./themusclefactory/docs/readme%20docs/validation/html-validation/g)
-![login](./themusclefactory/docs/readme%20docs/userstorie-testing.png)
-![logout](./themusclefactory/docs/readme%20docs/userstorie-testing.png)
-![registration](./themusclefactory/docs/readme%20docs/userstorie-testing.png)
-![event_detail](./themusclefactory/docs/readme%20docs/userstorie-testing.png)
-![delete_booking](./themusclefactory/docs/readme%20docs/userstorie-testing.png)
-![edit_item](./themusclefactory/docs/readme%20docs/userstorie-testing.png)
-![my_bookings](./themusclefactory/docs/readme%20docs/userstorie-testing.png)
-![process_form](./themusclefactory/docs/readme%20docs/userstorie-testing.png)
-![contact.html](./themusclefactory/docs/readme%20docs/userstorie-testing.png)
-![error404](./themusclefactory/docs/readme%20docs/userstorie-testing.png)
-![about](./themusclefactory/docs/readme%20docs/userstorie-testing.png)
+
+<details>
+<summary>home.html</summary>
+https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fthe-muscle-factory-9f171161969d.herokuapp.com%2F
+</details>
+
+
+logout.html
+https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fthe-muscle-factory-9f171161969d.herokuapp.com%2Faccount%2Flogin%2F
+
+login.html
+https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fthe-muscle-factory-9f171161969d.herokuapp.com%2Faccount%2Flogin%2F
+signup.html
+
+Registration *
+https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fthe-muscle-factory-9f171161969d.herokuapp.com%2Faccount%2Fsignup%2F
+
+event_detail.html
+https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fthe-muscle-factory-9f171161969d.herokuapp.com%2Fthe-best-event-ever-known-to-man%2F
+
+delete_booking.html
+https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fthe-muscle-factory-9f171161969d.herokuapp.com%2Fbookings%2Fmy_bookings%2Fdelete_booking%2Fe632fec1-63d7-4ba1-a429-0ec236cd98d8
+
+edit_item.html *
+https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fthe-muscle-factory-9f171161969d.herokuapp.com%2Fbookings%2Fmy_bookings%2Fedit_item%2Fe632fec1-63d7-4ba1-a429-0ec236cd98d8%2F
+
+my_bookings.html
+https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fthe-muscle-factory-9f171161969d.herokuapp.com%2Fbookings%2Fmy_bookings%2F#textarea
+
+process_form.html *
+https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fthe-muscle-factory-9f171161969d.herokuapp.com%2Fbookings%2Fprocess_form%2F#textarea
+
+contact.html
+https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fthe-muscle-factory-9f171161969d.herokuapp.com%2Fcontact%2Fcontact%2F
+
+error404.html
+https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fthe-muscle-factory-9f171161969d.herokuapp.com%2F404%2F#textarea
+
+about.html
+https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fthe-muscle-factory-9f171161969d.herokuapp.com%2Fabout%2F
 
 ### 
+All CSS passed trough validation and shows no errors:
 ![css](./themusclefactory/docs/readme%20docs/validation/css-validation/css-validation.png)
 
 ### JavaScript
+All Javascript files has passed through validation and shows no errors:
 ![jshint](./themusclefactory/docs/readme%20docs/validation/js-validation/jshint.png)
 ### Python
 
 <details>
 <summary>Blog app</summary>
-
+All Python files has passed through validation and shows no errors:
 admin.py
 ![blog-admin](./themusclefactory/docs/readme%20docs/validation/python-linter-ci/blog-adminlinter.png)
 views.py
