@@ -370,6 +370,14 @@ Follow link to view manual testing:
 ### Lighthouse testing
 ![Lighthouse](docs/readme%20docs/images/lighthouse-testing.png)
 
+### Browser Testing
+The live webpage has been tested with:
+- Mozilla
+- Chrome
+- Safari
+
+No issues were found.
+
 ## Future Improvments
 There are a lot of approvments I wish to do. This was a super fun project and I had to restrict myself to only create a MVP. 
 Theese are some future improvments I wish to do:
@@ -377,16 +385,19 @@ Theese are some future improvments I wish to do:
 - Create new app to let members choose membership level
 - Create better performance rate
 - Create a function for admin to adjust information about services and employees
+- I would like to change bookingform so only current time and forward of current day can be selected.
 
 ## Bugs
+- Booking form not submitting:
+The booking form will not submit when entering booking link in nav bar. It works fine if form is entered from other link, like ADD button from my bookings.
+Status: Fixed
 
-No bugs where found during testing.
-
+- Alignment issue:
 There is a alignment issue unfixed, in edit_item, with "UPDATE" and "CANCEL" buttons. This is thought to have something to do with the form.as_p and Bootstrap classes. The buttons should be aligned.
 Solution: No solution at the moment.
 
-The errors found with HTML validation checker: 
-Theese errors are thought to occure because of the CSS styling to block the labels. The code passed trough validation comes from the live link of the webpage. From the code snippets used the labels are blocked. I think this is what is causing the problems, but since the code actually is there these are not really errors. 
+- The errors found with HTML validation checker: 
+Theese errors are thought to occure because of the CSS styling to block the in form labels. The code passed trough validation comes from the live link of the webpage. From the code snippets used the labels are blocked. I think this is what is causing the problems, but since the code actually is there theese are not really errors. The form is part of Django framwork code wich is why I can not just add a class or id to the labels. 
 Solution: Remove CSS class display: block; before passing code through validation.
 
 
