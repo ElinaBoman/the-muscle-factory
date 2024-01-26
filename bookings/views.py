@@ -23,10 +23,7 @@ def process_form(request):
                 start_time=str(start_time))
 
             if stored_bookings.exists():
-                messages.info
-                (request,
-                 'The time or date has been booked. Please select other.'
-                 )
+                messages.info(request,'The time or date has been booked. Please select other.')
             else:
                 booking = form.save(commit=False)
                 booking.user = request.user
