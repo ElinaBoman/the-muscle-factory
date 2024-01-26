@@ -20,10 +20,33 @@ Link to live website can be found here:
 
 ![Am I resppnsive](docs/readme%20docs/images/air.png)
 
-## Table of 
+## Table of Contents
 - [General](https://github.com/ElinaBoman/the-muscle-factory?tab=readme-ov-file#general)
 - [Table of Contents](https://github.com/ElinaBoman/the-muscle-factory?tab=readme-ov-file#general)
 - [Project Goals](https://github.com/ElinaBoman/the-muscle-factory?tab=readme-ov-file#project-goals)
+- [UX](https://github.com/ElinaBoman/the-muscle-factory?tab=readme-ov-file#general)
+- [Development](https://github.com/ElinaBoman/the-muscle-factory?tab=readme-ov-file#general)
+- [Flowchart](https://github.com/ElinaBoman/the-muscle-factory?tab=readme-ov-file#project-goals)
+- [User Stories](https://github.com/ElinaBoman/the-muscle-factory?tab=readme-ov-file#general)
+- [Colors and Fonts](https://github.com/ElinaBoman/the-muscle-factory?tab=readme-ov-file#general)
+- [Wireframes](https://github.com/ElinaBoman/the-muscle-factory?tab=readme-ov-file#project-goals)
+- [General Features](https://github.com/ElinaBoman/the-muscle-factory?tab=readme-ov-file#general)
+- [Features](https://github.com/ElinaBoman/the-muscle-factory?tab=readme-ov-file#general)
+- [Database](https://github.com/ElinaBoman/the-muscle-factory?tab=readme-ov-file#project-goals)
+- [Testing](https://github.com/ElinaBoman/the-muscle-factory?tab=readme-ov-file#general)
+- [Code Validation](https://github.com/ElinaBoman/the-muscle-factory?tab=readme-ov-file#general)
+- [Testing User Stories](https://github.com/ElinaBoman/the-muscle-factory?tab=readme-ov-file#project-goals)
+- [Manuel Testing](https://github.com/ElinaBoman/the-muscle-factory?tab=readme-ov-file#general)
+- [Lighthouse Testing](https://github.com/ElinaBoman/the-muscle-factory?tab=readme-ov-file#general)
+- [Browswe Testing](https://github.com/ElinaBoman/the-muscle-factory?tab=readme-ov-file#project-goals)
+- [Future Improvments](https://github.com/ElinaBoman/the-muscle-factory?tab=readme-ov-file#general)
+- [Bugs](https://github.com/ElinaBoman/the-muscle-factory?tab=readme-ov-file#general)
+- [Technologies Used](https://github.com/ElinaBoman/the-muscle-factory?tab=readme-ov-file#project-goals)
+- [Libraries](https://github.com/ElinaBoman/the-muscle-factory?tab=readme-ov-file#general)
+- [Packages](https://github.com/ElinaBoman/the-muscle-factory?tab=readme-ov-file#general)
+- [Framwork and Websites](https://github.com/ElinaBoman/the-muscle-factory?tab=readme-ov-file#project-goals)
+- [Deployment](https://github.com/ElinaBoman/the-muscle-factory?tab=readme-ov-file#general)
+- [Credits](https://github.com/ElinaBoman/the-muscle-factory?tab=readme-ov-file#general)
 
 
 ### Project Goals
@@ -545,7 +568,7 @@ To handle the database.
 Creating event post images.
 
 
-## 
+## Deployment
 
 ### Create Heroku app
 - Install Django and Gunicorn
