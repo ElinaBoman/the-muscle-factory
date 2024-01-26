@@ -1,19 +1,20 @@
 Table of Contents
 # The Muscle Factory- A Django project, for Code Institute
 # General 
-The Muscle Factory is a website that lets users register for an account, book appointments and provieds information about upcomming events. The user can read about the services provided and the people working at The Muscle Factory. When the user has created and accont he/she can manage their bookings with full CRUD functionallity. This means that the user can: 
+The Muscle Factory is a website that lets users register for an account, book appointments and provides information about upcoming events. The user can read about the services provided and the people working at The Muscle Factory. When the user has created and account he/she can manage their bookings with full CRUD functionality.
+This means that the user can:
 * Create a booking
-* Rewiew their bookings
+* Review their bookings
 * Update and edit bookings
 * Delete their bookings
 
-The user will be kept up to date with upcoming events, that are manage by the admin panel. This is to always keep the website updated, and also attract new members with fun and creative events. 
+The user will be kept up to date with upcoming events that are managed by the admin panel. This is to always keep the website updated, and also attract new members with fun and creative events. 
 
-The website is also equipped with a contact form where anyone can contact The Muscle Factory, this will also send a auto-reply to the user, to inform that their message has been sent and is awaiting a reply. 
+The website is also equipped with a contact form where anyone can contact The Muscle Factory. This will also send an auto-reply to the user, to inform them that their message has been sent and is awaiting a reply. 
 
-The website is designed to make the user feel welcome regardless of their workout history. Everyone is welcome to join and form a new healty lifestyle with The Muscle Factory.
+The website is designed to make the user feel welcome regardless of their workout history. Everyone is welcome to join and form a new healthy lifestyle with The Muscle Factory.
 
-The idé for The Muscle Factory is based on my sisters personal trainer company. This project is only a simple example of what a fitness company website could look like and what features that are necessary. This project will hopefully be the base for my sisters company in the future.
+The idea that The Muscle Factory was based on is my sister´s personal trainer company: Reality Lift. This project is only a simple example of what a fitness company website could look like and what features that are necessary. This project will hopefully be the base for my sister´s companys website in the future.
 
 Link to live website can be found here:
 [Click Me](https://the-muscle-factory-9f171161969d.herokuapp.com/)
@@ -28,51 +29,97 @@ The main goals for this project was:
 
 * Use: Bootstrap, python, javascript, CSS and HTML
 
-* Create a website with full CRUD functionallity
+* Create a website with full CRUD functionality
 
-* Creat a appeling frontend suiting a fitness website
+* Create a appealing frontend suiting a fitness website
 
 * Use a database to store information about users and their appointments
 
-* Set up email functionallity and use auto-reply
+* Set up email functionality and use auto-reply
 
 ## UX
-The main goal for the website is to attract new members and also take care of members bookings. It was important that the website had a clean proffesional front. To make the website more interesting and also be able to show The Muscle Factorys matra a Bootstrap Carousel was placed on the landing page. The carousel shows images of the gym, members and some healty food to immideatly let the user know what the website is all about. The fist slide for example lets the user know that it's The Muscle Factorys misson to help members create a healthier lifestyle, but also how important it's to have a helpful community that supports members all the way.
+The main goal for the website is to attract new members and also take care of member bookings. It was important that the website had a clean professional front. To make the website more interesting and also be able to show The Muscle Factorys mantra a Bootstrap Carousel was placed on the landing page. The carousel shows images of the gym, members and some healthy food to immediately let the user know what the website is all about. The first slide for example lets the user know that it's The Muscle Factorys mission to help members create a healthier lifestyle, but also how important it's to have a helpful community that supports members all the way.
 
 ### User Stories
-The Mucle Factory project was planned trough user stories. Theese stories were created from a user and site owner perspective. The stories describes what the project should include and would set the over all planing structure.
-
-One importent part of this project was to use a agile development method. This would make the customers perspective very important but since this is not a real project with real customers, user stories were made up by creating potential customers and site owners. 
-
-In agile development iterative and incremental development is a very important part. Each user storie represents a smaller and easier to manage part of the project. This helped a lot with planing the workload. 
-
-As there was not a team bulding this project it might be hard to fully grasp the concept of agile development, since teamwork is a big part of that. Instead of having a team, I choose to create a chatgroup on Slack. Working with the critisim I got from fellow students, this turned out to be a very good idea. I got a lot of feedback that I later on implemented in my project, so big credits to my fiends on Slack. 
-
-A Kanban board was created on GitHub to structure the project development. By taking all my user stories and labeling with their significanse for this project, it was a lot easier to assess each user storie after their relevance.
-
+#### Agile Development Process
+The Muscle Factory project was planned through user stories. These stories were created from a user and site owner perspective. The stories describe what the project should include and would set the overall planning structure.
+One important part of this project was to use an agile development method. This would make the customer's perspective very important but since this is not a real project with real customers, user stories were made up by creating potential customers and site owners.
+In agile development iterative and incremental development is a very important part. Each user story represents a smaller and easier to manage part of the project. This helped a lot with planning the workload.
+As there was not a team building this project it might be hard to fully grasp the concept of agile development, since teamwork is a big part of that. Instead of having a team, I choose to create a chat group on Slack. Working with the criticism I got from fellow students, this turned out to be a very good idea. I got a lot of feedback that I later on implemented in my project, so big credits to my friends on Slack.
+A Kanban board was created on GitHub to structure the project development. By taking all my user stories and labeling them with their significance for this project, it was a lot easier to assess each user story after their relevance.
 Not all user stories were finished, but all user stories with the label "MUST HAVE" were completed.
+
 
 [Click to view Kanban board](https://github.com/users/ElinaBoman/projects/5/views/1)
 
+#### View User stories:
+
 ![User Stories](docs/readme%20docs/ux-testing/UX.png)
 
+#### This is how the User stories have been implemented:
+-  #2 As a user I can make bookings on the website so that I can plan my schedule
+
+The user can create bookings and also view them on the website.
+
+-  #3 As a user I can edit/delete bookings on the website so that I can change my schedule
+
+There are options for the user to edit and delete their bookings.
+
+-  #4 As a user I can create an account so I can see my bookings
+
+There is a fully functioning authentication system so each user can view their own bookings and manage them.
+
+-  #5 As a site owner I can create events so that I can display them on the website
+
+In the admin panel the site owner can create events so that the website is always up to date.
+
+-  #6 As a site owner I can edit events so that I can display changes on the website
+
+The site owner can manage the events, including changing published events.
+
+-  #7 As a site owner I can get in contact with clients so that I can connect with clients
+
+There is a contact form on the website collecting user information entered by the user. The user can, of course, choose if they want to display their full name and phone number; only the name and email are required. User information is displayed in the admin panel.
+
+-  #8 As a site owner I can delete events so that I can remove it from the website
+
+The events can be deleted in the admin panel.
+
+-  #9 As a user I can see available dates in a calendar so that I can schedule private sessions
+
+The booking form will only show available dates and time in their widgets.
+
+-  #10 As a site owner I can display pictures of the gym so I can attract more clients
+
+This has not been fully completed. There is a picture of the gym in the Bootstrap carousel, but it's not clear enough that the image represents the gym. This would be a future implementation.
+
+-  #11 As a site owner I can display and edit information about employees specialization so that I can attract more clients
+
+This has not been completed. Even tough there is information about the employees, the admin does not have the ability to change this information yet. This would be a future implementation. 
+
+-  #12 As a user I can use the website on my phone so that I can make, edit and delete bookings with ease from my phone
+
+The website is fully responsive and all booking features works on all viewports.
+
+-  #13 As a site owner I can display information on the website so that I can inform clients about services and events
+
+All services are described on the website.
 
 ### Colors and Fonts
-To create a clean and proffessinal looking website calm colors were used. The main colors are gray but then there are some color pops to catch the eye of the user. This adds a bit of playfulness to the over all clinic looking front. Since this is a company that focus more on the longterm healt of members with not only gym membership but also massage, rehab and dietist it's more of a clinical gym and therefore the colors are more on the cool side. 
+To create a clean and professional looking website calm colors were used. The main colors are gray but then there are some color pops to catch the eye of the user. This adds a bit of playfulness to the overall clinic looking front. Since this is a company that focuses more on the long term health of members with not only gym membership but also massage, rehab and dietist . It's more of a clinical gym and therefore the colors are more on the cool side. 
 
 ![Palette](docs/readme%20docs/images/colorpalette.png)
 
-
-The fonts that are used are mainly clean and thin with dark colors. The headings are bold and thick creating a strong and sturdy look. The main text is balanced nicely with the thiner text creating a easy to read front. 
-The font for heading has been borrowed from GoogleFonts, and the main text is set to the font of apple device's. 
+The fonts that are used are mainly clean and thin with dark colors. The headings are bold and thick creating a strong and sturdy look. The main text is balanced nicely with the thinner text creating an easy to read front. The font for heading has been borrowed from GoogleFonts, and the main text is set to the font of apple device's.
 * Heading: Bebas Neue, fallback: sans-serif
 * Main text: apple-system, fallback: sans-serif
 
 
 ### Front End Structure
-The Muscle Factory website is devided between if a user is authenticated or not. To view the full front end website the user must be registrerd and signed in. 
+The Muscle Factory website is divided between if a user is authenticated or not. To view the full front end website the user must be registered and signed in.
 
-#### For a user who is not signed in following views avaialable are:
+#### For a user who is not signed in following views available are:
+
 - Home
 
 Landing page: Any user can read about membership prices and view some inspirational paragraphs. There is also a button that will take unregistered users to the registration form.
@@ -96,25 +143,26 @@ The bookings page will render different content depending on whether the user is
 #### For a user who is signed in, following views are avaialable:
 - Home
 
-Registration button is exchanged with a greating to user.
+Registration button is exchanged with a greeting to the user.
 - Contact Us
 - About Us
 - Bookings: 
-When user is authenticated bookings view will allow user to enter a booking trough a form. To submit the form, the user needs to:
+Bookings: When a user is authenticated, the bookings view will allow the user to enter a booking through a form. To submit the form, the user needs to:
+
     
-    - Choose service. The service provided are Personal trainer, Rehab, Massage or Dietist.
-    - Choose time and date. The time and date widgets will only show avaialble dates and times. 
+    - Choose service. The services provided are Personal trainer, Rehab, Massage or Dietist.
+    - Choose time and date. The time and date widgets will only show available dates and times. 
     - Enter if this is the users first appointment.
     - Extra comments, if there is anything the user would like to add, this field is not required.
 - My Bookings
 
-All bookings made by a user will be displayed, providing full CRUD functionality. If the user wants to delete a specific booking, the delete button will first render a view, asking if the user really wants to delete the booking. If the user deletes the booking, an alert will inform the user that the chosen booking has been deleted.
-If the user would like to edit a booking, the booking form renders with prepopulated fields. If the user updated the booking there will be an alert informing user, that the booking has been updated.
+All bookings made by a user will be displayed, providing full CRUD functionality. If the user wants to delete a specific booking, the delete button will first render a view asking if the user really wants to delete the booking. If the user deletes the booking, an alert will inform the user that the chosen booking has been deleted.
+If the user would like to edit a booking, the booking form renders with pre populated fields. If the user updated the booking there will be an alert informing user, that the booking has been updated.
 If user wants to add a new booking from My Bookings view, the booking form will render.
 
 - Logout
 
-If signes out there is a alert message letting the user know if event was successfull. 
+If a user signs out there is an alert message letting the user know if the event was successful.
 
 
 ### Flowchart
@@ -127,9 +175,7 @@ To view project structure, see flowchart:
 
 
 ### Wireframes
-To plan the design and responsivness of The Muscle Factory a tool called Balsamiq was used. This was in the early stages of the project and the images created dosn't represent the finished product. Balsamiq was used to visualize the project in diffrent wireframes.
-
-See Balsamiq wireframes below:  
+To plan the design and responsiveness of The Muscle Factory a tool called Balsamiq was used. This was in the early stages of the project and the images created do not represent the finished product. Balsamiq was used to visualize the project in different wireframes. 
 
 <details>
     <summary>Smaller devices</summary>
@@ -164,7 +210,7 @@ See Balsamiq wireframes below:
 </details>
 
 ## Database
-To store user information a relational database was used called PostgreSQL. The database is managed trough ElephantSQL. Read more about ElephantSQL in deployment section. 
+To store user information a relational database was used called PostgreSQL. The database is managed through ElephantSQL. Read more about ElephantSQL in the deployment section.
 
 #### The project contains four apps: User(AllAuth), Blog, Bookings and Contact.
 The User model is a part of Django's built-in models. This creates an authentication system and allows users to create accounts and make unique bookings.
@@ -232,7 +278,7 @@ The logout page is for the user to sign out. Before a user can sign out, they ha
 ## Testing
 ### Code Validation
 #### HTML
-All html code has gone trough Nu Html Checker. There were few errors. The errors comes from Djangos framework code. The errors has been documented and can be found inside registration.html and edit_item.html. Note that event_detail link is not provided, this is because the link will throw error because of changing event posts. The code has been validated without any event added.
+All html code has gone through Nu Html Checker. There were few errors. The errors came from Django's framework code. The errors have been documented and can be found inside registration.html and edit_item.html. Read more about these errors under Bugs section.
 
 <details>
 <summary>home.html</summary>
@@ -291,7 +337,7 @@ https://validator.w3.org/nu/?showsource=yes&doc=https%3A%2F%2Fthe-muscle-factory
 
 
 ### CSS 
-All CSS passed trough validation and shows no errors:
+All CSS passed through validation and shows no errors:
 <details>
 <summary>style.css</summary>
 
@@ -378,7 +424,7 @@ The live webpage has been tested with:
 
 No issues were found.
 
-## Future Improvments
+## Future Improvements
 There are a lot of approvments I wish to do. This was a super fun project and I had to restrict myself to only create a MVP. 
 Theese are some future improvments I wish to do:
 - Add more styling to bookings pages
@@ -389,15 +435,15 @@ Theese are some future improvments I wish to do:
 
 ## Bugs
 - Booking form not submitting:
-The booking form will not submit when entering booking link in nav bar. It works fine if form is entered from other link, like ADD button from my bookings.
+The booking form will not submit when entering the booking link in the nav bar. It works fine if the form is entered from other link, like the ADD button from my bookings.
 Status: Fixed
 
 - Alignment issue:
-There is a alignment issue unfixed, in edit_item, with "UPDATE" and "CANCEL" buttons. This is thought to have something to do with the form.as_p and Bootstrap classes. The buttons should be aligned.
+There is an alignment issue unfixed, in edit_item, with "UPDATE" and "CANCEL" buttons. This is thought to have something to do with the form.as_p and Bootstrap classes. The buttons should be aligned.
 Solution: No solution at the moment.
 
 - The errors found with HTML validation checker: 
-Theese errors are thought to occure because of the CSS styling to block the in form labels. The code passed trough validation comes from the live link of the webpage. From the code snippets used the labels are blocked. I think this is what is causing the problems, but since the code actually is there theese are not really errors. The form is part of Django framwork code wich is why I can not just add a class or id to the labels. 
+These errors are thought to occur because of the CSS styling to block the in form labels. The code passed trough validation comes from the live link of the webpage. From the code snippets used the labels are blocked. I think this is what is causing the problems, but since the code actually is there these are not really errors. The form is part of Django framework code which is why I can not just add a class or id to the labels. 
 Solution: Remove CSS class display: block; before passing code through validation.
 
 
@@ -435,7 +481,7 @@ Solution: Remove CSS class display: block; before passing code through validatio
 - Flake8: https://flake8.pycqa.org/en/latest/ 
 To search for errors and unused libraries.
 -  chatGPT: https://chat.openai.com/
-For trouble shooting and writing text content.
+For troubleshooting and writing text content.
 - Pexels: https://www.pexels.com/sv-se/
 To search for images.
 - Google: https://www.google.com/webhp?hl=sv&sa=X&sqi=2&pjf=1&ved=0ahUKEwjD2YDFqvmDAxW_AhAIHcSrBckQPAgJ
@@ -453,13 +499,13 @@ API.
 - GitHub: https://github.com/
 Pushing all code and creating Kanban board.
 - LucidChart: https://www.lucidchart.com/
-For creating flowchart and database chart.
+For creating flowchart and database charts.
 - Balsamiq: https://balsamiq.com/
 To create all wireframes.
 - Google Fonts: https://fonts.google.com/
 To search for and borrow fonts.
 - Font Awesome: https://fontawesome.com/
-For borrowing fonticons.
+For borrowing font icons.
 - Bootstrap: https://getbootstrap.com/ and https://getbootstrap.com/docs/5.3/getting-started/introduction/
 To create classes.
 - Favicon: https://favicon.io/
@@ -475,31 +521,32 @@ Database.
 - EmailJS: https://www.emailjs.com/
 Email function.
 - Stack Overflow: https://stackoverflow.com/
-Trouble shooting.
+Troubleshooting.
 - W3Schools: https://www.w3schools.com/
 Readin documentation.
 - Youtube: https://www.youtube.com/
 Link in footer and trouble shooting.
 - Coolors: https://coolors.co/
-To create color chart.
+To create a color chart.
 - Am I responsive: https://ui.dev/amiresponsive
 For testing wireframes.
-- Code institute tutorials/ Walktrough project
+- Code institute tutorials/ Walkthrough project
 - Lighthouse testing
-Creating lighthouse repport.
+Creating a lighthouse report.
 - Elephant SQL: https://customer.elephantsql.com/login
-To handle database.
+To handle the database.
 - Perchance: https://perchance.org/ai-photo-generator?fbclid=IwAR2sOEfkPK5GW5uKOcfqvSraVwiDcZFSIkrOV8UP88daEPPKWJUa7ZwwuTo
 Creating event post images.
 
 
-## Deployment
+## 
+
 ### Create Heroku app
 - Install Django and Gunicorn
 - Install libraries: dj_database_url and psycopg2
 - Install Cloudinary Libraries
 - Create requirements.txt file
-- Create project with command django-admin startproject themusclefactory . (replace 
+- Create a project with command django-admin startproject themusclefactory . (replace 
   themusclefactory with your project name). Do not forget the "." in the end, it's very important.
 - Create app with command: python manage.py startapp blog (Replace 'blog' with name of your app)
 - To create database models run: python manage.py makemigrations
@@ -528,20 +575,20 @@ Creating event post images.
 - Choose buildpack Python and "Save changes". Add another buildpack with nodjs. Save changes. It is important that the buildpacks are added in the correct order. Drag and drop buildpacks if they are in the wrong order
 - When buildpacks are in order. Locate the "Deploy" tab. It's found on the left side of the "Settings" tab
 - In the Deployment method section, choose GitHub to connect to the repository. Confirm request to connect to GitHub
-- Search for repo-name. This is the name of the repository. Click "Search"
+- Search for the repo-name. This is the name of the repository. Click "Search"
 - Click "Connect" to link Heroku app to GitHub repository
 - Scroll down to Automatic deploy section and Manual deploy section
-- Choose how the project should be deployed. If Enable Automatic Deploys, Heroku rebuilds the app every time new changes are pushed inside the working enviroment
+- Choose how the project should be deployed. If Enable Automatic Deploys, Heroku rebuilds the app every time new changes are pushed inside the working environment
 - If Manual deploy is chosen the current state of the project will be deployed. For this alternative click "Deploy Branch".
-- When the project is deployed there will be four green circles with checkmarks inside. There should be a message "Your app was successfully deployed.". Click the "View" button to see deployed project. If steps are followed there should be a mock terminal with project inside of it. Program starts automagically
+- When the project is deployed there will be four green circles with check marks inside. There should be a message "Your app was successfully deployed.". Click the "View" button to see the deployed project. If steps are followed there should be a mock terminal with a project inside of it. Program starts automagically
 
 ### Fork repository in GitHub
 - Log in to your GitHub account, or create a account if you don't have one
 - Go to GitHub repository that you would like to fork. To
   find the repository, search for the repository URL inside the search bar
-- At the top of the site in the right corner of repository page there should be a button called "Fork". Click this button
+- At the top of the site in the right corner of the repository page there should be a button called "Fork". Click this button
 - Choose where you would like to fork the repository
-- GitHub will then create a clone of repository at choosen location. By default you should be directed to forked repository inside your gitHub account
+- GitHub will then create a clone of repository at chosen location. By default you should be directed to forked repository inside your gitHub account
 
 ## Credits
 - I want to thank my fantastic mentor, Brian O'Hare, who always helps me with great feedback.
