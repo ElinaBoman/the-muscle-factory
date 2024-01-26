@@ -20,6 +20,12 @@ Link to live website can be found here:
 
 ![Am I resppnsive](docs/readme%20docs/images/air.png)
 
+## Table of 
+- [General](https://github.com/ElinaBoman/the-muscle-factory?tab=readme-ov-file#general)
+- [Table of Contents](https://github.com/ElinaBoman/the-muscle-factory?tab=readme-ov-file#general)
+- [Project Goals](https://github.com/ElinaBoman/the-muscle-factory?tab=readme-ov-file#project-goals)
+
+
 ### Project Goals
 
 The main goals for this project was:
