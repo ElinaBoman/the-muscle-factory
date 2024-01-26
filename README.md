@@ -1,4 +1,3 @@
-Table of Contents
 # The Muscle Factory- A Django project, for Code Institute
 # General 
 The Muscle Factory is a website that lets users register for an account, book appointments and provides information about upcoming events. The user can read about the services provided and the people working at The Muscle Factory. When the user has created and account he/she can manage their bookings with full CRUD functionality.
@@ -40,7 +39,7 @@ The main goals for this project was:
 ## UX
 The main goal for the website is to attract new members and also take care of member bookings. It was important that the website had a clean professional front. To make the website more interesting and also be able to show The Muscle Factorys mantra a Bootstrap Carousel was placed on the landing page. The carousel shows images of the gym, members and some healthy food to immediately let the user know what the website is all about. The first slide for example lets the user know that it's The Muscle Factorys mission to help members create a healthier lifestyle, but also how important it's to have a helpful community that supports members all the way.
 
-### User Stories
+### Development 
 #### Agile Development Process
 The Muscle Factory project was planned through user stories. These stories were created from a user and site owner perspective. The stories describe what the project should include and would set the overall planning structure.
 One important part of this project was to use an agile development method. This would make the customer's perspective very important but since this is not a real project with real customers, user stories were made up by creating potential customers and site owners.
@@ -52,6 +51,15 @@ Not all user stories were finished, but all user stories with the label "MUST HA
 
 [Click to view Kanban board](https://github.com/users/ElinaBoman/projects/5/views/1)
 
+### Flowchart
+To view project structure, see flowchart:
+<details>
+<summary>Lucidchart</summary>
+
+![Lucidchart](docs/readme%20docs/images/lucidchart.png)
+</details>
+
+### User Stories
 #### View User stories:
 
 ![User Stories](docs/readme%20docs/ux-testing/UX.png)
@@ -115,7 +123,43 @@ The fonts that are used are mainly clean and thin with dark colors. The headings
 * Main text: apple-system, fallback: sans-serif
 
 
-### Front End Structure
+### Wireframes
+To plan the design and responsiveness of The Muscle Factory a tool called Balsamiq was used. This was in the early stages of the project and the images created do not represent the finished product. Balsamiq was used to visualize the project in different wireframes. 
+
+<details>
+    <summary>Smaller devices</summary>
+
+![Small](docs/readme%20docs/wireframes/wireframes-sm-landing-about-contact.png)
+
+![Small](docs/readme%20docs/wireframes/wireframes-sm-create-delete.png)
+</details>
+
+<details>
+  <summary>Medium devices</summary>
+
+![Medium](docs/readme%20docs/wireframes/wireframes-md-landing-about.png)
+
+![Medium](docs/readme%20docs/wireframes/wireframes-md-contact.png)
+
+![Medium](docs/readme%20docs/wireframes/wireframes-md-create-bookings.png)
+</details>
+<details>
+ <summary>Large devices</summary>
+
+![Large](docs/readme%20docs/wireframes/wireframes-lg-landing.png)
+
+![Large](docs/readme%20docs/wireframes/wireframes-lg-about.png)
+
+![Large](docs/readme%20docs/wireframes/wireframes-lg-contacts.png)
+
+![Large](docs/readme%20docs/wireframes/wireframes-lg-create.png)
+
+![Large](docs/readme%20docs/wireframes/wireframes-lg-delete.png)
+
+</details>
+
+
+##  General Features
 The Muscle Factory website is divided between if a user is authenticated or not. To view the full front end website the user must be registered and signed in.
 
 #### For a user who is not signed in following views available are:
@@ -164,67 +208,7 @@ If user wants to add a new booking from My Bookings view, the booking form will 
 
 If a user signs out there is an alert message letting the user know if the event was successful.
 
-
-### Flowchart
-To view project structure, see flowchart:
-<details>
-<summary>Lucidchart</summary>
-
-![Lucidchart](docs/readme%20docs/images/lucidchart.png)
-</details>
-
-
-### Wireframes
-To plan the design and responsiveness of The Muscle Factory a tool called Balsamiq was used. This was in the early stages of the project and the images created do not represent the finished product. Balsamiq was used to visualize the project in different wireframes. 
-
-<details>
-    <summary>Smaller devices</summary>
-
-![Small](docs/readme%20docs/wireframes/wireframes-sm-landing-about-contact.png)
-
-![Small](docs/readme%20docs/wireframes/wireframes-sm-create-delete.png)
-</details>
-
-<details>
-  <summary>Medium devices</summary>
-
-![Medium](docs/readme%20docs/wireframes/wireframes-md-landing-about.png)
-
-![Medium](docs/readme%20docs/wireframes/wireframes-md-contact.png)
-
-![Medium](docs/readme%20docs/wireframes/wireframes-md-create-bookings.png)
-</details>
-<details>
- <summary>Large devices</summary>
-
-![Large](docs/readme%20docs/wireframes/wireframes-lg-landing.png)
-
-![Large](docs/readme%20docs/wireframes/wireframes-lg-about.png)
-
-![Large](docs/readme%20docs/wireframes/wireframes-lg-contacts.png)
-
-![Large](docs/readme%20docs/wireframes/wireframes-lg-create.png)
-
-![Large](docs/readme%20docs/wireframes/wireframes-lg-delete.png)
-
-</details>
-
-## Database
-To store user information a relational database was used called PostgreSQL. The database is managed through ElephantSQL. Read more about ElephantSQL in the deployment section.
-
-#### The project contains four apps: User(AllAuth), Blog, Bookings and Contact.
-The User model is a part of Django's built-in models. This creates an authentication system and allows users to create accounts and make unique bookings.
-
-The EventBooking model is a part of the bookings app and is for the user to create bookings. This is related to the Django built-in User model. It will create unique bookings for each user.
-
-The ContactForm model is not related to any other model since it is not unique to any user. This model will save messages from users in the database but also send an email to both The Muscle Factory and an auto-reply to the user.
-
-The Event model is for the admin to create events that will render on the landing page. This is to make it easy for the site owner to keep the website updated with relevant events. This is also related to the User model, but is for site owner and his/hers employees. 
-
-![Database Models](docs/readme%20docs/images/db-models.png)
-
-## General features
-
+### Features
 ### Header and Navigation
 The header and navigation menu are responsive and will change to suit different wireframes. On bigger screens, the menu will display all navigation elements, but on smaller screens, the elements will be contained in a hamburger bar. The navbar also contains a kettlebell logo, same as in the title.
 The navbar elements change depending on whether the user is signed in or not. For a user who is not signed in, the navigation elements are Home, About us, Contact us, and Booking. If the user is signed in, there will also be a link to My bookings.
@@ -273,6 +257,21 @@ If a user is registered, they can log in. This is a part of Django's built-in al
 ### Logout
 The logout page is for the user to sign out. Before a user can sign out, they have to confirm their action. If the user confirms that they want to sign out, the user will be logged out, and an alert message will confirm the action.
 ![Login](docs/readme%20docs/images/features/signout.png)
+
+
+## Database
+To store user information a relational database was used called PostgreSQL. The database is managed through ElephantSQL. Read more about ElephantSQL in the deployment section.
+
+#### The project contains four apps: User(AllAuth), Blog, Bookings and Contact.
+The User model is a part of Django's built-in models. This creates an authentication system and allows users to create accounts and make unique bookings.
+
+The EventBooking model is a part of the bookings app and is for the user to create bookings. This is related to the Django built-in User model. It will create unique bookings for each user.
+
+The ContactForm model is not related to any other model since it is not unique to any user. This model will save messages from users in the database but also send an email to both The Muscle Factory and an auto-reply to the user.
+
+The Event model is for the admin to create events that will render on the landing page. This is to make it easy for the site owner to keep the website updated with relevant events. This is also related to the User model, but is for site owner and his/hers employees. 
+
+![Database Models](docs/readme%20docs/images/db-models.png)
 
 
 ## Testing
@@ -409,6 +408,7 @@ urls.py
 
 ### Testing User Stories
 ![userstories](docs/readme%20docs/ux-testing/userstorie-testing.png)
+
 ### Manuel Testing
 Follow link to view manual testing:
 [Click Me](docs/readme%20docs/README-TESTING.md)
