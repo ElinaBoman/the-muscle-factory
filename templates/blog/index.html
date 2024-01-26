@@ -60,6 +60,7 @@
                 </div>
             </div>
         </div>
+        <!-- Bootstrap carousel buttons to move forward and backward -->
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
@@ -111,7 +112,11 @@
             </div>
         </div>
     </div>
-    <!-- Event Entries Column created in Code institute walk through, view repo: https://github.com/Code-Institute-Solutions/Django3blog/blob/master/11_messages/templates/index.html  -->
+    <!-- 
+        Event Entries Column created in Code Institute walkthrough, 
+        view repo:
+        https://github.com/Code-Institute-Solutions/Django3blog/blob/master/11_messages/templates/index.html 
+    -->
     <div class="col-12 mt-3 left">
         <h2 class="heading text-center">Check out our upcoming events!</h2>
         <div class="row event-posts">
@@ -142,7 +147,7 @@
             {% endfor %}
         </div>
     </div>
-
+    <!-- Page navigation -->
     {% if is_paginated %}
     <nav aria-label="Page navigation">
         <ul class="pagination justify-content-center">
@@ -155,6 +160,7 @@
         </ul>
     </nav>
     {% endif %}
+    <!-- Script tags -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>

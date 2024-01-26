@@ -90,9 +90,11 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 offset-md-2">
-                <!--Code copied from Code institute walktrough project, "I think therefore I blog":
+                <!--
+                    Code copied from Code institute walktrough project, "I think therefore I blog":
                     https://github.com/Code-Institute-Solutions/Django3blog/tree/master.
-                    This will inform the user while performing an action-->
+                    This will inform the user while performing an action
+                -->
                 {% for message in messages %}
                 <div class="alert {{ message.tags }} alert-dismissible fade show" id="msg" role="alert">{{ message | safe }}
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>

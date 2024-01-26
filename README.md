@@ -464,14 +464,17 @@ Theese are some future improvments I wish to do:
 ## Bugs
 - Booking form not submitting:
 The booking form will not submit when entering the booking link in the nav bar. It works fine if the form is entered from other link, like the ADD button from my bookings.
+
 Status: Fixed
 
 - Alignment issue:
 There is an alignment issue unfixed, in edit_item, with "UPDATE" and "CANCEL" buttons. This is thought to have something to do with the form.as_p and Bootstrap classes. The buttons should be aligned.
+
 Solution: No solution at the moment.
 
 - The errors found with HTML validation checker: 
 These errors are thought to occur because of the CSS styling to block the in form labels. The code passed trough validation comes from the live link of the webpage. From the code snippets used the labels are blocked. I think this is what is causing the problems, but since the code actually is there these are not really errors. The form is part of Django framework code which is why I can not just add a class or id to the labels. 
+
 Solution: Remove CSS class display: block; before passing code through validation.
 
 
