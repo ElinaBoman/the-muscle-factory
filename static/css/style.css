@@ -166,16 +166,16 @@
 
 /* Edit item */
 .edit_item{
-    border: #fff 2px solid;
+    border: rgb(255, 255, 255) 2px solid;
     padding: 20px;
     padding-bottom: 20px;
 }
 
-/* Booking form */
+/* Booking form */ 
 .bookings_form_list{
     list-style: none;
     line-height: 1.5rem;
-    font-weight: 600;
+    font-weight: 500;
     border: #fff 2px solid;
     padding: 2%; 
 }
@@ -184,8 +184,6 @@
     list-style: none;
     border: #fff solid 2px;
     line-height: 2rem;
-    padding: 4%;
-    margin: 2%;
     font-weight: 600;
 }
 

@@ -5,9 +5,10 @@
 {% block head_title %}{% trans "Create Booking" %}{% endblock %}
 
 {% block content %}
-    <div class="container-fluid edit_item">
+<!-- For user to edit their booking -->
+    <div class="container text-center mt-5 mb-3 edit_item">
         <div class="row">
-            <div class="col-md-8 mt-5 offset-md-1">
+            <div class="col-md-12 mt-5 text-center">
             <h2 class="heading">Hello {{user.username}}, would you like update your booking?</h2>
                 <div class="booking-form">
                     <form method="post">

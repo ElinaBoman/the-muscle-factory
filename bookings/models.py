@@ -38,8 +38,7 @@ class EventBooking(models.Model):
     start_time = models.TimeField(default=datetime.time(8, 0))
     event_choice = models.CharField(max_length=30,
                                     choices=EVENT_CHOICE)
-    booking_status = models.IntegerField(choices=BOOKING_STATUS,
-                                         default=0)
+    booking_status = models.CharField(max_length=30, choices=BOOKING_STATUS)
     extra_comments = models.TextField(null=True, blank=True,
                                       verbose_name='Anything we should know?'
                                       )
