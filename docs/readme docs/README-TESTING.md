@@ -51,7 +51,6 @@
 | Message field | Try sending form without message, try sending message | User can enter text message, is not required | If not message form is still submitted, if message, the information will show in submited form |
 | 'Submit' button | Click button without entering any information in input fields, fill out form | Submits bookings form | Form is not submite, form is submited, redirects to my bookings | 
 | Alert message| Check if there is an alert when form is submitted | When booking form is submitted, the user will have a alert success message | Alert displays | 
-| Booking status |  | The booking is shown in  admin panel, and in My bookings  |
 
 
 | Feature        |            Action           |             Expectation         |          Result           |
@@ -61,7 +60,6 @@
 | Date| Check | Shows correct date for specified booking | Correct date | 
 | Start time |  start time  | Shows correct time for specified booking | Correct start time
 | Event choice|  check | Shows correct Event for specified booking | Correct event choice |
-| Status| - | Shows is booking has been approved by admin |   -    |
 | Your comment (if comment)| Check | If user has enterd a message it is displayed in specefied booking | Correct comment | 
 | 'Edit' button | Click button | Takes user to edit booking page | Renders booking form with prefilled inputs with correct info |
 | 'Delete' button|  Click delete button  | Takes user to delete booking page | Renders delete booking page | 

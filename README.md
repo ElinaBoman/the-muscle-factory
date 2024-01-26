@@ -623,5 +623,10 @@ Creating event post images.
 - I want to express my gratitude to my fiancé, who helped me proofread this fantastic README. He also tried to break my project several times, which helped me locate errors.
 - I also want to extend my thanks to my colleagues on Slack. Thank you so much for taking the time to help me improve my project.
 - Special thanks to Code Institute's tutor support, especially John, who helped me with some real headaches.
-- This README was inspired by github user gStarHigh and 
+ - Gustaf Starhög aka gStarHigh: https://github.com/gStarhigh/pro4 
+   Inspired my model in Eventbooking.
+- This README was inspired by github users 
+    - Gustaf Starhög aka gStarHigh: https://github.com/gStarhigh/pro4 
+    - Yannick Ferenczi aka yannickferenczi: https://github.com/yannickferenczi/hands-home-helpers-website
+    - Kristyna Wach aka Cushione: https://github.com/Cushione/fantastic-news
 - Last but not least, thank you to Code Institute for this truly enjoyable and informative project.
