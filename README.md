@@ -1,5 +1,5 @@
 # The Muscle Factory- A Django project, for Code Institute
-# General 
+## General 
 The Muscle Factory is a website that lets users register for an account, book appointments and provides information about upcoming events. The user can read about the services provided and the people working at The Muscle Factory. When the user has created and account he/she can manage their bookings with full CRUD functionality.
 This means that the user can:
 * Create a booking
