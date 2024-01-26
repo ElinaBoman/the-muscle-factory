@@ -226,7 +226,7 @@ If a user is registered, they can log in. This is a part of Django's built-in al
 
 ### Logout
 The logout page is for the user to sign out. Before a user can sign out, they have to confirm their action. If the user confirms that they want to sign out, the user will be logged out, and an alert message will confirm the action.
-![Login](docs/readme%20docs/images/features/signout.png)my
+![Login](docs/readme%20docs/images/features/signout.png)
 
 
 ## Testing
